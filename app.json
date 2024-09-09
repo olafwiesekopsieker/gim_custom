@@ -16,15 +16,21 @@
       "publisher": "NETRONIC Software GmbH",
       "name": "Visual Advanced Production Scheduler",
       "version": "1.17.0.1"
-    } 
+    },
+    {
+      "id":"8d751890-73a2-4219-8770-7fcaced7ef5e",
+      "publisher": "COSMO Consult / GIM",
+      "name": "DueperthalBC22",
+      "version": "22.0.0.0"
+    }
   ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "22.0.0.0",
   "idRanges": [
     {
-      "from": 81200,
-      "to": 81299
+      "from": 82000,
+      "to": 82999
     }
   ],
   "resourceExposurePolicy": {

@@ -1,11 +1,11 @@
 /// <summary>
 /// TableExtension GIM2 User Setup (ID 81200) extends Record User Setup.
 /// </summary>
-tableextension 81200 "GIM2 User Setup" extends "User Setup"
+tableextension 82000 "GIM2 User Setup" extends "User Setup"
 {
     fields
     {
-        field(81200; "gimArtikel sperren erlaubt"; boolean)
+        field(82000; "gimArtikel sperren erlaubt"; boolean)
         {
             trigger OnValidate()
             var

@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit GIM Custom Events (ID 81200).
 /// </summary>
-codeunit 81200 "GIM Custom Events"
+codeunit 82000 "GIM Custom Events"
 {
 
     [EventSubscriber(ObjectType::table, database::item, 'OnBeforeValidateEvent', 'Blocked', false, false)]
@@ -20,6 +20,7 @@ codeunit 81200 "GIM Custom Events"
     local procedure VAPSSimPrdOrdrOnBeforeInsert(var rec: record "NETVAPS SIMPrdOrdr")
     var
         item: record Item;
+        POLine: record "Production Order";
     begin
         if rec."Source Type" = rec."source type"::Item then
             if rec."Source No." <> '' then begin
@@ -27,7 +28,9 @@ codeunit 81200 "GIM Custom Events"
                     item.init;
                 rec.Artikelkategoriecode := item."Item Category Code";
                 rec."Produktbuch.-gruppe (Artikel)" := item."Gen. Prod. Posting Group";
+                rec.Fertigungsgruppencode := item."Production Group Code";
             end;
+
 
     end;
 

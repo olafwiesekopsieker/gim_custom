@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension gim2UserSetup (ID 81200) extends Record User Setup.
 /// </summary>
-pageextension 81200 GIM2UserSetup extends "User Setup"
+pageextension 82000 GIM2UserSetup extends "User Setup"
 {
     layout
     {
