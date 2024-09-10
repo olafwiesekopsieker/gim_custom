@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit GIM Custom Events (ID 81200).
 /// </summary>
-codeunit 82000 "GIM Custom Events"
+codeunit 80000 "GIM Custom Events"
 {
 
     [EventSubscriber(ObjectType::table, database::item, 'OnBeforeValidateEvent', 'Blocked', false, false)]

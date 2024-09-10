@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension GIMNETVAPS SIM PO Search (ID 81201) extends Record NETVAPS Sim PO Search.
 /// </summary>
-pageextension 82001 "GIMNETVAPS SIM PO Search" extends "NETVAPS Sim PO Search"
+pageextension 80001 "GIMNETVAPS SIM PO Search" extends "NETVAPS Sim PO Search"
 {
     layout
     {
