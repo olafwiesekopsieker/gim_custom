@@ -16,9 +16,8 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
-            "port":22250,
-            "schemaUpdateMode":"Synchronize"
-           
+            "port": 22250,
+            "schemaUpdateMode": "Synchronize"
         },
         {
             "name": "BC22 Server",
@@ -35,10 +34,8 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
-            "port":22049,
-            "schemaUpdateMode":"Synchronize"
-            
-           
+            "port": 22049,
+            "schemaUpdateMode": "Synchronize"
         },
         {
             "name": "BC24 Server",
@@ -55,10 +52,20 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
-            "port":24049,
-            "schemaUpdateMode":"Synchronize"
-            
-           
+            "port": 24049,
+            "schemaUpdateMode": "Synchronize"
+        },
+        {
+            "name": "AL: Generated Attach request",
+            "request": "attach",
+            "type": "al",
+            "server": "http://GIOE46.hanning.hg.intra",
+            "serverInstance": "BC240",
+            "authentication": "Windows",
+            "port": 24049,
+            "sessionId": 733,
+            "breakOnNext": "WebClient",
+            "breakOnError": "ExcludeTry"
         }
     ]
 }
