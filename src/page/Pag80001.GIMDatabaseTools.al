@@ -1,12 +1,12 @@
 /// <summary>
-/// Page GIM_DatabaseTools (ID 82001).
+/// Page "GIM_DatabaseTools" (ID 82001).
 /// </summary>
-page 82001 GIM_DatabaseTools
+page 80001 GIM_DatabaseTools
 {
     ApplicationArea = All;
     Caption = 'GIM Database Tools';
     PageType = Card;
-    SourceTable = "Integer";
+    SourceTable = "Customer";
     UsageCategory = Administration;
 
     layout
@@ -38,8 +38,10 @@ page 82001 GIM_DatabaseTools
                 trigger OnAction()
                 var
                     ApplicationAreaSetup: record "Application Area Setup";
+                    ExperienceTierSetup: record "Experience Tier Setup";
                 begin
                     ApplicationAreaSetup.DELETEALL;
+                    ExperienceTierSetup.DELETEALL;
                 end;
             }
         }

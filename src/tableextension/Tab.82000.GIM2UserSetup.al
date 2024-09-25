@@ -1,7 +1,7 @@
 /// <summary>
 /// TableExtension GIM2 User Setup (ID 81200) extends Record User Setup.
 /// </summary>
-tableextension 82000 "GIM2 User Setup" extends "User Setup"
+tableextension 80000 "GIM2 User Setup" extends "User Setup"
 {
     fields
     {

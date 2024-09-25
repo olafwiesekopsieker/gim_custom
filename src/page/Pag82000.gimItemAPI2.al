@@ -171,26 +171,26 @@ page 80000 gimItemAPI2
                 }
 
 
-                part(gimExtendedTextLine; gimExtendedTextLine)
-                {
-                    ApplicationArea = all;
-                    Caption = 'textLines', Locked = True;
-                    EntityName = 'gimItemTextLine';
-                    EntitySetName = 'gimItemTextLines';
-                    SubPageLink = "Table Name" = Filter('Item'), "No." = field("No.");
-                }
-                part(ItemAttributeValueList; "Item Attribute Value List")
-                {
-                    ApplicationArea = All;
-                    EntityName = 'gimItemAttribute';
-                    EntitySetName = 'gimItemAttributes';
-                }
+                // part(gimExtendedTextLine; gimExtendedTextLine)
+                // {
+                //     ApplicationArea = all;
+                //     Caption = 'textLines', Locked = True;
+                //     EntityName = 'gimItemTextLine';
+                //     EntitySetName = 'gimItemTextLines';
+                //     SubPageLink = "Table Name" = Filter('Item'), "No." = field("No.");
+                // }
+                // part(ItemAttributeValueList; "Item Attribute Value List")
+                // {
+                //     ApplicationArea = All;
+                //     EntityName = 'gimItemAttribute';
+                //     EntitySetName = 'gimItemAttributes';
+                // }
             }
         }
     }
 
     trigger OnAfterGetCurrRecord()
     begin
-        CurrPage.ItemAttributeValueList.PAGE.LoadAttributes(rec."No.");
+        // CurrPage.ItemAttributeValueList.PAGE.LoadAttributes(rec."No.");
     end;
 }

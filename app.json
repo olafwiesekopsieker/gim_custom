@@ -29,7 +29,7 @@
   "application": "22.0.0.0",
   "idRanges": [
     {
-      "from": 82000,
+      "from": 80000,
       "to": 82999
     }
   ],
