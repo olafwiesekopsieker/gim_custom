@@ -25,7 +25,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://gioe46/bc220/",
+            "server": "http://oegim-srvbc1/bc220/",
             "serverInstance": "BC220",
             "authentication": "Windows",
             "startupObjectId": 22,
@@ -35,7 +35,7 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
-            "port":22049,
+            "port":7049,
             "schemaUpdateMode":"Synchronize"
             
             

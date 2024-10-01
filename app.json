@@ -18,14 +18,74 @@
       "version": "1.17.0.1"
     },
     {
+      "id": "551d85cb-2152-4144-9464-a16791aff492",
+      "name": "COSMO Licensing",
+      "publisher": "Cosmo Consult",
+      "version": "2.4.0.0"
+    },
+    {
+      "id": "1b26c6f6-4689-4dc3-af55-f39e95a781f8",
+      "name": "COSMO Advanced Manufacturing Pack",
+      "publisher": "Cosmo Consult",
+      "version": "7.1.192970.0"
+    },
+    {
+      "id": "63aa5c1b-6e26-4572-aa2d-8b333b3ff1a4",
+      "name": "COSMO Quality Assurance",
+      "publisher": "Cosmo Consult",
+      "version": "4.4.192107.0"
+    },
+    {
+      "id": "6f0293d3-86fc-4ff8-9632-54a580be6546",
+      "name": "ForNAV Core",
+      "publisher": "ForNAV",
+      "version": "7.1.1.5"
+    },
+    {
+      "id": "83326d6d-11f8-49fd-981a-6f266a7c8d81",
+      "name": "customizable Report Pack",
+      "publisher": "ForNAV",
+      "version": "7.1.1.5"
+    },
+    {
+      "id": "ffa26420-b880-4d49-9b2c-c3e60c86b914",
+      "name": "COSMO Text Module",
+      "publisher": "Cosmo Consult",
+      "version": "3.0.187470.0"
+    },
+    {
+      "id": "f5f034bb-d1a9-4dde-9a16-1dc5cd11ada8",
+      "name": "COSMO Advance Payment",
+      "publisher": "Cosmo Consult",
+      "version": "4.1.186880.0"
+    },
+    {
+      "id": "e6ae6d0f-9583-489d-80be-3f3214958a4c",
+      "name": "COSMO Product Data Management",
+      "publisher": "Cosmo Consult",
+      "version": "4.1.185640.0"
+    },
+    {
+      "id": "67e19f65-9a1f-41e1-8e54-acc6540922a4",
+      "name": "Servotion",
+      "publisher": "MULTISOFT KFT",
+      "version": "3.0.0.6"
+    },
+    {
       "id":"8d751890-73a2-4219-8770-7fcaced7ef5e",
       "publisher": "COSMO Consult / GIM",
-      "name": "DueperthalBC22",
+      "name": "DueperthalBC24",
       "version": "22.0.0.0"
+    },
+    {
+      "id": "88cf5d4c-8afc-4a98-9cb7-212196c51d74",
+      "name": "Continia OPplus",
+      "version": "1.0.0.0",
+      "publisher": "Continia Software"
     }
   ],
   "screenshots": [],
-  "platform": "1.0.0.0",
+  "platform": "22.0.0.0",
   "application": "22.0.0.0",
   "idRanges": [
     {

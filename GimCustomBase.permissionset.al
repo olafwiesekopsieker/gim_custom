@@ -7,4 +7,5 @@ permissionset 80000 _Gim_Custom_Base
     Permissions = codeunit "GIM Custom Events" = X,
         page gimItemAPI2 = X,
         page GIM_DatabaseTools = X;
+
 }
