@@ -1,3 +1,4 @@
 .alpackages
 *.app
 .vscode/.alcache
+.vscode/rad.json
