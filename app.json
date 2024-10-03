@@ -76,13 +76,8 @@
       "publisher": "COSMO Consult / GIM",
       "name": "DueperthalBC24",
       "version": "22.0.0.0"
-    },
-    {
-      "id": "88cf5d4c-8afc-4a98-9cb7-212196c51d74",
-      "name": "Continia OPplus",
-      "version": "1.0.0.0",
-      "publisher": "Continia Software"
     }
+    
   ],
   "screenshots": [],
   "platform": "22.0.0.0",
