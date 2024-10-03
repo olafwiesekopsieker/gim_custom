@@ -159,7 +159,7 @@ page 80005 gim2ItemAPI
                 }
                 field(unitPrice; Rec."Unit Price")
                 {
-                    Caption = 'Unit Cost';
+                    Caption = 'Unit Price';
                 }
                 field(vendorNo; Rec."Vendor No.")
                 {
