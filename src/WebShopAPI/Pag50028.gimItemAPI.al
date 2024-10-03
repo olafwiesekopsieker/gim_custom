@@ -157,9 +157,9 @@ page 80005 gim2ItemAPI
                 {
                     Caption = 'Tariff No.';
                 }
-                field(unitPrice; Rec."Unit Cost")
+                field(unitPrice; Rec."Unit Price")
                 {
-                    Caption = 'Unit Cost';
+                    Caption = 'Unit Price';
                 }
                 field(vendorNo; Rec."Vendor No.")
                 {
