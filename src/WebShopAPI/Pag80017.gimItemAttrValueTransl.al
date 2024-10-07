@@ -9,8 +9,8 @@ page 80017 gimItemAttrValueTransl
     ApplicationArea = All;
     Caption = 'gimItemAttrValueTransl';
     DelayedInsert = true;
-    EntityName = 'gimTemAttrValueTrans';
-    EntitySetName = 'gimTemAttrValueTranss';
+    EntityName = 'gimItemAttrValueTrans';
+    EntitySetName = 'gimItemAttrValueTranss';
     PageType = API;
     SourceTable = "Item Attr. Value Translation";
 
