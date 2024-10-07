@@ -23,6 +23,8 @@ permissionset 80001 gim2WebShopAPI
         tabledata "Extended Text Line" = R,
         tabledata "Contact Mailing Group" = R,
         tabledata "Item Translation" = R,
+        tabledata "Item Attribute Translation" = R,
+        tabledata "Item Attr. Value Translation" = R,
 
         codeunit gim2DownloadImageToItem = X,
 
@@ -40,6 +42,8 @@ permissionset 80001 gim2WebShopAPI
         page gim2SalesHeaderArchive = X,
         page gim2SalesInvoiceHeader = X,
         Page gim2ContactMailGroupAPI = X,
-        query "gim2Item Attr. Value Mapping" = X;
+        query "gim2Item Attr. Value Mapping" = X,
+        page gimItemAttrTransl = X,
+        page gimItemAttrValueTransl = X;
 
 }
