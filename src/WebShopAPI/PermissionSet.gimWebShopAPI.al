@@ -26,12 +26,12 @@ permissionset 80001 gim2WebShopAPI
         tabledata "Item Attribute Translation" = R,
         tabledata "Item Attr. Value Translation" = R,
 
+
         codeunit gim2DownloadImageToItem = X,
 
 
         page "WebshopStammdaten-DS" = X,
         page gimArtikelBild = X,
-        page gim2ExtendedTextLine = X,
         page gim2ItemAttributeValueList = X,
         page gim2ItemAPI = X,
         page gim2ContactAPI = X,
@@ -44,6 +44,8 @@ permissionset 80001 gim2WebShopAPI
         Page gim2ContactMailGroupAPI = X,
         query "gim2Item Attr. Value Mapping" = X,
         page gimItemAttrTransl = X,
+        page gimExtendedText = X,
         page gimItemAttrValueTransl = X;
+
 
 }
