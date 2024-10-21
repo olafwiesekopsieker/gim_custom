@@ -169,9 +169,10 @@ page 80005 gim2ItemAPI
                 {
                     Caption = 'Vendor Item No.';
                 }
-
-
-
+                field(Partnerportal; Rec.Partnerportal)
+                {
+                    Caption = 'Partnerportal';
+                }
                 // part(gimExtendedTextLine; gimExtendedTextLine)
                 // {
                 //     ApplicationArea = all;
