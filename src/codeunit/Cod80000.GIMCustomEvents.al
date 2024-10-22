@@ -35,6 +35,24 @@ codeunit 80000 "GIM Custom Events"
     end;
 
 
+    [EventSubscriber(ObjectType::Table, Database::"NETVAPS SIMPrdOrdrRtngLn", 'OnBeforeInsertEvent', '', true, true)]
+    local procedure VAPSSimPORtLnOnBeforeInsert(var rec: record "NETVAPS SIMPrdOrdrRtngLn")
+    var
+        NETVSimPrdOrdr: record "Netvaps SimPrdOrdr";
+        item: record "Item";
+    begin
+        if not NETVSimPrdOrdr.GET(rec.Status, rec."Prod. Order No.") then
+            NETVSimPrdOrdr.init;
+        if NETVSimPrdOrdr."Source Type" = NETVSimPrdOrdr."source type"::Item then
+            if NETVSimPrdOrdr."Source No." <> '' then begin
+                IF not item.get(NETVSimPrdOrdr."Source No.") then
+                    item.init;
+                rec.Artikelkategoriecode := item."Item Category Code";
+                rec."Produktbuch.-gruppe (Artikel)" := item."Gen. Prod. Posting Group";
+                rec.Fertigungsgruppencode := item."Production Group Code";
+            end;
+    end;
+
 }
 
 
