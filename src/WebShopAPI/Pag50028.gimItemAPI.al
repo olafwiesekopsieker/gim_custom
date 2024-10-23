@@ -174,7 +174,6 @@ page 80005 gim2ItemAPI
                     Caption = 'Partnerportal';
                 }
 
-
                 // part(gimExtendedTextLine; gimExtendedTextLine)
                 // {
                 //     ApplicationArea = all;
