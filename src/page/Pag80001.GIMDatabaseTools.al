@@ -44,6 +44,25 @@ page 80001 GIM_DatabaseTools
                     ExperienceTierSetup.DELETEALL;
                 end;
             }
+
+            action(AllItemsOnNoPlanningForEMAD)
+            {
+                ApplicationArea = All;
+                Caption = 'Alle Artikel auf nicht berücksichtigen beim EMAD';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
+
+                trigger OnAction()
+                var
+                    item: record Item;
+
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then
+                        item.modifyall("NETVAPS Excl. From EMAD", true);
+                end;
+            }
         }
     }
 
