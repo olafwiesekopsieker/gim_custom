@@ -53,6 +53,11 @@ codeunit 80000 "GIM Custom Events"
             end;
     end;
 
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetPremiumExperienceAppAreas', '', false, false)]
+    local procedure EnableAdvancedApplicationAreaOnGetPremiumExperienceAppAreas(var TempApplicationAreaSetup: Record "Application Area Setup" temporary)
+    begin
+        TempApplicationAreaSetup.Advanced := true;
+    end;
 }
 
 
