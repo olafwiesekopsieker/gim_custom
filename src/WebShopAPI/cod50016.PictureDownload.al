@@ -125,7 +125,7 @@ codeunit 80001 gim2DownloadImageToItem
     /// getResultFromAPI.
     /// </summary>
     /// <param name="strAPIURI">Text.</param>
-    /// <param name="content">VAR text.</param>
+    /// <param name="txtContent">VAR text.</param>
     procedure getResultFromAPI(strAPIURI: Text; var txtContent: text)
     var
         RequestMessage: HttpRequestMessage;
