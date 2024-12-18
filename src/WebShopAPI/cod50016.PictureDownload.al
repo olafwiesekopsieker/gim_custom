@@ -80,11 +80,13 @@ codeunit 80001 gim2DownloadImageToItem
         InStr: InStream;
     begin
         if Languagecode = '' then BEGIN
-            PDFURL := 'https://shop.dueperthal.com/dataSheetGenerator/generate/orderNo/%1/type/%2';
+            // PDFURL := 'https://shop.dueperthal.com/dataSheetGenerator/generate/orderNo/%1/type/%2';
+            PDFURL := 'https://pim.dueperthal.com/downloadDatasheet/%1';
             PDFURL := StrSubstNo(PDFURL, ItemNo, PDFType);
         END else BEGIN
-            PDFURL := 'https://shop.dueperthal.com/%1/dataSheetGenerator/generate/orderNo/%2/type/%3';
-            PDFURL := StrSubstNo(PDFURL, LanguageCode, ItemNo, PDFType);
+            //PDFURL := 'https://shop.dueperthal.com/%1/dataSheetGenerator/generate/orderNo/%2/type/%3';
+            PDFURL := 'https://pim.dueperthal.com/downloadDatasheet/%1?lang=%2';
+            PDFURL := StrSubstNo(PDFURL, ItemNo, lowercase(LanguageCode), PDFType);
         END;
         Client.Get(PDFURL, Response);
         Response.Content.ReadAs(InStr);
