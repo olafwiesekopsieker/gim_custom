@@ -35,6 +35,29 @@ codeunit 80000 "GIM Custom Events"
     end;
 
 
+    [EventSubscriber(ObjectType::Table, Database::"NETVAPS SIMPrdOrdrRtngLn", 'OnBeforeInsertEvent', '', true, true)]
+    local procedure VAPSSimPORtLnOnBeforeInsert(var rec: record "NETVAPS SIMPrdOrdrRtngLn")
+    var
+        PO: record "Production Order";
+        item: record "Item";
+    begin
+        if not po.GET(rec.Status, rec."Prod. Order No.") then
+            po.init;
+        if po."Source Type" = po."source type"::Item then
+            if po."Source No." <> '' then begin
+                IF not item.get(po."Source No.") then
+                    item.init;
+                rec.Artikelkategoriecode := item."Item Category Code";
+                rec."Produktbuch.-gruppe (Artikel)" := item."Gen. Prod. Posting Group";
+                rec.Fertigungsgruppencode := item."Production Group Code";
+            end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetPremiumExperienceAppAreas', '', false, false)]
+    local procedure EnableAdvancedApplicationAreaOnGetPremiumExperienceAppAreas(var TempApplicationAreaSetup: Record "Application Area Setup" temporary)
+    begin
+        TempApplicationAreaSetup.Advanced := true;
+    end;
 }
 
 

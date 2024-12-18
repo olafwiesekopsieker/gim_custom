@@ -24,7 +24,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://gioe46/bc220/",
+            "server": "http://oegim-srvbc1/bc220/",
             "serverInstance": "BC220",
             "authentication": "Windows",
             "startupObjectId": 22,
@@ -34,15 +34,39 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
-            "port": 22049,
-            "schemaUpdateMode": "Synchronize"
+            "port":7049,
+            "schemaUpdateMode":"Synchronize"
+            
+            
+            
+           
+        },
+        {
+            "name": "BC22_UAT2 Server",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://oegim-srvbc1/bc220_UAT2",
+            "serverInstance": "BC220_UAT2",
+            "authentication": "Windows",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "port":22049,
+            "schemaUpdateMode":"Synchronize"
+            
+           
         },
         {
             "name": "BC24 Server",
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://gioe46/bc240/",
+            "server": "http://oegim-srvbcdem1/bc240",
             "serverInstance": "BC240",
             "authentication": "Windows",
             "startupObjectId": 22,
@@ -52,20 +76,30 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
-            "port": 24049,
-            "schemaUpdateMode": "Synchronize"
+            "port":24049,
+            "schemaUpdateMode":"Synchronize"
+            
+           
         },
         {
-            "name": "AL: Generated Attach request",
-            "request": "attach",
+            "name": "BC24_UAT2 Server",
+            "request": "launch",
             "type": "al",
-            "server": "http://GIOE46.hanning.hg.intra",
-            "serverInstance": "BC240",
+            "environmentType": "OnPrem",
+            "server": "http://oegim-srvbcdem1/bc240_UAT2",
+            "serverInstance": "BC240_UAT2",
             "authentication": "Windows",
-            "port": 24049,
-            "sessionId": 733,
-            "breakOnNext": "WebClient",
-            "breakOnError": "ExcludeTry"
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "port":24150,
+            "schemaUpdateMode":"Synchronize"
+            
+           
         }
     ]
 }
