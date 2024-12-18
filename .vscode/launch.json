@@ -81,6 +81,26 @@
             "schemaUpdateMode":"Synchronize"
             
            
+        },
+        {
+            "name": "BC24_UAT2 Server",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://oegim-srvbcdem1/bc240_UAT2",
+            "serverInstance": "BC240_UAT2",
+            "authentication": "Windows",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "port":24150,
+            "schemaUpdateMode":"Synchronize"
+            
+           
         }
     ]
 }
