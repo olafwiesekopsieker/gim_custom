@@ -20,12 +20,12 @@
             "schemaUpdateMode": "Synchronize"
         },
         {
-            "name": "BC22 Server",
+            "name": "BC24 Produktiv Server",
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://oegim-srvbc1/bc220/",
-            "serverInstance": "BC220",
+            "server": "http://oegim-srvbc1/bc_prod/",
+            "serverInstance": "BC_prod",
             "authentication": "Windows",
             "startupObjectId": 22,
             "startupObjectType": "Page",
