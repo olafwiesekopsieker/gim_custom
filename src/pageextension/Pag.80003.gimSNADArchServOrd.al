@@ -16,12 +16,12 @@ pageextension 80003 gimSNADArchServOrd extends "MUL SNAD Arch Serv. O."
                 trigger OnAction()
                 var
                     repChecklistForArchSO: report "gimCheck List for Archived";
-                    SO: record "MUL SNAD Arch Serv. Header";
+                    SOL: record "MUL SNAD Arch Serv. item Line";
                 begin
-                    SO.setrange("Document Type", rec."Document Type");
-                    SO.setrange("No.", rec."No.");
-                    if SO.FINDLast() then
-                        repChecklistForArchSO.SetTableView(so);
+                    SOL.setrange("Document Type", rec."Document Type");
+                    SOL.setrange("Document No.", rec."No.");
+                    if SOl.FINDLast() then
+                        repChecklistForArchSO.SetTableView(sol);
                     repChecklistForArchSO.run;
 
 

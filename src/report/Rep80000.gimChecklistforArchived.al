@@ -24,7 +24,9 @@ report 80000 "gimCheck List for Archived"
             column(PoDate_ServiceHeader; Format(ServiceHeader."PO Date", 0, '<Standard Format,1>')) { }
             column(ServiceHeader_ShipToContact; ServiceHeader."Ship-to Contact") { }
             column(ServiceItemNo_ServiceItemLine; "Service Item Line"."Service Item No.") { }
-            //column(SignatureName_ServiceItemLine; "Service Item Line".signatureName) { }  TODO: Überprüfen
+            // column(SignatureName_ServiceItemLine; "Service Item Line".signatureName) { }  TODO: Überprüfen
+            column(SignatureName_ServiceItemLine; blank) { } // TODO: Überprüfen
+
             column(Gebaeude_ServiceItem; ServiceItem.Gebäude) { }
             column(KeyNo_ServiceItem; ServiceItem."Key-No.") { }
             column(Ebene_ServiceItem; ServiceItem.Ebene) { }
@@ -205,6 +207,7 @@ report 80000 "gimCheck List for Archived"
         CompanyInfo.CalcFields(Picture, "Picture 2");
         if InbetriebnahmeBool then
             ReactivateText := 'Die Prüfung erfolgte gem. den o. g Prüfkriterien und Aufgrund von Inbetriebnahme / Wiederinbetriebnahme nach prüfpflichtigen Änderungen gem. BetrSichV §15.';
+        blank := '';
     end;
 
     var
@@ -215,4 +218,5 @@ report 80000 "gimCheck List for Archived"
         ServiceHeader: Record "MUL SNAD Arch Serv. Header";
         DescriptionSQ, NotificationText, ReactivateText : Text;
         Testbadge, InbetriebnahmeBool : Boolean;
+        blank: text;
 }
