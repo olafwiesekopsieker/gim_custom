@@ -24,8 +24,8 @@ report 80000 "gimCheck List for Archived"
             column(PoDate_ServiceHeader; Format(ServiceHeader."PO Date", 0, '<Standard Format,1>')) { }
             column(ServiceHeader_ShipToContact; ServiceHeader."Ship-to Contact") { }
             column(ServiceItemNo_ServiceItemLine; "Service Item Line"."Service Item No.") { }
-            // column(SignatureName_ServiceItemLine; "Service Item Line".signatureName) { }  TODO: Überprüfen
-            column(SignatureName_ServiceItemLine; blank) { } // TODO: Überprüfen
+            column(SignatureName_ServiceItemLine; ServiceHeader.signatureName) { } // TODO: Überprüfen
+            //column(SignatureName_ServiceItemLine; blank) { } // TODO: Überprüfen
 
             column(Gebaeude_ServiceItem; ServiceItem.Gebäude) { }
             column(KeyNo_ServiceItem; ServiceItem."Key-No.") { }
@@ -40,12 +40,12 @@ report 80000 "gimCheck List for Archived"
             column(Salesperson_Name; Salesperson.Name) { }
             column(CustomerServiceID__ServiceItem; ServiceItem."Customer Service ID") { }
             column(ReactivateText; ReactivateText) { }
-            dataitem("MUL SNAD Answer Group"; "MUL SNAD Answer Group")
+            dataitem("MUL SNAD Answer Group"; "MUL SNAD Answer Group Arch.")
             {
                 DataItemLink = "Source ID" = field("Document No."), "Source Ref. No." = field("Line No.");
                 DataItemLinkReference = "Service Item Line";
                 PrintOnlyIfDetail = true;
-                dataitem("MUL SNAD Answer"; "MUL SNAD Answer")
+                dataitem("MUL SNAD Answer"; "MUL SNAD Answer Arch.")
                 {
                     DataItemLink = "Answer Group No." = field("Answer Group No.");
                     DataItemLinkReference = "MUL SNAD Answer Group";
@@ -177,7 +177,7 @@ report 80000 "gimCheck List for Archived"
 
     local procedure CaptionEntryHasValues(): Boolean
     var
-        AnswerCompare: Record "MUL SNAD Answer";
+        AnswerCompare: Record "MUL SNAD Answer Arch.";
     begin
         AnswerCompare := "MUL SNAD Answer";
         AnswerCompare.CopyFilters("MUL SNAD Answer");
