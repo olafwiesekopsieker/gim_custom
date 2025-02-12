@@ -99,7 +99,7 @@ codeunit 80002 gimServotionMgmt
             until srcMULSNADAnswCond.next = 0;
     end;
 
-    procedure openDialog(recQuest: record "MUL SNAD Question")
+    procedure openDialog(var recQuest: record "MUL SNAD Question")
 
     dlg: page gimDialogCopyQuestions;
     begin
