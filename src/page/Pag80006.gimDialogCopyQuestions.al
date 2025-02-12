@@ -2,7 +2,7 @@ page 80006 gimDialogCopyQuestions
 {
     ApplicationArea = All;
     Caption = 'Kopiere Fragegruppen';
-    PageType = StandardDialog;
+    PageType = Card;
 
     layout
     {
