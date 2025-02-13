@@ -11,7 +11,11 @@ codeunit 80002 gimServotionMgmt
     var
         srcMULSNADQuest: record "MUL SNAD Question";
         trgMULSNADQuest: record "MUL SNAD Question";
+        ServotionGenSetup: record "MUL SNAD General Setup";
+        NoSeries: codeunit "No. Series";
     begin
+        if not ServotionGenSetup.get() then
+            ServotionGenSetup.init;
 
         srcMULSNADQuest.Setrange("Question Group Code", srcQuestionGroupCode);
         srcMULSNADQuest.Setfilter(Position, srcPosNoFilter);
@@ -20,7 +24,7 @@ codeunit 80002 gimServotionMgmt
 
                 //Kopiere Question
                 trgMULSNADQuest := srcMULSNADQuest;
-                trgMULSNADQuest.Validate("No.", '');
+                trgMULSNADQuest.Validate("No.", noSeries.GetNextNo(servotionGenSetup."Question Nos."));
                 trgMULSNADQuest.Validate("Question Group Code", trgQuestionGroupCode);
                 if not trgMULSNADQuest.INSERT then trgMULSNADQuest.MODIFY;
 
