@@ -29,6 +29,23 @@ pageextension 80004 gimQuestions extends "MUL SNAD Question List"
                 end;
 
             }
+            action(DeleteSelectedQuestions)
+            {
+                applicationArea = all;
+                caption = 'Ausgewählte Fragen löschen';
+                image = Copy;
+                trigger onAction()
+                var
+                    Quest: record "MUL SNAD Question";
+                    gimServotionMgmt: codeunit gimServotionMgmt;
+                begin
+                    currpAGE.SetSelectionFilter(Quest);
+                    gimServotionMgmt.DeleteSelectedQuestions(Quest);
+                    currpage.update(false);
+                end;
+
+            }
+
         }
 
 

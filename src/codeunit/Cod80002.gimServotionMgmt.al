@@ -114,4 +114,29 @@ codeunit 80002 gimServotionMgmt
         end;
     end;
 
+    procedure DeleteSelectedQuestions(var Quest: record "MUL SNAD Question")
+    var
+        QuestCond: record "MUL SNAD Question Condition";
+        QuestOpt: record "MUL SNAD Question Option";
+        AnswCond: record "MUL SNAD Answer Condition";
+    BEGIN
+
+        if Quest.COUNT = 0 then error('Sie haben keine Fragen ausgewählt');
+
+        IF Quest.findset then
+            repeat
+                QuestCond.SETRANGE("Question No.", Quest."No.");
+                QuestCond.DELETEALL;
+
+                QuestOpt.setrange("Question No.", Quest."No.");
+                QuestOpt.DELETEALL;
+
+                AnswCond.Setrange("Question No.", Quest."No.");
+                AnswCond.deleteall;
+
+            until quest.next = 0;
+
+        Quest.deleteall;
+    END;
+
 }
