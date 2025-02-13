@@ -99,6 +99,7 @@ codeunit 80002 gimServotionMgmt
                 getParentQuestion(trgParentQuest, srcMULSNADAnswCond, trgQuestionGroupCode);
                 trgMULSNADAnswCond."Parent Question No." := trgParentQuest."No.";
                 trgMULSNADAnswCond."Parent Question GUID" := trgParentQuest.SystemId;
+                trgMULSNADAnswCond."Question Group Code" := trgQuestionGroupCode;
                 if not trgMULSNADAnswCond.INSERT then trgMULSNADAnswCond.MODIFY;
             until srcMULSNADAnswCond.next = 0;
     end;
