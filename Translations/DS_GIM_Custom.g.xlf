@@ -1,0 +1,1444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="DS_GIM_Custom">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 2183238915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimContact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 1408747468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Company Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control companyName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 147901250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Company No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control companyNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 639513079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country/Region Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control countryRegionCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 2977059376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control eMail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 1794991033 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control languageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 3558812865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 4231590924 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salesperson Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control salespersonCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 4169399721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salutation Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control salutationCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 2453272523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control SystemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2183238915 - Control 3175374588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactAPI - Control type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimContactMailGroup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 147901250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Company No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control companyNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 171324676 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact Company Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control contactCompanyName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 3670588217 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control contactName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 4244735267 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control contactNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 639513079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country/Region Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control countryRegionCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 2977059376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control eMail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 1794991033 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control languageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 3650689077 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mailing Group Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control mailingGroupCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 2190944308 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mailing Group Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control mailingGroupDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 4231590924 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salesperson Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control salespersonCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 1421298788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control systemCreatedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 591346850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control systemCreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 3092263724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control systemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 4098519211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control systemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 469175489 - Control 1436117145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ContactMailGroupAPI - Control systemModifiedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimItemAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3943808778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control abmessung1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2030718927 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control abmessung2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2668415544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control abmessung3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2571795694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Unit of Measure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control baseUnitOfMeasure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 4247538596 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2980149681 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control ccsDMDescription3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2762750464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control description2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 4091325730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Durchmesser(Innen)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control durchmesser1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2178235879 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Durchmesser(Aussen)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control durchmesser2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 760962053 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Freight Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control freightType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2078902558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Prod. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control genProdPostingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2208514385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Prod. Posting Group Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control GenProdPostingGroupId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2962728448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GTIN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control gtin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2543498056 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Innenabmessung(B)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control innenabmessung1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3181194673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Innenabmessung(T)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control innenabmessung2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3818891290 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Innenabmessung(H)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control innenabmessung3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 953500447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control inventoryPostingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3228882140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Posting Group ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control inventoryPostingGroupID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 1024955636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Category Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control itemCategoryCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 1113318548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Category ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control ItemCategoryId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2736452277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Katalog</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control katalog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 4010162839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kategorie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control kategorie - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 4047956314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Load Capacity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control maxLoadCapacity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2918068461 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Pack Size left</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control maxPackSizeLeft - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3652377548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Pack Size right</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control maxPackSizeRight - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2378483423 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Max Tragfähigkeit Stellfläche, links&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control maxTragfStellfLinks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 1490610727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Max Tragfähigkeit Stellfläche, rechts&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control maxTragfStellfRechts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3980785550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Partnerportal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control Partnerportal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2826635002 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preisrelevant</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control preisrelevant - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3108978833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Item Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control serviceItemGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 4098519211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control systemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3979584145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tariff No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control tariffNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3175374588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 3421409717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control unitPrice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 1354571308 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control vendorItemNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 204490496 - Control 1764391503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control vendorNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1096565907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Attribute Values</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAttributeValueList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1096565907 - Control 1182307093 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item attribute.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAttributeValueList - Control AttributeName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1096565907 - Control 1182307093 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attribute</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAttributeValueList - Control AttributeName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1096565907 - Control 3955711665 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or resource's unit of measure, such as piece or hour.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAttributeValueList - Control UnitOfMeasure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1096565907 - Control 1131619133 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the item attribute.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAttributeValueList - Control Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1096565907 - Control 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAttributeValueList - Control Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimItemTranslAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 2980149681 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control ccsDMDescription3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 598272236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control ccsDMDescription4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 4255542915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control ccsDMDescription5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 2762750464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control description2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 2930473216 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control itemNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 1794991033 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control languageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 1421298788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control systemCreatedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 591346850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control systemCreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 3092263724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control systemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 4098519211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control systemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 1436117145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control systemModifiedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2692572662 - Control 783251086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variant Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemTranslAPI - Control variantCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimSalesHeaderAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 1121446808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 3276161585 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control billToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 305869689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control documentType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 3947953933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control externalDocumentNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 284829013 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control quoteNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimSalesHeaderArchive</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Control 1121446808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Control amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Control 3276161585 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Control billToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Control 305869689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Control documentType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Control 3947953933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Control externalDocumentNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Control 994452517 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Quote No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Control salesQuoteNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2963042744 - Control 580601509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Version No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderArchive - Control versionNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 470678745 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimSalesInvoiceHeader</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesInvoiceHeader - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 470678745 - Control 1121446808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesInvoiceHeader - Control amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 470678745 - Control 3276161585 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesInvoiceHeader - Control billToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 470678745 - Control 3947953933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesInvoiceHeader - Control externalDocumentNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 470678745 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesInvoiceHeader - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 470678745 - Control 284829013 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesInvoiceHeader - Control quoteNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1451287365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimServiceHeaderAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1451287365 - Control 1121446808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderAPI - Control amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1451287365 - Control 3276161585 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderAPI - Control billToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1451287365 - Control 305869689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderAPI - Control documentType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1451287365 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderAPI - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1451287365 - Control 284829013 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderAPI - Control quoteNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1442141787 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimArchServiceHeaderAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderArchive - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1442141787 - Control 1121446808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderArchive - Control amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1442141787 - Control 3276161585 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderArchive - Control billToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1442141787 - Control 305869689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderArchive - Control documentType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1442141787 - Control 3947953933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderArchive - Control externalDocumentNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1442141787 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderArchive - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1442141787 - Control 284829013 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceHeaderArchive - Control quoteNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1882621311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimServiceInvoiceHeaderAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceInvoiceAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1882621311 - Control 1121446808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceInvoiceAPI - Control amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1882621311 - Control 3276161585 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceInvoiceAPI - Control billToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1882621311 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceInvoiceAPI - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1882621311 - Control 2662938561 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ServiceInvoiceAPI - Control orderNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimWebshopAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 881365963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ebene</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control ebene - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 1698270117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Einsatz/Programmabschnitt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control einsatzProgrammabschnitt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 2930473216 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control itemNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 2770010641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Modell</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control Linie - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 1410210562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Produktgruppe</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control produktgruppe - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 2061707098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Produktkategorie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control produktkategorie - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 2453272523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control SystemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1427601175 - Control 1214533716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zubehoer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopAPI - Control zubehoer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimWebshopStammdatenAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 707985127 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 739926159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description(EN)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control descriptionEN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 3689816446 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description(FR)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control descriptionFR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 881365963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ebene</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control ebene - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 985991131 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Einsatz/Produktabschnitt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control einsatzProduktabschnitt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 3205429041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Modell</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control linie - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 2394810011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Modellgroesse</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control modellgroesse - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 335815066 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Modelltyp</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control Modelltyp - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 1410210562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Produktgruppe</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control produktgruppe - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 2061707098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Produktkategorie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control produktkategorie - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 2453272523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control SystemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3775021899 - Control 1214533716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zubehoer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control zubehoer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4060315061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kopiere Fragegruppen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4060315061 - Control 3852550844 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Beispiel: 1..30|64..67</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Control srcPositionsfilter - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4060315061 - Control 3852550844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positionsfilter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Control srcPositionsfilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4060315061 - Control 3664020674 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fragegruppencode der Quelle</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Control srcQuestionGroupCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4060315061 - Control 3407790911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fragegruppencode des Ziel </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Control trgQuestionGroupCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4060315061 - Control 2523958702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Servicegruppencode des Ziel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Control trgServicegruppenCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4060315061 - Action 3822680266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fragen kopieren</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Action actCopyQuestions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimExtendedText</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 1794991033 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control languageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 1294919425 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control lineNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 1421298788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control systemCreatedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 591346850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control systemCreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 3092263724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control systemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 4098519211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control systemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 1436117145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control systemModifiedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 1686156363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control tableName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 3819277359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 62833699 - Control 862481448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimExtendedText - Control textNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimItemAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3943808778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control abmessung1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2030718927 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control abmessung2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2668415544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control abmessung3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2571795694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Unit of Measure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control baseUnitOfMeasure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 4247538596 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2762750464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control description2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 4091325730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Durchmesser(Innen)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control durchmesser1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2178235879 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Durchmesser(Aussen)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control durchmesser2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 760962053 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Freight Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control freightType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2078902558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Prod. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control genProdPostingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2208514385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Prod. Posting Group Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control GenProdPostingGroupId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2962728448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GTIN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control gtin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2543498056 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Innenabmessung(B)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control innenabmessung1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3181194673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Innenabmessung(T)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control innenabmessung2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3818891290 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Innenabmessung(H)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control innenabmessung3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 953500447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control inventoryPostingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3228882140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Posting Group ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control inventoryPostingGroupID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 1024955636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Category Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control itemCategoryCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 1113318548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Category ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control ItemCategoryId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2736452277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Katalog</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control katalog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 4010162839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kategorie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control kategorie - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 4047956314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Load Capacity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control maxLoadCapacity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2918068461 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Pack Size left</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control maxPackSizeLeft - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3652377548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Pack Size right</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control maxPackSizeRight - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2378483423 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Max Tragfähigkeit Stellfläche, links&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control maxTragfStellfLinks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 1490610727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Max Tragfähigkeit Stellfläche, rechts&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control maxTragfStellfRechts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control no - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2826635002 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preisrelevant</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control preisrelevant - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3108978833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Item Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control serviceItemGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 4098519211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control systemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3979584145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tariff No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control tariffNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3175374588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 3421409717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Cost</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control unitPrice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 1354571308 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control vendorItemNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 1764391503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control vendorNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimItemAttrTransl</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 4042025147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attribute ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control attributeID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 1794991033 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control languageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 3558812865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 1421298788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control systemCreatedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 591346850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control systemCreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 3092263724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control systemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 4098519211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control systemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1475824933 - Control 1436117145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrTransl - Control systemModifiedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimItemAttrValueTransl</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 4042025147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attribute ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control attributeID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 1794991033 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control languageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 3558812865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 1421298788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control systemCreatedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 591346850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemCreatedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control systemCreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 3092263724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control systemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 4098519211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control systemModifiedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1530422900 - Control 1436117145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemModifiedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAttrValueTransl - Control systemModifiedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Düperthal TAN Output Journal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Control 3108107879 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Control Operation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Control 1881747694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Control OperationName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Control 4136425938 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prod. Order Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Control Prod. Order Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Control 874212758 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Batch Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Control CurrentJnlBatchName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Control 212214945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aktueller Tester</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Control currTester - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Control 1631011129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Routing TAN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Control RoutingTAN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 1402615620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action &amp;Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 4254209057 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bin Contents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Bin Contents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 4023405129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item &amp;Tracking Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Item Tracking Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 191736833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pro&amp;d. Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Pro&amp;d. Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 4125097576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Ledger E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 3841429197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Capacity Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Capacity Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 1906712824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Ledger E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Item Ledger E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 2513602899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Value Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 1344672713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Print</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action &amp;Print - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 3106002577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F&amp;unctions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action F&amp;unctions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 1265963452 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Arbeitsblatt wechseln..</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Arbeitsblatt wechseln.. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 250155271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Explode &amp;Routing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Explode &amp;Routing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 2245087378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>P&amp;osting</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action P&amp;osting - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 2282416948 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>P&amp;ost</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Post - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 1333595352 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post and &amp;Print</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Post and &amp;Print - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 3150094508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Report</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Test Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1754429658 - Action 3305856652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Produktionsplan Reihenfolgenplanung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimTANOutputJournal - Action Produktionsplan Reihenfolgenplanung - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1472808070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GIM Database Tools</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1472808070 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 2569379896 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Alle Artikel auf nicht berücksichtigen beim EMAD</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action AllItemsOnNoPlanningForEMAD - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 267804181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Application Areas zurücksetzen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action ResetApplicationAreas - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2070460718 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report gimCheck List for Archived - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2070460718 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report gimCheck List for Archived - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2070460718 - Control 1382502153 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Wiederin-/Inbetriebnahme</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report gimCheck List for Archived - Control Inbetriebnahme - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2701744352 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4240524421">
+          <source>Picking List DUE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CCO Inventory Pick - Action CCO Print Picking List DUE - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2691657687 - Action 1788106223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1211261581">
+          <source>Production BOM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CCO Production BOM Ext - Action CCOPrintProductionBOM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1210015669 - Action 906073334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Clearance Certificate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CCO Sales Return Order - Action CCO Clearance Certificate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1210015669 - Action 2564239000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Return Slip</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CCO Sales Return Order - Action ReturnSlip - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1210015669 - Control 2958825091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CCO Sales Return Order - Control Sell-to Customer Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1210015669 - Control 2627792820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CCO Sales Return Order - Control Bill-to Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1210015669 - Control 3261344115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CCO Sales Return Order - Control Ship-to Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1926226765 - Action 1527532080 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Prepayment Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension GIM Posted Sales Invoice - Action PrintCommInv - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1926226765 - Control 2627792820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension GIM Posted Sales Invoice - Control Bill-to Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1926226765 - Control 3261344115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension GIM Posted Sales Invoice - Control Ship-to Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1596991873 - Control 3191901429 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 337631938">
+          <source>Benutzer mit SUPER-Rechten können hier festlegen, ob ein User berechtigt ist, Artikel zu sperren oder entsperren</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension GIM2UserSetup - Control gimArtikel sperren erlaubt - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1596991873 - Control 3191901429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 337631938">
+          <source>Artikel sperren erlaubt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension GIM2UserSetup - Control gimArtikel sperren erlaubt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3726681872 - Action 3511120583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1555938241">
+          <source>Return Slip</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPurchaseReturnOrder - Action PrintReturnSlip - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1471030466 - Action 3822680266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1868812204">
+          <source>Fragen kopieren</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimQuestions - Action actCopyQuestions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1471030466 - Action 624939335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1868812204">
+          <source>Ausgewählte Fragen löschen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimQuestions - Action DeleteSelectedQuestions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Action 3413224075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Customs Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Action CustomsInvoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Action 1755290613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Packing List (Shipping)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Action PackingList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Control 2627792820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Bill-to Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Control 3261344115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Ship-to Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1272390404 - Action 345011919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1962553163">
+          <source>Prüfzertifikat für Arch. Serv. Auftr.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSNADArchServOrd - Action Pruefzertifikat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3121333321 - Field 3191901429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
+          <source>gimArtikel sperren erlaubt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIM2 User Setup - Field gimArtikel sperren erlaubt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2059874798 - Field 3960759840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
+          <source>Artikelkategoriecode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Artikelkategoriecode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2059874798 - Field 2250980222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
+          <source>Eventuelle Auftragsnr.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Eventuelle Auftragsnr. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2059874798 - Field 3341153190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
+          <source>Fertigungsgruppencode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Fertigungsgruppencode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2059874798 - Field 1796631960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
+          <source>Produktbuchungsgruppe (Artikel)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Produktbuch.-gruppe (Artikel) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 738649601 - Field 3960759840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
+          <source>Artikelkategoriecode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Artikelkategoriecode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 738649601 - Field 2250980222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
+          <source>Eventuelle Auftragsnr.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Eventuelle Auftragsnr. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 738649601 - Field 3341153190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
+          <source>Fertigungsgruppencode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Fertigungsgruppencode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 738649601 - Field 1796631960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
+          <source>Produktbuchungsgruppe (Artikel)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Produktbuch.-gruppe (Artikel) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 4150685431 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>gimWebShopAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet gim2WebShopAPI - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -26,5 +26,23 @@ codeunit 80003 gimStartEMAD
         END;
     end;
 
+    procedure StartFMVDFromPage()
+    var
+      ChangeLogSetup: record "Change Log Setup";
+      EMAD: Codeunit "NETVAPS EMAD Management";
+    begin
+          if ChangeLogSetup.get then BEGIN
+            if ChangelogSetup."Change Log Activated" then BEGIN
+                ChangelogSetup.VALIDATE("Change log Activated", false);
+                changelogsetup.modify;
+                EMAD.Run();
+                ChangelogSetup.Validate("Change Log Activated", true);
+                changelogsetup.modify;
+            end ELSE
+                EMAD.run();
+
+        END; 
+    end;
+
 
 }
