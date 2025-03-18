@@ -1353,6 +1353,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPurchaseReturnOrder - Action PrintReturnSlip - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2291125232 - Control 3261711184 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2462712906">
+          <source>Fragegruppencode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimQestionCard - Control Question Group Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1471030466 - Action 3822680266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1868812204">
           <source>Fragen kopieren</source>
           <note from="Developer" annotates="general" priority="2"></note>
