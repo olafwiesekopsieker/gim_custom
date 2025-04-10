@@ -173,6 +173,10 @@ page 80005 gim2ItemAPI
                 {
                     Caption = 'Partnerportal';
                 }
+                Field("WebGruppe"; rec.Katalogseite)
+                {
+                    caption = 'Web-Gruppe';
+                }
 
                 // part(gimExtendedTextLine; gimExtendedTextLine)
                 // {

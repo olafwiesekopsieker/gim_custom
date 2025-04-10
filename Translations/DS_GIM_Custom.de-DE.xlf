@@ -11483,7 +11483,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 2345507458 - Field 310665247 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Katalogseite</source>
-          <target>Katalogseite</target>
+          <target>Web-Gruppe</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIM Item - Field Katalogseite - Property Caption</note>
         </trans-unit>

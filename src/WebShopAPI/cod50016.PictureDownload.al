@@ -30,11 +30,13 @@ codeunit 80001 gim2DownloadImageToItem
         InStr: InStream;
     begin
         Client.Get(PictureURL, Response);
-        Response.Content.ReadAs(InStr);
-        if Item.Get(ItemNo) then begin
-            Clear(Item.Picture);
-            Item.Picture.ImportStream(InStr, 'Demo picture for item ' + Format(Item."No."));
-            Item.Modify(true);
+        if response.IsSuccessStatusCode then begin
+            Response.Content.ReadAs(InStr);
+            if Item.Get(ItemNo) then begin
+                Clear(Item.Picture);
+                Item.Picture.ImportStream(InStr, 'Demo picture for item ' + Format(Item."No."));
+                Item.Modify(true);
+            end;
         end;
     end;
 
@@ -114,13 +116,14 @@ codeunit 80001 gim2DownloadImageToItem
     begin
         // strAccept:= 'application/vnd.fotoware.assetlist+json';
         // strFTAPIToken:= 'Ybgef3it3$^xyUgj>WwY';
-        strURL := 'https://dueperthal.fotoware.cloud/fotoweb/archives/5023-Products/?q=%1&812=ja&811=ja';  //%1=Artikelnummer
+        //strURL := 'https://dueperthal.fotoware.cloud/fotoweb/archives/5023-Products/?q=%1&812=ja&811=ja';  //%1=Artikelnummer
+        strURL := 'https://pim.dueperthal.com/showMainImage/%1';
         strURL := StrSubstNo(strURL, ItemNo);
-        getResultFromAPI(strURL, txtContent);
+        //getResultFromAPI(strURL, txtContent);
         // message(txtcontent);
-        strImageURL := getImageURL(txtContent);
-        if strImageURL <> 'NOIMAGE' then
-            ImportItemPictureFromURL(ItemNo, strImageURL);
+        //strImageURL := getImageURL(txtContent);
+        //if strImageURL <> 'NOIMAGE' then
+        ImportItemPictureFromURL(ItemNo, strImageURL);
     end;
 
     /// <summary>

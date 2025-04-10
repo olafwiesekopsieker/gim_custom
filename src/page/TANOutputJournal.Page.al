@@ -699,6 +699,12 @@ page 80019 "gimTANOutputJournal"
         if Rec."Line No." <> 0 then
             if Rec.Modify() then;
 
+        if isProdOrderLineFinished(routingTan) then begin
+            myNotification.message('Dieser Fertigungsauftrag scheint schon gebucht zu sein');
+            myNotification.send();
+            exit;
+        end;
+
         // << #PMW16.00.02.05:T511
         if currTester <> '' then begin
             if lProdOrderFeedbackService.InsertTANOutputJnlLine(Rec, RoutingTAN, currTester, 0, 0) then
@@ -840,6 +846,42 @@ page 80019 "gimTANOutputJournal"
             ProdLabel.UseRequestPage(false);
             ProdLabel.RunModal();
         end;
+    end;
+
+    /// <summary>
+    /// IsProdOrderLineFinished.
+    /// </summary>
+    /// <returns>Return variable ret of type boolean.</returns>
+    local procedure IsProdOrderLineFinished(locRoutingTan: code[50]) ret: boolean
+    var
+        ProdOrderRoutingLine: Record "Prod. Order Routing Line";
+        ProdOrderLine: record "Prod. Order line";
+        posDivider: Integer;
+    begin
+        posDivider := StrPos(locRoutingTAN, '$');
+        if posDivider > 0 then
+            locRoutingTAN := CopyStr(locRoutingTAN, 1, posDivider - 1);
+
+        ret := false;
+        ProdOrderRoutingLine.Reset();
+        ProdOrderRoutingLine.SetCurrentKey("ccs pm Routing TAN");
+        ProdOrderRoutingLine.SetRange("ccs pm Routing TAN", locRoutingTAN);
+        ProdOrderRoutingLine.SetFilter(Status, '%1|%2', ProdOrderRoutingLine.Status::Released, ProdOrderRoutingLine.Status::Finished);
+        if ProdOrderRoutingLine.FindFirst() then begin
+            IF not ProdOrderLine.Get(ProdOrderRoutingLine.Status, ProdOrderRoutingLine."Prod. Order No.",
+                                       ProdOrderRoutingLine."Routing Reference No.") then
+                ProdOrderline.init
+            ELSE begin
+                if ProdOrderLine.status = ProdOrderLine.status::Finished then ret := true;
+                if ProdOrderLine.status = ProdOrderline.status::released then begin
+                    IF prodorderline.Quantity = ProdOrderline."Finished Quantity" then ret := true;
+                end;
+            end;
+
+
+
+        End;
+
     end;
 }
 

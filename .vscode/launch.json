@@ -84,7 +84,7 @@
            
         },
         {
-            "name": "BC24 Server",
+            "name": "BC24 Test Server",
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
