@@ -338,6 +338,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control vendorNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2246970727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Web-Gruppe</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control WebGruppe - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1096565907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Attribute Values</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1347,6 +1352,11 @@
           <source>Artikel sperren erlaubt</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension GIM2UserSetup - Control gimArtikel sperren erlaubt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3045814676 - Action 3526020579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Importiere aus Bilddatenbank (neue Funktion)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimItemCard2 - Action ImportPicNewFunction - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3726681872 - Action 3511120583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1555938241">
           <source>Return Slip</source>
