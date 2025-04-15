@@ -123,7 +123,7 @@ codeunit 80001 gim2DownloadImageToItem
         // message(txtcontent);
         //strImageURL := getImageURL(txtContent);
         //if strImageURL <> 'NOIMAGE' then
-        ImportItemPictureFromURL(ItemNo, strImageURL);
+        ImportItemPictureFromURL(ItemNo, strURL);
     end;
 
     /// <summary>
