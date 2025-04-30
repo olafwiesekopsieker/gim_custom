@@ -9,8 +9,8 @@ page 80002 gim2ServiceHeaderAPI
     ApplicationArea = All;
     Caption = 'gimServiceHeaderAPI';
     DelayedInsert = true;
-    EntityName = 'gimServiceHeader';
-    EntitySetName = 'gimServiceHeaders';
+    EntityName = 'gimServiceHeader2';
+    EntitySetName = 'gimServiceHeaders2';
     PageType = API;
     SourceTable = "Service Header";
 

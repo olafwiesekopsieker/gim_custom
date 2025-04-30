@@ -7,8 +7,8 @@ page 80007 "gim2ItemAttributeValueList"
     APIGroup = 'gimWebShop';
     APIPublisher = 'gim';
     APIVersion = 'v1.0';
-    EntityName = 'gimItemAttribute';
-    EntitySetName = 'gimItemAttributes';
+    EntityName = 'gimItemAttribute2';
+    EntitySetName = 'gimItemAttributes2';
     SourceTable = "Item Attribute Value Selection";
     SourceTableTemporary = true;
 

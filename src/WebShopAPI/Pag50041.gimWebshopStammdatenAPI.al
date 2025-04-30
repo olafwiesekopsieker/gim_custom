@@ -9,8 +9,8 @@ page 80009 gim2WebshopStammdatenAPI
     ApplicationArea = All;
     Caption = 'gimWebshopStammdatenAPI';
     DelayedInsert = true;
-    EntityName = 'gimWebshopStammdata';
-    EntitySetName = 'gimWebshopStammdaten';
+    EntityName = 'gimWebshopStammdata2';
+    EntitySetName = 'gimWebshopStammdaten2';
     PageType = API;
     SourceTable = "WebshopStammdaten- DS";
 

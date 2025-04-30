@@ -9,8 +9,8 @@ page 80003 gim2ServiceHeaderArchive
     ApplicationArea = All;
     Caption = 'gimArchServiceHeaderAPI';
     DelayedInsert = true;
-    EntityName = 'gimArchServiceHeader';
-    EntitySetName = 'gimArchServiceHeaders';
+    EntityName = 'gimArchServiceHeader2';
+    EntitySetName = 'gimArchServiceHeaders2';
     PageType = API;
     SourceTable = "MUL SNAD Arch Serv. Header";
 

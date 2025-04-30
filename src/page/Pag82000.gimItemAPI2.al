@@ -9,8 +9,8 @@ page 80000 gimItemAPI2
     ApplicationArea = All;
     Caption = 'gimItemAPI';
     DelayedInsert = true;
-    EntityName = 'gimItem';
-    EntitySetName = 'gimItemSet';
+    EntityName = 'gimItem2';
+    EntitySetName = 'gimItemSet2';
     PageType = API;
     SourceTable = Item;
 

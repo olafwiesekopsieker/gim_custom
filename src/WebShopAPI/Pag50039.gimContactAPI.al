@@ -9,8 +9,8 @@ page 80008 gim2ContactAPI
     ApplicationArea = All;
     Caption = 'gimContact';
     DelayedInsert = true;
-    EntityName = 'gimContact';
-    EntitySetName = 'gimContacts';
+    EntityName = 'gimContact2';
+    EntitySetName = 'gimContacts2';
     PageType = API;
     SourceTable = Contact;
 

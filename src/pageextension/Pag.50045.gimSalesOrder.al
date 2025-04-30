@@ -73,10 +73,7 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
         {
             field("Bill-to Name 2"; Rec."Bill-to Name 2") { ApplicationArea = All; Caption = 'Name 2'; }
         }
-        addafter("Ship-to Name")
-        {
-            field("Ship-to Name 2"; Rec."Ship-to Name 2") { ApplicationArea = All; Caption = 'Name 2'; }
-        }
+
     }
 
     actions

@@ -6,8 +6,8 @@ page 80010 gim2WebshopAPI
     ApplicationArea = All;
     Caption = 'gimWebshopAPI';
     DelayedInsert = true;
-    EntityName = 'gimWebshop';
-    EntitySetName = 'gimWebshops';
+    EntityName = 'gimWebshop2';
+    EntitySetName = 'gimWebshops2';
     PageType = API;
     SourceTable = "Webshop-DS";
 

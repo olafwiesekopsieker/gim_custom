@@ -6,8 +6,8 @@ page 80013 gim2SalesInvoiceHeader
     ApplicationArea = All;
     Caption = 'gimSalesInvoiceHeader';
     DelayedInsert = true;
-    EntityName = 'gimSalesInvoice';
-    EntitySetName = 'gimSalesInvoices';
+    EntityName = 'gimSalesInvoice2';
+    EntitySetName = 'gimSalesInvoices2';
     PageType = API;
     SourceTable = "Sales Invoice Header";
 

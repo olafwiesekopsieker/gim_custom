@@ -9,8 +9,8 @@ page 80004 gim2ServiceInvoiceAPI
     ApplicationArea = All;
     Caption = 'gimServiceInvoiceHeaderAPI';
     DelayedInsert = true;
-    EntityName = 'gimServiceInvoiceHeader';
-    EntitySetName = 'gimServiceInvoiceHeaders';
+    EntityName = 'gimServiceInvoiceHeader2';
+    EntitySetName = 'gimServiceInvoiceHeaders2';
     PageType = API;
     SourceTable = "Service Invoice Header";
 

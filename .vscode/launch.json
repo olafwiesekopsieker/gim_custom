@@ -122,6 +122,26 @@
             "schemaUpdateMode":"Synchronize"
             
            
+        },
+        {
+            "name": "BC26 for Upgrade",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://oegim-srvbcdem1",
+            "serverInstance": "BC260",
+            "authentication": "Windows",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "port":26049,
+            "schemaUpdateMode":"Synchronize"
+            
+           
         }
     ]
 }

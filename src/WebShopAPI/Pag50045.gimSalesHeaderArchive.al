@@ -6,8 +6,8 @@ page 80012 gim2SalesHeaderArchive
     ApplicationArea = All;
     Caption = 'gimSalesHeaderArchive';
     DelayedInsert = true;
-    EntityName = 'gimSalesHeaderAchive';
-    EntitySetName = 'gimSalesHeaderArchives';
+    EntityName = 'gimSalesHeaderAchive3';
+    EntitySetName = 'gimSalesHeaderArchives3';
     PageType = API;
     SourceTable = "Sales Header Archive";
 

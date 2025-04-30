@@ -9,8 +9,8 @@ page 80011 gim2SalesHeaderAPI
     ApplicationArea = All;
     Caption = 'gimSalesHeaderAPI';
     DelayedInsert = true;
-    EntityName = 'gimSalesHeader';
-    EntitySetName = 'gimSalesHeaders';
+    EntityName = 'gimSalesHeader2';
+    EntitySetName = 'gimSalesHeaders2';
     PageType = API;
     SourceTable = "Sales Header";
 
