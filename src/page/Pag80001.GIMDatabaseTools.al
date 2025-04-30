@@ -63,6 +63,35 @@ page 80001 GIM_DatabaseTools
                         item.modifyall("NETVAPS Excl. From EMAD", true);
                 end;
             }
+
+            action(DeleteUmlagerung)
+            {
+                ApplicationArea = All;
+                Caption = 'Umlagerung löschen';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
+
+                trigger OnAction()
+                var
+                    TransferHeader: record "Transfer Header";
+                    TransferLine: record "Transfer Line";
+
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+                        TransferLine.Setrange("Document No.", 'UL2410108');
+                        TransferLine.DELETEALL(false);
+
+                        TransferHeader.SETRANGE("No.", 'UL2410108');
+                        TransferHeader.DELETEAll(False);
+
+                        message('job erledigt');
+
+                    end;
+
+                end;
+            }
         }
     }
 
