@@ -11,12 +11,7 @@
   "url": "",
   "logo": "",
   "dependencies": [
-    {
-      "id": "26fb6f9e-04f2-47c1-863e-9725fcdc9784",
-      "publisher": "NETRONIC Software GmbH",
-      "name": "Visual Advanced Production Scheduler",
-      "version": "1.17.0.1"
-    },
+   
     {
       "id": "551d85cb-2152-4144-9464-a16791aff492",
       "name": "COSMO Licensing",
