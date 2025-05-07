@@ -1273,6 +1273,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action AllItemsOnNoPlanningForEMAD - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 3050868628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Umlagerung löschen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action DeleteUmlagerung - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1472808070 - Action 267804181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Application Areas zurücksetzen</source>
           <note from="Developer" annotates="general" priority="2"></note>
