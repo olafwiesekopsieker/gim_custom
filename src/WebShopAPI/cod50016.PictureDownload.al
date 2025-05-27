@@ -10,7 +10,7 @@ codeunit 80001 gim2DownloadImageToItem
         item: record item;
     begin
         //item.Setrange(Katalog, true);
-        item.SETFILTER("Production Group Code", '%1|%2', 'FERTIGWA19', 'HANDELWA19');
+        item.SETFILTER("Gen. Prod. Posting Group", '%1|%2', 'FERTIGWA19', 'HANDELWA19');
         if item.FindSet() then
             repeat
                 getItemMetadata(item."No.");
