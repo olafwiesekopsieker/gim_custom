@@ -1,4 +1,4 @@
-pageextension 80014 gimWarehouseShipment extends "Warehouse Shipment"
+pageextension 80015 gimWarehouseActivityLines extends "Warehouse Activity Lines"
 {
     layout
     {
@@ -6,7 +6,7 @@ pageextension 80014 gimWarehouseShipment extends "Warehouse Shipment"
     }
     actions
     {
-        addlast(reporting)
+        addfirst(Reporting)
         {
             action("CCO Print Picking List DUE")
             {
@@ -19,13 +19,13 @@ pageextension 80014 gimWarehouseShipment extends "Warehouse Shipment"
                     WarehouseActivityLine: Record "Warehouse Activity Line";
                     SalesHeader: record "Sales Header" temporary;
                 begin
-                    WarehouseActivityLine.Setrange("Whse. Document No.", Rec."No.");
-                    if WarehouseActivityLine.findset() then
+
+                    if rec.findset() then
                         repeat
                             SalesHeader.init;
-                            SalesHeader."No." := WarehouseActivityLine."Source No.";
+                            SalesHeader."No." := rec."Source No.";
                             if Not SalesHeader.insert then SalesHeader.modify;
-                        until WarehouseActivityLine.Next() = 0;
+                        until rec.Next() = 0;
 
                     if SalesHeader.FINDSET() then
                         repeat
@@ -51,7 +51,6 @@ pageextension 80014 gimWarehouseShipment extends "Warehouse Shipment"
                             end;
                         until SalesHeader.next = 0;
                 end;
-
             }
         }
     }
