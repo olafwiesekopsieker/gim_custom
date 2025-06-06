@@ -1408,6 +1408,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSNADArchServOrd - Action Pruefzertifikat - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3774890730 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 693800023">
+          <source>Picking List DUE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimWarehouseActivityLines - Action CCO Print Picking List DUE - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4029954202 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
           <source>Picking List DUE</source>
           <note from="Developer" annotates="general" priority="2"></note>
