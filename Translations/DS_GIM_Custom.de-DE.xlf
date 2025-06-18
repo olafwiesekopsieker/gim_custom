@@ -5699,7 +5699,7 @@
         </trans-unit>
         <trans-unit id="Report 1377504511 - NamedType 4226246461" size-unit="char" translate="yes" xml:space="preserve">
           <source>For discounts and reductions see our current conditions of payment and contract conditions.</source>
-          <target>Bezüglich der Entgeltminderungen verweisen wir auf die aktuellen Zahlungs- und Konditionsvereinbarungen.</target>
+          <target>Bezüglich nachträglicher Entgeltminderungen verweisen wir auf die aktuellen Zahlungs- und Konditionsvereinbarungen.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report CCO Sales Advance Prep.Invoice - NamedType DUE034</note>
         </trans-unit>
@@ -5975,7 +5975,7 @@
         </trans-unit>
         <trans-unit id="Report 557645684 - NamedType 4226246461" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bezüglich der Entgeltminderungen verweisen wir auf die aktuellen Zahlungs- und Konditionsvereinbarungen</source>
-          <target>Bezüglich der Entgeltminderungen verweisen wir auf die aktuellen Zahlungs- und Konditionsvereinbarungen</target>
+          <target>Bezüglich nachträglicher Entgeltminderungen verweisen wir auf die aktuellen Zahlungs- und Konditionsvereinbarungen</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report CCO Sales Credit Memo - NamedType DUE034</note>
         </trans-unit>
@@ -6575,7 +6575,7 @@
         </trans-unit>
         <trans-unit id="Report 2709276322 - NamedType 4226246461" size-unit="char" translate="yes" xml:space="preserve">
           <source>For discounts and reductions see our current conditions of payment and contract conditions.</source>
-          <target>Bezüglich der Entgeltminderungen verweisen wir auf die aktuellen Zahlungs- und Konditionsvereinbarungen.</target>
+          <target>Bezüglich nachträglicher Entgeltminderungen verweisen wir auf die aktuellen Zahlungs- und Konditionsvereinbarungen.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report CCO Sales Invoice - NamedType DUE034</note>
         </trans-unit>
@@ -13685,6 +13685,12 @@
           <target>Düperthal Logistik</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PermissionSet DP_Logistik - Property Caption</note>
+        </trans-unit>
+         <trans-unit id="PageExtension 4029954202 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
+          <source>Picking List DUE</source>
+          <target>Packzettel DUE</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimWarehouseShipment - Action CCO Print Picking List DUE - Property Caption</note>
         </trans-unit>
         <trans-unit id="PermissionSet 3969603481 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
           <source>Düperthal Marketing</source>

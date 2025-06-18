@@ -24,6 +24,10 @@ pageextension 80013 gimItemCard2 extends "Item Card"
             }
 
         }
+        modify(TestBilddatenbank)
+        {
+            visible = false;
+        }
     }
 
 }
