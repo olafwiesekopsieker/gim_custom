@@ -169,6 +169,10 @@ page 80000 gimItemAPI2
                 {
                     Caption = 'Vendor Item No.';
                 }
+                field(autoTextbaustein; rec."Automatic Ext. Texts")
+                {
+                    Caption = 'Automatic Ext. Texts';
+                }
 
 
                 // part(gimExtendedTextLine; gimExtendedTextLine)

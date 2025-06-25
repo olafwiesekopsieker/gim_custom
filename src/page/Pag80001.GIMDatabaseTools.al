@@ -92,6 +92,33 @@ page 80001 GIM_DatabaseTools
 
                 end;
             }
+
+
+            action(CopyNETVAPSField)
+            {
+                ApplicationArea = All;
+                Caption = 'Copy NETVAPS-Field';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = Copy;
+
+                trigger OnAction()
+                var
+                    Item: record Item;
+
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+                        if item.findset() then
+                            repeat
+                                item.gimNichtInEtagisPlanen := item."NETVAPS Excl. From EMAD";
+                                item.modify(false);
+                            until item.next = 0;
+
+                    end;
+
+                end;
+            }
         }
     }
 

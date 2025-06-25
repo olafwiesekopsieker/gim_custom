@@ -177,6 +177,11 @@ page 80005 gim2ItemAPI
                 {
                     caption = 'Web-Gruppe';
                 }
+                field(autoTextbaustein; rec."Automatic Ext. Texts")
+                {
+                    Caption = 'Automatic Ext. Texts';
+                }
+
 
                 // part(gimExtendedTextLine; gimExtendedTextLine)
                 // {

@@ -2,7 +2,13 @@ pageextension 80013 gimItemCard2 extends "Item Card"
 {
     layout
     {
-
+        addafter("Item Category Code")
+        {
+            field(gimNichtInEtagisPlanen; rec.gimNichtInEtagisPlanen)
+            {
+                applicationArea = all;
+            }
+        }
     }
 
     actions
