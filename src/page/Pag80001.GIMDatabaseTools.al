@@ -45,10 +45,29 @@ page 80001 GIM_DatabaseTools
                 end;
             }
 
-            action(AllItemsOnNoPlanningForEMAD)
+            // action(AllItemsOnNoPlanningForEMAD)
+            // {
+            //     ApplicationArea = All;
+            //     Caption = 'Alle Artikel auf nicht berücksichtigen beim EMAD';
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     Image = ResetStatus;
+
+            //     trigger OnAction()
+            //     var
+            //         item: record Item;
+
+            //     begin
+            //         if userid = 'HEW\OLAF.WIESEKOPSIEKER' then
+            //             item.modifyall("NETVAPS Excl. From EMAD", true);
+            //     end;
+            // }
+
+            action(DeleteUmlagerung)
             {
                 ApplicationArea = All;
-                Caption = 'Alle Artikel auf nicht berücksichtigen beim EMAD';
+                Caption = 'Umlagerung löschen';
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
@@ -56,13 +75,50 @@ page 80001 GIM_DatabaseTools
 
                 trigger OnAction()
                 var
-                    item: record Item;
+                    TransferHeader: record "Transfer Header";
+                    TransferLine: record "Transfer Line";
 
                 begin
-                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then
-                        item.modifyall("NETVAPS Excl. From EMAD", true);
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+                        TransferLine.Setrange("Document No.", 'UL2410108');
+                        TransferLine.DELETEALL(false);
+
+                        TransferHeader.SETRANGE("No.", 'UL2410108');
+                        TransferHeader.DELETEAll(False);
+
+                        message('job erledigt');
+
+                    end;
+
                 end;
             }
+
+
+            // action(CopyNETVAPSField)
+            // {
+            //     ApplicationArea = All;
+            //     Caption = 'Copy NETVAPS-Field';
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     Image = Copy;
+
+            //     trigger OnAction()
+            //     var
+            //         Item: record Item;
+
+            //     begin
+            //         if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+            //             if item.findset() then
+            //                 repeat
+            //                     item.gimNichtInEtagisPlanen := item."NETVAPS Excl. From EMAD";
+            //                     item.modify(false);
+            //                 until item.next = 0;
+
+            //         end;
+
+            //     end;
+            // }
         }
     }
 

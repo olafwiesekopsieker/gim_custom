@@ -163,6 +163,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control abmessung3 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2282113411 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Automatic Ext. Texts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control autoTextbaustein - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 204490496 - Control 2571795694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Base Unit of Measure</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -868,6 +873,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control abmessung3 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2282113411 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Automatic Ext. Texts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control autoTextbaustein - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3032037944 - Control 2571795694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Base Unit of Measure</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1268,11 +1278,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Control General - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1472808070 - Action 2569379896 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Alle Artikel auf nicht berücksichtigen beim EMAD</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action AllItemsOnNoPlanningForEMAD - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 1472808070 - Action 3050868628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Umlagerung löschen</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1393,50 +1398,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSNADArchServOrd - Action Pruefzertifikat - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3121333321 - Field 3191901429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
-          <source>gimArtikel sperren erlaubt</source>
+        <trans-unit id="PageExtension 3774890730 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 693800023">
+          <source>Picking List DUE</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimWarehouseActivityLines - Action CCO Print Picking List DUE - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 3960759840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Artikelkategoriecode</source>
+        <trans-unit id="PageExtension 4029954202 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
+          <source>Picking List DUE</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Artikelkategoriecode - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimWarehouseShipment - Action CCO Print Picking List DUE - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 2250980222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Eventuelle Auftragsnr.</source>
+        <trans-unit id="TableExtension 3121333321 - Field 3191901429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
+          <source>gimArtikel sperren erlaubt</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Eventuelle Auftragsnr. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIM2 User Setup - Field gimArtikel sperren erlaubt - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 3341153190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Fertigungsgruppencode</source>
+        <trans-unit id="TableExtension 3257030642 - Field 4282701467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>gimNichtInEtagisPlanen</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Fertigungsgruppencode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 1796631960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Produktbuchungsgruppe (Artikel)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Produktbuch.-gruppe (Artikel) - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 3960759840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Artikelkategoriecode</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Artikelkategoriecode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 2250980222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Eventuelle Auftragsnr.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Eventuelle Auftragsnr. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 3341153190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Fertigungsgruppencode</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Fertigungsgruppencode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 1796631960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Produktbuchungsgruppe (Artikel)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Produktbuch.-gruppe (Artikel) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimItem - Field gimNichtInEtagisPlanen - Property Caption</note>
         </trans-unit>
         <trans-unit id="PermissionSet 4150685431 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
           <source>gimWebShopAPI</source>
