@@ -163,6 +163,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control abmessung3 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 204490496 - Control 2282113411 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Automatic Ext. Texts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control autoTextbaustein - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 204490496 - Control 2571795694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Base Unit of Measure</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -868,6 +873,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control abmessung3 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3032037944 - Control 2282113411 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Automatic Ext. Texts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimItemAPI2 - Control autoTextbaustein - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3032037944 - Control 2571795694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Base Unit of Measure</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1273,6 +1283,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action AllItemsOnNoPlanningForEMAD - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 1894397816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy NETVAPS-Field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action CopyNETVAPSField - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1472808070 - Action 3050868628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Umlagerung löschen</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1422,6 +1437,11 @@
           <source>gimArtikel sperren erlaubt</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIM2 User Setup - Field gimArtikel sperren erlaubt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3257030642 - Field 4282701467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>gimNichtInEtagisPlanen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimItem - Field gimNichtInEtagisPlanen - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2059874798 - Field 3960759840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
           <source>Artikelkategoriecode</source>
