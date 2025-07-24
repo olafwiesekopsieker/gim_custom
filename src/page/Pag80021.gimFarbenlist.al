@@ -20,6 +20,7 @@ page 80021 gimFarbenlist
                 field(Beschreibung; Rec.Beschreibung)
                 {
                     ToolTip = 'Specifies the value of the Beschreibung field.', Comment = '%';
+
                 }
                 field(R; Rec.R)
                 {

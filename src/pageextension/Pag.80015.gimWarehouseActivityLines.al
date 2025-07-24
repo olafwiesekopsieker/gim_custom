@@ -35,7 +35,7 @@ pageextension 80015 gimWarehouseActivityLines extends "Warehouse Activity Lines"
                                 WarehouseActivityLine.Setrange("Whse. Document No.", Rec."Whse. Document No.");
                                 warehouseActivityLine.setrange("Source No.", salesHeader."No.");
                                 if WarehouseActivityLine.FINDfirst() then begin
-                                    WarehouseActivityHeader.init;
+                                    //WarehouseActivityHeader.init;
                                     WarehouseActivityHeader.Type := WarehouseActivityHeader.type::Pick;
                                     WarehouseActivityHeader."No." := WarehouseActivityLine."No.";
                                     WarehouseActivityHeader."Source No." := WarehouseActivityLine."Source No.";
