@@ -36,6 +36,7 @@ pageextension 80014 gimWarehouseShipment extends "Warehouse Shipment"
                             if WarehouseActivityLine.FINDfirst() then begin
                                 //WarehouseActivityHeader.init;
 
+                                warehouseActivityHeader.get(WarehouseActivityHeader.type::pick, WarehouseActivityLine."No.");
                                 WarehouseActivityHeader.Type := WarehouseActivityHeader.type::Pick;
                                 WarehouseActivityHeader."No." := WarehouseActivityLine."No.";
                                 WarehouseActivityHeader."Source No." := WarehouseActivityLine."Source No.";
