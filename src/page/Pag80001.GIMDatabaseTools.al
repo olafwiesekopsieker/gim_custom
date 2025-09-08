@@ -119,6 +119,33 @@ page 80001 GIM_DatabaseTools
 
             //     end;
             // }
+
+
+            action(syncColorsToItem)
+            {
+                ApplicationArea = All;
+                Caption = 'sync Farbe zu Artikel';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = Copy;
+
+                trigger onAction()
+                var
+                    ProdDim: record "CCS PX Default Mfg. Dimension";
+                    item: record item;
+                begin
+                    ProdDim.setrange("Table ID", 27);
+                    ProdDim.setrange("Mfg. Dimension Code", 'FARBE');
+                    if PRODDim.FINDSET() then
+                        repeat
+                            if item.get(prodDim."No.") then begin
+                                item.gimRALCode := ProdDim."Mfg. Dimension Value Code";
+                                item.modify;
+                            end;
+                        until ProdDim.Next() = 0;
+                end;
+            }
         }
     }
 

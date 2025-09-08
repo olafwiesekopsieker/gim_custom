@@ -8,6 +8,11 @@ pageextension 80013 gimItemCard2 extends "Item Card"
             {
                 applicationArea = all;
             }
+
+            field(gimRALCode; Rec.gimRALCode)
+            {
+                applicationArea = all;
+            }
         }
     }
 

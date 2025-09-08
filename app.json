@@ -77,6 +77,12 @@
       "name": "GIM_CUSTOM_FORNAV_REPORTS",
       "publisher": "GIM",
       "version": "24.0.0.2"
+    },
+    {
+      "id": "88cf5d4c-8afc-4a98-9cb7-212196c51d74",
+      "name": "Continia OPplus",
+      "version": "24.2.0.701266",
+      "publisher": "Continia Software"
     }
     
   ],

@@ -16,6 +16,7 @@ pageextension 80014 gimWarehouseShipment extends "Warehouse Shipment"
                 trigger OnAction()
                 var
                     WarehouseActivityHeader: Record "Warehouse Activity Header";
+                    WarehouseActivityHeaderSave: Record "Warehouse Activity Header";
                     WarehouseActivityLine: Record "Warehouse Activity Line";
                     SalesHeader: record "Sales Header" temporary;
                 begin
@@ -33,7 +34,9 @@ pageextension 80014 gimWarehouseShipment extends "Warehouse Shipment"
                             WarehouseActivityLine.Setrange("Whse. Document No.", Rec."No.");
                             warehouseActivityLine.setrange("Source No.", salesHeader."No.");
                             if WarehouseActivityLine.FINDfirst() then begin
-                                WarehouseActivityHeader.init;
+                                //WarehouseActivityHeader.init;
+
+                                warehouseActivityHeader.get(WarehouseActivityHeader.type::pick, WarehouseActivityLine."No.");
                                 WarehouseActivityHeader.Type := WarehouseActivityHeader.type::Pick;
                                 WarehouseActivityHeader."No." := WarehouseActivityLine."No.";
                                 WarehouseActivityHeader."Source No." := WarehouseActivityLine."Source No.";
