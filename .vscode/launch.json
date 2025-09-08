@@ -42,6 +42,28 @@
            
         },
         {
+            "name": "BC26 Test Server Service",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://oegim-srvbcdem1/bc260_Service/",
+            "serverInstance": "BC260_Service",
+            "authentication": "Windows",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "port":46249,
+            "schemaUpdateMode":"Synchronize"
+            
+            
+            
+           
+        },
+        {
             "name": "BC24 Test Server",
             "request": "launch",
             "type": "al",
