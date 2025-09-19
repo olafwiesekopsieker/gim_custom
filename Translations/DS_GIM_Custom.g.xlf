@@ -1768,11 +1768,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Bill-to Name 2 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1418196127 - Control 3261344115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
-          <source>Name 2</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Ship-to Name 2 - Property Caption</note>
-        </trans-unit>
         <trans-unit id="PageExtension 253740477 - Control 2149028864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2485541542">
           <source>Standort</source>
           <note from="Developer" annotates="general" priority="2"></note>
