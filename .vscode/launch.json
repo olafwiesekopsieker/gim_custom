@@ -1,26 +1,9 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
         {
-            "name": "BC22 Server-local Mirror",
-            "request": "launch",
-            "type": "al",
-            "environmentType": "OnPrem",
-            "server": "http://gioe46",
-            "serverInstance": "BC220_Standard",
-            "authentication": "Windows",
-            "startupObjectId": 22,
-            "startupObjectType": "Page",
-            "breakOnError": true,
-            "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true,
-            "tenant": "default",
-            "port": 22250,
-            "schemaUpdateMode": "Synchronize"
-        },
-        {
-            "name": "BC24 Produktiv Server",
+            "name": "BC26 Produktiv Server",
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
@@ -64,7 +47,7 @@
            
         },
         {
-            "name": "BC24 Test Server",
+            "name": "BC26 Test Server",
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",

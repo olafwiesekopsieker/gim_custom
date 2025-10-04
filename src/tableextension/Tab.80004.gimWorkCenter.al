@@ -10,5 +10,18 @@ tableextension 80004 gimWorkCenter extends "Work Center"
             Caption = 'Sortierreihenfolge Etagis';
             DataClassification = SystemMetadata;
         }
+        field(80001; gimRessourcentyp; enum gimRessourcentyp)
+        {
+            Caption = 'Ressourcentyp';
+            DataClassification = SystemMetadata;
+        }
+        field(80002; gimVerplanungsart; enum gimVerplanungsart)
+        {
+            Caption = 'Verplanungsart';
+            DataClassification = SystemMetadata;
+        }
+
+
+
     }
 }
