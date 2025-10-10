@@ -94,6 +94,32 @@ page 80001 GIM_DatabaseTools
             }
 
 
+            action(DeleteServiceContractServiceLine)
+            {
+                ApplicationArea = All;
+                Caption = 'Servicezeilen im Servicevertrag löschen';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
+
+                trigger OnAction()
+                var
+                    SL: record "Service Contract Service Line";
+
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+
+                        sl.deleteall(false);
+
+                        message('job erledigt');
+
+                    end;
+
+                end;
+            }
+
+
             // action(CopyNETVAPSField)
             // {
             //     ApplicationArea = All;

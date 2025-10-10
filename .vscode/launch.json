@@ -7,7 +7,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://oegim-srvbc1/bc_prod/",
+            "server": "http://oegim-srvbc1:8080/bc_prod/",
             "serverInstance": "BC_prod",
             "authentication": "Windows",
             "startupObjectId": 22,
