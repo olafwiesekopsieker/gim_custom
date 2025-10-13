@@ -14,6 +14,14 @@ pageextension 80024 gimProdOrderLine extends "Prod. Order Line List"
                 ApplicationArea = all;
 
             }
+            // field(gimEingeplanteStartzeit; Rec.gimEingeplanteStartzeit)
+            // {
+            //     ApplicationArea = all;
+            // }
+            // field(gimEingeplanteEndzeit; Rec.gimEingeplanteEndzeit)
+            // {
+            //     ApplicationArea = all;
+            // }
         }
 
     }

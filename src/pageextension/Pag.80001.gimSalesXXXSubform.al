@@ -10,7 +10,15 @@ pageextension 80001 gimSalesOrderSubform extends "Sales Order Subform"
         {
             visible = false;
         }
+        // addlast(content)
+        // {
+        //     field("gimEingeplantes Lieferdatum"; Rec."gimEingeplantes Lieferdatum")
+        //     {
+        //         ApplicationArea = all;
+        //     }
+        // }
     }
+
 }
 
 pageextension 80002 gimSalesInvoiceSubform extends "Sales Invoice Subform"
