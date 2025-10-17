@@ -1868,6 +1868,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimProdOrderRtngLine - Field etagis Data - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1868324127 - Field 4192623304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 803582013">
+          <source>Eingeplante Endzeit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimProdOrderRtngLine - Field gimEingeplanteEndzeit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1868324127 - Field 3883582829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 803582013">
+          <source>Eingeplante Startzeit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimProdOrderRtngLine - Field gimEingeplanteStartzeit - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1960430711 - Field 3130686926 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Eingeplantes Lieferdatum</source>
           <note from="Developer" annotates="general" priority="2"></note>
