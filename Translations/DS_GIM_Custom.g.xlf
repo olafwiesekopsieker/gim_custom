@@ -1838,6 +1838,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimFAZeile - Field etagis Data - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2932664837 - Field 4192623304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4218928473">
+          <source>Eingeplante Endzeit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimFAZeile - Field gimEingeplanteEndzeit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2932664837 - Field 3883582829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4218928473">
+          <source>Eingeplante Startzeit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimFAZeile - Field gimEingeplanteStartzeit - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2932664837 - Field 1438784749 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4218928473">
           <source>Produktionszieltermin</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1853,50 +1863,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimItem - Field gimRALCode - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 3960759840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Artikelkategoriecode</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Artikelkategoriecode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 2250980222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Eventuelle Auftragsnr.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Eventuelle Auftragsnr. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 3341153190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Fertigungsgruppencode</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Fertigungsgruppencode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 2059874798 - Field 1796631960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 381375459">
-          <source>Produktbuchungsgruppe (Artikel)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension GIMNetVAPS SimPrdOrdr - Field Produktbuch.-gruppe (Artikel) - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 3960759840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Artikelkategoriecode</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Artikelkategoriecode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 2250980222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Eventuelle Auftragsnr.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Eventuelle Auftragsnr. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 3341153190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Fertigungsgruppencode</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Fertigungsgruppencode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 738649601 - Field 1796631960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4078008944">
-          <source>Produktbuchungsgruppe (Artikel)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimNETVSimPORtngLn - Field Produktbuch.-gruppe (Artikel) - Property Caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 1868324127 - Field 234477223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 803582013">
           <source>etagis Data</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimProdOrderRtngLine - Field etagis Data - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 3130686926 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Eingeplantes Lieferdatum</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gimEingeplantes Lieferdatum - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3271962283 - Field 2861697451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3433205814">
           <source>Ressourcentyp</source>
