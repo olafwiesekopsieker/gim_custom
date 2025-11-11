@@ -18,4 +18,20 @@ tableextension 80007 gimProdOrderRtngLine extends "Prod. Order Routing Line"
             Dataclassification = SystemMetadata;
         }
     }
+
+    trigger OnBeforeModify()
+    var
+        Helper: Codeunit "gimEtagisRedirectHelper";
+    begin
+        if not Helper.IsFromEtagis() then
+            exit;
+
+        Helper.RedirectPlannedOnModify(
+            Rec."Starting Date-Time",
+            Rec."Ending Date-Time",
+            xRec."Starting Date-Time",
+            xRec."Ending Date-Time",
+            Rec."gimEingeplanteStartzeit",
+            Rec."gimeingeplanteEndzeit");
+    end;
 }

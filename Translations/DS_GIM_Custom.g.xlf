@@ -3,6 +3,46 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="DS_GIM_Custom">
     <body>
       <group id="body">
+        <trans-unit id="Table 2348163085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delivery Signature</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2348163085 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2348163085 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2348163085 - Field 2224537128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Spedition</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Forwarder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2348163085 - Field 2110152561 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Header SystemId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Sales Header SystemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2348163085 - Field 1395270684 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Signature Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Signature Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2348163085 - Field 2000751757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Signature</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Signature Image - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2348163085 - Field 4164156288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LKW-Kennzeichen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Truck License Plate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1625739267 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>gimFarbe</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -802,6 +842,71 @@
           <source>Zubehoer</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim2WebshopStammdatenAPI - Control zubehoer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delivery Signature Capture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Control 2224537128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Spedition/Forwarder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Control Forwarder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Control 2776164212 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum/Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Control SignatureDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Control 2437470969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LKW-Kennzeichen/Truckplate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Control TruckPlate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Control 870794884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ausgewählte Aufträge/Selected Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Control Selection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Control 2893692764 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kommaseparierte Liste der ausgewählten Aufträge.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Control OrdersText - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Control 685401789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unterschrift/Sign</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Control Sign - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Action 2457075619 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Leeren</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Action Clear - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3569397825 - Action 3182505287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unterschrift speichern</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureCapture - Action SaveSignature - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1279121042 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lieferunterschrift</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureFactBox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1279121042 - Control 320775665 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unterschrift</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureFactBox - Control Image - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1211530899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delivery Signatures</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDeliverySignatureList - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4060315061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kopiere Fragegruppen</source>
@@ -1828,6 +1933,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimWarehouseShipment - Action CCO Print Picking List DUE - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Action 234437865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Unterschriften erfassen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List Ext - Action CaptureDeliverySignatures - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3121333321 - Field 3191901429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
           <source>gimArtikel sperren erlaubt</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1972,6 +2082,11 @@
           <source>gimWebShopAPI</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PermissionSet gim2WebShopAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 1794922558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Capture &amp; store delivery signatures</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet gimDELIV_SIGNATURE - Property Caption</note>
         </trans-unit>
       </group>
     </body>
