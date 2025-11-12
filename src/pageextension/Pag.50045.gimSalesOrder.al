@@ -73,6 +73,30 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
         {
             field("Bill-to Name 2"; Rec."Bill-to Name 2") { ApplicationArea = All; Caption = 'Name 2'; }
         }
+        addafter("Shipment Date")
+        {
+            group("Etagis – Planung")
+            {
+                Caption = 'Etagis – Planung';
+                field("Planned Shipment Date Min (etagis)"; rec."Planned Shipment Date Min (etagis)")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Kleinstes geplantes Warenausgangsdatum aus den Zeilen (etagis).';
+                }
+                field("Planned Shipment Date Max (etagis)"; rec."Planned Shipment Date Max (etagis)")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Größtes geplantes Warenausgangsdatum aus den Zeilen (etagis).';
+                }
+                field("Status (etagis)"; rec."Status (etagis)")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Aggregierter (kritischster) Etagis-Status des Auftrags.';
+                    Style = Strong;
+                    StyleExpr = HeaderStatusStyleTxt;
+                }
+            }
+        }
 
     }
 
@@ -118,6 +142,7 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
 
     var
         CustomerIsBlocked: Boolean;
+        HeaderStatusStyleTxt: Text[30];
 
     local procedure IsCustBlocked(): Boolean
     begin
@@ -128,5 +153,23 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
     trigger OnAfterGetCurrRecord()
     begin
         CustomerIsBlocked := IsCustBlocked();
+    end;
+
+    trigger OnAfterGetRecord()
+    begin
+        HeaderStatusStyleTxt := GetStatusStyle(rec."Status (etagis)");
+    end;
+
+    local procedure GetStatusStyle(Status: Option Unkritisch,Ungeplant,Kritisch): Text
+    begin
+        case Status of
+            Status::Unkritisch:
+                exit('Favorable');   // grün
+            Status::Ungeplant:
+                exit('Ambiguous');   // grau/neutral
+            Status::Kritisch:
+                exit('Attention');   // rot/gelb
+        end;
+        exit('');
     end;
 }

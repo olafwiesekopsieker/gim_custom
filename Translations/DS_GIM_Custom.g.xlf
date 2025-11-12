@@ -1878,6 +1878,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Bill-to Name 2 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Control 4083906179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Etagis – Planung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Etagis – Planung - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Control 2055973836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Größtes geplantes Warenausgangsdatum aus den Zeilen (etagis).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Planned Shipment Date Max (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Control 3793909922 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Kleinstes geplantes Warenausgangsdatum aus den Zeilen (etagis).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Planned Shipment Date Min (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Control 3793156732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Aggregierter (kritischster) Etagis-Status des Auftrags.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Status (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1696253881 - Control 1903064224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2026081320">
+          <source>Geplantes Warenausgangsdatum der Zeile (von etagis).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrderSubform - Control Planned Shipment Date (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1696253881 - Control 3793156732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2026081320">
+          <source>Etagis-Status der Zeile: unkritisch, ungeplant, kritisch.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrderSubform - Control Status (etagis) - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 253740477 - Control 2149028864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2485541542">
           <source>Standort</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1938,6 +1968,121 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List Ext - Action CaptureDeliverySignatures - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 2055973836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Größtes geplantes Warenausgangsdatum aus den Zeilen (etagis).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control Planned Shipment Date Max (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 2055973836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Gepl. Warenausgang (max, etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control Planned Shipment Date Max (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 3793909922 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Kleinstes geplantes Warenausgangsdatum aus den Zeilen (etagis).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control Planned Shipment Date Min (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 3793909922 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Gepl. Warenausgang (min, etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control Planned Shipment Date Min (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 3793156732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Aggregierter (kritischster) Etagis-Status des Auftrags.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control Status (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 3793156732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Status (etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control Status (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 2153992161 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>ABD</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field ABD - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 919213191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Abholavis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Abholavis - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 1372123382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Ausgangsvermerk (AGV)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Ausgangsvermerk (AGV) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 1988327069 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Ausgangsvermerk nachgefragt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Ausgangsvermerk nachgefragt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 2514746624 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>BL (Bill of Lading)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field BL (Bill of Lading) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 2994320672 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>FCA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field FCA - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 3523178754 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>FCA Versand beauftragt durch DÜSI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field FCA Versand beauftragt durch DÜSI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 1707694353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Packliste erstellt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Packliste erstellt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 1630182229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>POD</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field POD - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 3060954973 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>POD nachgefragt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field POD nachgefragt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 3472663129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>UZ</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field UZ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 4038150813 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Versand durch DÜSI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Versand durch DÜSI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 3641685768 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>VGM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field VGM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 3993406152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Zoll erstellt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Zoll erstellt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 4066866902 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Zollhandelsrechnung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Zollhandelsrechnung - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 4249645655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Zollvermerk</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Zollvermerk - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 2456993123 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Übergabebeleg</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Übergabebeleg - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3121333321 - Field 3191901429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
           <source>gimArtikel sperren erlaubt</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1988,10 +2133,45 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimProdOrderRtngLine - Field gimEingeplanteStartzeit - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3058138043 - Field 2055973836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Geplanter Warenausgang (max, etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Planned Shipment Date Max (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3058138043 - Field 3793909922 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Geplanter Warenausgang (min, etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Planned Shipment Date Min (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3058138043 - Field 3793156732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Status (etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Status (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3058138043 - Field 3793156732 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>unkritisch,ungeplant,kritisch</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Status (etagis) - Property OptionCaption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1960430711 - Field 3130686926 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Eingeplantes Lieferdatum</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gimEingeplantes Lieferdatum - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 1903064224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Geplantes Warenausgangsdatum (etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field Planned Shipment Date (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 3793156732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Status (etagis)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field Status (etagis) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 3793156732 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>unkritisch,ungeplant,kritisch</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field Status (etagis) - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3271962283 - Field 2861697451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3433205814">
           <source>Ressourcentyp</source>
