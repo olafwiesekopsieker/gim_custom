@@ -2,91 +2,124 @@ tableextension 80002 CertificateOfSupplyExt extends "Certificate of Supply"
 {
     fields
     {
-        field(80000; FCA; Boolean)
+        // -------------------------------------------------
+        // Systemfelder - Referenzen auf Belege
+        // -------------------------------------------------
+        field(80000; "gimAuftragsnummer"; Code[20])
+        {
+            Caption = 'Auftragsnummer';
+            DataClassification = CustomerContent;
+
+            TableRelation =
+                if ("Document Type" = filter("Sales Shipment")) "Sales Header"."No." where("Document Type" = const(Order))
+            else
+            if ("Document Type" = filter("Service Shipment")) "Service Header"."No." where("Document Type" = const(Order));
+
+            TestTableRelation = false;
+            ValidateTableRelation = false;
+
+            trigger OnValidate()
+            begin
+                UpdateDerivedFields();
+            end;
+        }
+
+        field(80001; "Geb. Rechnungsnr."; Code[20])
+        {
+            Caption = 'Geb. Verkaufs-/Service-Rechnung';
+            DataClassification = CustomerContent;
+
+            TableRelation =
+                if ("Document Type" = filter("Sales Shipment")) "Sales Invoice Header"."No."
+            else
+            if ("Document Type" = filter("Service Shipment")) "Service Invoice Header"."No.";
+
+            trigger OnValidate()
+            begin
+                UpdateDerivedFields();
+            end;
+        }
+
+        //-----------------------------------------------------------------
+        // Versand / Zusteller
+        //-----------------------------------------------------------------
+        field(80002; FCA; Date)
         {
             Caption = 'FCA';
-            DataClassification = SystemMetadata;
+            DataClassification = CustomerContent;
         }
-        field(80001; "FCA Versand beauftragt durch DÜSI"; Code[10])
+
+        field(80003; "FCA Versand beauftr. d. DÜSI"; Code[20])
         {
             Caption = 'FCA Versand beauftragt durch DÜSI';
-            DataClassification = SystemMetadata;
-            TableRelation = "Shipping Agent";
+            TableRelation = "Shipping Agent".Code; // Dropdown <Liste Zusteller>
+            DataClassification = CustomerContent;
+            ValidateTableRelation = false;
         }
-        field(80002; "Versand durch DÜSI"; Boolean)
+
+        field(80004; "Versand durch DÜSI"; Code[20])
         {
             Caption = 'Versand durch DÜSI';
-            DataClassification = SystemMetadata;
+            DataClassification = CustomerContent;
+            Editable = false; // wird automatisch gefüllt
         }
-        field(80003; "Zoll erstellt"; Boolean)
+
+        //-----------------------------------------------------------------
+        // Versand-/Zollstatus (Datum)
+        //-----------------------------------------------------------------
+        field(80010; "Zoll erstellt"; Date) { Caption = 'Zoll erstellt'; DataClassification = CustomerContent; }
+        field(80011; POD; Date) { Caption = 'POD'; DataClassification = CustomerContent; }
+        field(80012; "POD nachgefragt"; Date) { Caption = 'POD nachgefragt'; DataClassification = CustomerContent; }
+        field(80013; "Ausgangsvermerk (AGV)"; Date) { Caption = 'Ausgangsvermerk (AGV)'; DataClassification = CustomerContent; }
+        field(80014; "Ausgangsvermerk nachgefragt"; Date) { Caption = 'Ausgangsvermerk nachgefragt'; DataClassification = CustomerContent; }
+        field(80015; Zollvermerk; Date) { Caption = 'Zollvermerk'; DataClassification = CustomerContent; }
+        field(80016; Übergabebeleg; Date) { Caption = 'Übergabebeleg'; DataClassification = CustomerContent; }
+        field(80017; UZ; Date) { Caption = 'UZ'; DataClassification = CustomerContent; }
+        field(80018; ABD; Date) { Caption = 'ABD'; DataClassification = CustomerContent; }
+        field(80019; "Packliste erstellt"; Date) { Caption = 'Packliste erstellt'; DataClassification = CustomerContent; }
+        field(80020; Abholavis; Date) { Caption = 'Abholavis'; DataClassification = CustomerContent; }
+        field(80021; Zollhandelsrechnung; Date) { Caption = 'Zollhandelsrechnung'; DataClassification = CustomerContent; }
+        field(80022; "BL (Bill of Lading)"; Date) { Caption = 'BL (Bill of Lading)'; DataClassification = CustomerContent; }
+        field(80023; VGM; Date) { Caption = 'VGM'; DataClassification = CustomerContent; }
+
+        //-----------------------------------------------------------------
+        // Verkäufer (werden automatisch aus Auftrag / Rechnung gefüllt)
+        //-----------------------------------------------------------------
+        field(80024; "Verkäufercode 1"; Code[20])
         {
-            Caption = 'Zoll erstellt';
-            DataClassification = SystemMetadata;
+            Caption = 'Verkäufercode 1';
+            TableRelation = "Salesperson/Purchaser".Code;
+            DataClassification = CustomerContent;
+            Editable = false;
         }
-        field(80004; POD; Boolean)
+
+        field(80025; "Verkäufercode 2"; Code[20])
         {
-            Caption = 'POD';
-            DataClassification = SystemMetadata;
-        }
-        field(80005; "POD nachgefragt"; Boolean)
-        {
-            Caption = 'POD nachgefragt';
-            DataClassification = SystemMetadata;
-        }
-        field(80006; "Ausgangsvermerk (AGV)"; Text[200])
-        {
-            Caption = 'Ausgangsvermerk (AGV)';
-            DataClassification = SystemMetadata;
-        }
-        field(80007; "Ausgangsvermerk nachgefragt"; Boolean)
-        {
-            Caption = 'Ausgangsvermerk nachgefragt';
-            DataClassification = SystemMetadata;
-        }
-        field(80008; Zollvermerk; Text[200])
-        {
-            Caption = 'Zollvermerk';
-            DataClassification = SystemMetadata;
-        }
-        field(80009; Übergabebeleg; Boolean)
-        {
-            Caption = 'Übergabebeleg';
-            DataClassification = SystemMetadata;
-        }
-        field(80010; UZ; Boolean)
-        {
-            Caption = 'UZ';
-            DataClassification = SystemMetadata;
-        }
-        field(80011; ABD; Boolean)
-        {
-            Caption = 'ABD';
-            DataClassification = SystemMetadata;
-        }
-        field(80012; "Packliste erstellt"; Boolean)
-        {
-            Caption = 'Packliste erstellt';
-            DataClassification = SystemMetadata;
-        }
-        field(80013; Abholavis; Boolean)
-        {
-            Caption = 'Abholavis';
-            DataClassification = SystemMetadata;
-        }
-        field(80014; Zollhandelsrechnung; Boolean)
-        {
-            Caption = 'Zollhandelsrechnung';
-            DataClassification = SystemMetadata;
-        }
-        field(80015; "BL (Bill of Lading)"; Boolean)
-        {
-            Caption = 'BL (Bill of Lading)';
-            DataClassification = SystemMetadata;
-        }
-        field(80016; VGM; Boolean)
-        {
-            Caption = 'VGM';
-            DataClassification = SystemMetadata;
+            Caption = 'Verkäufercode 2';
+            TableRelation = "Salesperson/Purchaser".Code;
+            DataClassification = CustomerContent;
+            Editable = false;
         }
     }
+
+    keys
+    {
+        key(KeyByOrderNo; "gimAuftragsnummer") { }
+        key(KeyByInvNo; "Geb. Rechnungsnr.") { }
+    }
+
+    //-----------------------------------------------------------------
+    // Hilfsfunktion: Ableitung der Systemfelder aus Belegen
+    //-----------------------------------------------------------------
+
+    procedure UpdateDerivedFields()
+    var
+        FillMgt: Codeunit "gimCoSFillMgt";
+    begin
+        FillMgt.FillFromSources(Rec);
+    end;
+
+
+
+
 }

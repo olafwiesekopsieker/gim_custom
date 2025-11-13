@@ -2028,10 +2028,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field FCA - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 191204314 - Field 3523178754 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+        <trans-unit id="TableExtension 191204314 - Field 1102148748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
           <source>FCA Versand beauftragt durch DÜSI</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field FCA Versand beauftragt durch DÜSI - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field FCA Versand beauftr. d. DÜSI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 1469015403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Geb. Verkaufs-/Service-Rechnung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Geb. Rechnungsnr. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 3408026746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Auftragsnummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field gimAuftragsnummer - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 191204314 - Field 1707694353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
           <source>Packliste erstellt</source>
@@ -2052,6 +2062,16 @@
           <source>UZ</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field UZ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 2842212162 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Verkäufercode 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Verkäufercode 1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 191204314 - Field 929122311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
+          <source>Verkäufercode 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CertificateOfSupplyExt - Field Verkäufercode 2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 191204314 - Field 4038150813 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2389727633">
           <source>Versand durch DÜSI</source>
