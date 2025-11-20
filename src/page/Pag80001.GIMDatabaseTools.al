@@ -119,32 +119,96 @@ page 80001 GIM_DatabaseTools
                 end;
             }
 
+            action(DeactivateAllJobQueueEntries)
+            {
+                ApplicationArea = All;
+                Caption = 'Alle Aufgabenwarteschlangenposten deaktvieren';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
 
-            // action(CopyNETVAPSField)
+                trigger OnAction()
+                var
+                    dbMan: codeunit gimDBManagement;
+
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+
+                        dbman.RunDisableAllJobQueues();
+
+                        message('job erledigt');
+
+                    end;
+
+                end;
+            }
+
+            // action(RunEtagisImport)
             // {
             //     ApplicationArea = All;
-            //     Caption = 'Copy NETVAPS-Field';
+            //     Caption = 'etagis Import starten';
             //     Promoted = true;
             //     PromotedCategory = Process;
             //     PromotedIsBig = true;
-            //     Image = Copy;
+            //     Image = ResetStatus;
 
             //     trigger OnAction()
             //     var
-            //         Item: record Item;
+            //         etagis: codeunit BMSEtagisImportDetailLineV2;
+            //         etagisImportDetails: record BMSEtagisImportDetails;
 
             //     begin
             //         if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
-            //             if item.findset() then
-            //                 repeat
-            //                     item.gimNichtInEtagisPlanen := item."NETVAPS Excl. From EMAD";
-            //                     item.modify(false);
-            //                 until item.next = 0;
+
+            //             etagisImportDetails.Reset();
+            //             etagisImportDetails.SetCurrentKey("Entry No.");
+            //             etagisImportDetails.SetRange(Status, etagisImportDetails.Status::New);
+            //             if etagisImportDetails.FindFirst() then begin
+
+
+            //                 etagisImportDetails.Status := etagisImportDetails.Status::"In Progress";
+            //                 etagisImportDetails.Modify();
+            //             END;
+
+            //             etagis.run;
+
+            //             message('job erledigt');
 
             //         end;
 
             //     end;
             // }
+
+
+
+
+
+            // // action(CopyNETVAPSField)
+            // // {
+            // //     ApplicationArea = All;
+            // //     Caption = 'Copy NETVAPS-Field';
+            // //     Promoted = true;
+            // //     PromotedCategory = Process;
+            // //     PromotedIsBig = true;
+            // //     Image = Copy;
+
+            // //     trigger OnAction()
+            // //     var
+            // //         Item: record Item;
+
+            // //     begin
+            // //         if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+            // //             if item.findset() then
+            // //                 repeat
+            // //                     item.gimNichtInEtagisPlanen := item."NETVAPS Excl. From EMAD";
+            // //                     item.modify(false);
+            // //                 until item.next = 0;
+
+            // //         end;
+
+            // //     end;
+            // // }
 
 
             action(syncColorsToItem)

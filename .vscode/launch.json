@@ -63,6 +63,7 @@
             "tenant": "default",
             "port":7349,
             "schemaUpdateMode":"ForceSync"
+
             
             
             
@@ -147,6 +148,16 @@
             "schemaUpdateMode":"Synchronize"
             
            
+        },
+        {
+            "name": "Attach to BC_TEST",
+            "type": "al",
+            "request": "attach",
+            "server": "http://oegim-srvbc1",
+            "serverInstance": "BC_TEST",
+            "port":7349,
+            "authentication": "windows" ,   // oder "Windows", je nach Setup
+            "breakOnNext": "WebClient"          // wichtig!
         }
     ]
 }

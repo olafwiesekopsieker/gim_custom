@@ -22,22 +22,25 @@ tableextension 80006 gimFAZeile extends "Prod. Order Line"
             caption = 'Eingeplante Endzeit';
             Dataclassification = SystemMetadata;
         }
+
+
+
     }
 
-    trigger OnBeforeModify()
-    var
-        Helper: Codeunit "gimEtagisRedirectHelper";
-    begin
-        // Nur reagieren, wenn der Schreibvorgang vom etagis-Service-User kommt
-        if not Helper.IsFromEtagis() then
-            exit;
+    // trigger OnBeforeModify()
+    // var
+    //     Helper: Codeunit "gimEtagisRedirectHelper";
+    // begin
+    //     // Nur reagieren, wenn der Schreibvorgang vom etagis-Service-User kommt
+    //     if not Helper.IsFromEtagis() then
+    //         exit;
 
-        Helper.RedirectPlannedOnModify(
-            Rec."Starting Date-Time",
-            Rec."Ending Date-Time",
-            xRec."Starting Date-Time",
-            xRec."Ending Date-Time",
-            Rec."gimEingeplanteStartzeit",
-            Rec."gimeingeplanteEndZeit");
-    end;
+    //     Helper.RedirectPlannedOnModify(
+    //         Rec."Starting Date-Time",
+    //         Rec."Ending Date-Time",
+    //         xRec."Starting Date-Time",
+    //         xRec."Ending Date-Time",
+    //         Rec."gimEingeplanteStartzeit",
+    //         Rec."gimeingeplanteEndZeit");
+    // end;
 }

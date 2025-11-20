@@ -43,6 +43,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Truck License Plate - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2631479374 - Field 4205967536 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EndOrig</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimEtagisSnapshot - Field EndOrig - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2631479374 - Field 1165969121 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LineNo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimEtagisSnapshot - Field LineNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2631479374 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimEtagisSnapshot - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2631479374 - Field 570822770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ProdOrderNo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimEtagisSnapshot - Field ProdOrderNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2631479374 - Field 3224067877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>StartOrig</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimEtagisSnapshot - Field StartOrig - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2631479374 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimEtagisSnapshot - Field Table ID - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1625739267 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>gimFarbe</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1522,6 +1552,11 @@
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 1327086487 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Alle Aufgabenwarteschlangenposten deaktvieren</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action DeactivateAllJobQueueEntries - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1472808070 - Action 1239587471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Servicezeilen im Servicevertrag löschen</source>
