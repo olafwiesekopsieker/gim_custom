@@ -16,8 +16,8 @@ codeunit 80009 "gimCoSSubscribers"
         CoS.SetRange("Document Type", CoS."Document Type"::"Sales Shipment");
         CoS.SetRange("Document No.", Rec."No.");
         if CoS.FindFirst() then begin
-            if CoS."Auftragsnummer" = '' then begin
-                CoS.Validate("Auftragsnummer", Rec."Order No.");
+            if CoS."gimAuftragsnummer" = '' then begin
+                CoS.Validate("gimAuftragsnummer", Rec."Order No.");
                 CoS.Modify(true);
             end;
         end;

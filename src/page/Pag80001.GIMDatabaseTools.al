@@ -119,6 +119,32 @@ page 80001 GIM_DatabaseTools
                 end;
             }
 
+            action(CoSFillOrderno)
+            {
+                ApplicationArea = All;
+                Caption = 'Gelangenbestätigung Auftragsnr. füllen';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
+
+                trigger OnAction()
+                var
+                    COSFill: Codeunit gimCoSFillMgt;
+
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+
+                        CosFill.FillOrderNo();
+                        cosFill.BackfillInvoiceNoFromShipment();
+
+                        message('job erledigt');
+
+                    end;
+
+                end;
+            }
+
             action(DeactivateAllJobQueueEntries)
             {
                 ApplicationArea = All;
