@@ -45,6 +45,31 @@ page 80011 gim2SalesHeaderAPI
                 {
                     Caption = 'Amount';
                 }
+                field("SellToCustomerName"; Rec."Sell-to Customer Name")
+                {
+                    caption = 'Sell-to Customer Name';
+                }
+                field("SellToCustomerName2"; Rec."Sell-to Customer Name 2")
+                {
+                    Caption = 'Sell-to Customer Name 2';
+                }
+                field("SellToAddress2"; Rec."Sell-to Address 2")
+                {
+                    caption = 'Sell-to Adress 2';
+                }
+                field("SellToCity"; Rec."Sell-to City")
+                {
+                    caption = 'Sell-to City';
+                }
+                field("SellToPostCode"; Rec."Sell-to Post Code")
+                {
+                    caption = 'Sell-to Post Code';
+                }
+                field("SellToCountryRegionCode"; Rec."Sell-to Country/Region Code")
+                {
+                    caption = 'Sell-to Country';
+                }
+
             }
         }
     }

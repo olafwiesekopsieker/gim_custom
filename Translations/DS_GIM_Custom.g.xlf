@@ -598,6 +598,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control quoteNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 3235271715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Adress 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control SellToAddress2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 3853348574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to City</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control SellToCity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 1582367340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Country</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control SellToCountryRegionCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 3513921754 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control SellToCustomerName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 1257707920 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Customer Name 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control SellToCustomerName2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 2893210612 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Post Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control SellToPostCode - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2963042744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>gimSalesHeaderArchive</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1552,6 +1582,16 @@
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 3978916780 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gelangenbestätigung Rechnungsnr. füllen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action CoSFillInvoiceNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 1725146289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gelangenbestätigung Auftragsnr. füllen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action CoSFillOrderno - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1472808070 - Action 1327086487 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Alle Aufgabenwarteschlangenposten deaktvieren</source>

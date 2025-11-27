@@ -44,6 +44,7 @@ page 80002 gim2ServiceHeaderAPI
                 {
                     Caption = 'Amount';
                 }
+
             }
         }
     }
