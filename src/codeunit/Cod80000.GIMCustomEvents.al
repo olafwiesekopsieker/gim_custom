@@ -85,6 +85,7 @@ codeunit 80000 "GIM Custom Events"
 
     // end;
 
+    [EventSubscriber(ObjectType::table, database::"Standard Service Item Gr. Code", 'OnBeforeInsertServiceLines', '', false, false)]
     local procedure OnBeforeInsertServiceLines(ServItemLine: Record "Service Item Line"; var IsHandled: Boolean)
     var
         ServiceHeader: Record "Service Header";

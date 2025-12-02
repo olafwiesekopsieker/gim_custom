@@ -593,6 +593,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control no - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1519893570 - Control 1817760606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2SalesHeaderAPI - Control OrderDate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1519893570 - Control 284829013 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Quote No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
