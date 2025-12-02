@@ -69,6 +69,10 @@ page 80011 gim2SalesHeaderAPI
                 {
                     caption = 'Sell-to Country';
                 }
+                field("OrderDate"; Rec."Order Date")
+                {
+                    Caption = 'Order Date';
+                }
 
             }
         }
