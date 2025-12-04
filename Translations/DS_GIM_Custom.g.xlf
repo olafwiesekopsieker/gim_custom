@@ -1988,6 +1988,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrderSubform - Control Status (etagis) - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3440199191 - Control 1442201679 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1399627168">
+          <source>lief. an E-Mail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceItemCard2 - Control Ship-to E-Mail - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 253740477 - Control 2149028864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2485541542">
           <source>Standort</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2007,6 +2012,11 @@
           <source>Lief. An Kontakt</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceItemList2 - Control Ship-to Contact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 253740477 - Control 1442201679 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2485541542">
+          <source>Lief. An E-Mail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceItemList2 - Control Ship-to E-Mail - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 253740477 - Control 2743501653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2485541542">
           <source>Lief. An Name</source>

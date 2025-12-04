@@ -39,6 +39,11 @@ pageextension 80017 gimServiceItemList2 extends "Service Item List"
                 caption = 'Lief. An Telefonnr.';
                 ApplicationArea = All;
             }
+            field("Ship-to E-Mail"; Rec."Ship-to E-Mail")
+            {
+                caption = 'Lief. An E-Mail';
+                ApplicationArea = All;
+            }
             field("Location of Service Item"; Rec."Location of Service Item")
             {
                 caption = 'Standort';

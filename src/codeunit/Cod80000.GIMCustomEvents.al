@@ -98,6 +98,27 @@ codeunit 80000 "GIM Custom Events"
             end;
     end;
 
+    [EventSubscriber(ObjectType::report, Report::"Create Contract Service Orders", 'OnBeforeInsertServiceItemLine', '', false, false)]
+    local procedure OnBeforeInsertServiceItemLine(var ServiceItemLine: Record "Service Item Line"; ServiceHeader: Record "Service Header"; ServiceContractHeader: Record "Service Contract Header"; ServiceContractLine: Record "Service Contract Line")
+    begin
+        If ServiceHeader.get(ServiceItemLine."Document Type", ServiceItemline."Document No.") then
+            If ServiceHeader."Contract No." <> '' THEN begin
+                Serviceheader."Link Service to Service Item" := true;
+                ServiceHeader.modify(false);
+            end;
+    end;
+
+    [EventSubscriber(ObjectType::report, Report::"Create Contract Service Orders", 'OnBeforeFindServiceItemLineOnCreateServiceHeader', '', false, false)]
+    local procedure OnBeforeFindServiceItemLineOnCreateServiceHeader(var ServiceItemLine: Record "Service Item Line"; ServiceHeader: Record "Service Header"; ServiceContractHeader: Record "Service Contract Header"; ServiceContractLine: Record "Service Contract Line")
+    begin
+
+
+        Serviceheader."Link Service to Service Item" := true;
+        ServiceHeader.modify(false);
+
+    end;
+
+
 
 
 }

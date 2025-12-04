@@ -122,7 +122,7 @@ page 80001 GIM_DatabaseTools
             action(CoSFillOrderno)
             {
                 ApplicationArea = All;
-                Caption = 'Gelangenbestätigung Auftragsnr. füllen';
+                Caption = 'Gelangenbestätigung Daten reparieren';
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
@@ -131,12 +131,13 @@ page 80001 GIM_DatabaseTools
                 trigger OnAction()
                 var
                     COSFill: Codeunit gimCoSFillMgt;
-
                 begin
                     if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
 
-                        CosFill.FillOrderNo();
-                        //cosFill.BackfillInvoiceNoFromShipment();
+
+                        CosFill.ResetSuspiciousInvoiceNos();
+                        CosFill.BackfillOrderNo();
+                        CosFill.BackfillInvoiceNo();
 
                         message('job erledigt');
 
@@ -145,31 +146,31 @@ page 80001 GIM_DatabaseTools
                 end;
             }
 
-            action(CoSFillInvoiceNo)
-            {
-                ApplicationArea = All;
-                Caption = 'Gelangenbestätigung Rechnungsnr. füllen';
-                Promoted = true;
-                PromotedCategory = Process;
-                PromotedIsBig = true;
-                Image = ResetStatus;
+            // action(CoSFillInvoiceNo)
+            // {
+            //     ApplicationArea = All;
+            //     Caption = 'Gelangenbestätigung Rechnungsnr. füllen';
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     Image = ResetStatus;
 
-                trigger OnAction()
-                var
-                    COSFill: Codeunit gimCoSFillMgt;
+            //     trigger OnAction()
+            //     var
+            //         COSFill: Codeunit gimCoSFillMgt;
 
-                begin
-                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+            //     begin
+            //         if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
 
-                        //CosFill.FillOrderNo();
-                        cosFill.BackfillInvoiceNoFromShipment();
+            //             //CosFill.FillOrderNo();
+            //             cosFill.BackfillInvoiceNoFromShipment();
 
-                        message('job erledigt');
+            //             message('job erledigt');
 
-                    end;
+            //         end;
 
-                end;
-            }
+            //     end;
+            // }
 
             action(DeactivateAllJobQueueEntries)
             {

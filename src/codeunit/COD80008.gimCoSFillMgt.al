@@ -37,87 +37,95 @@ codeunit 80008 "gimCoSFillMgt"
 
     end;
 
-    Procedure FillOrderNo()
-    var
-        CoS: record "Certificate of Supply";
-        Cos2: record "Certificate of Supply";
-        SalesShipmentHeader: record "Sales Shipment Header";
-        ServiceShipmentHeader: record "Service Shipment Header";
-    begin
-        Cos.Setrange(Cos.gimAuftragsnummer, '');
-        IF CoS.FINDSET() THEN
-            repeat
-                Cos2 := cos;
-                case Cos."Document Type" of
-                    cos."Document Type"::"Sales Shipment":
-                        begin
-
-                            if SalesShipmentHeader.get(Cos."Document No.") then begin
-                                Cos2.gimAuftragsnummer := salesshipmentHeader."Order No.";
-                                Cos2.modify;
-                                commit;
-                            end;
-
-                        END;
-
-                    cos."Document Type"::"Service Shipment":
-                        begin
-
-                            if ServiceShipmentHeader.get(Cos."Document No.") then begin
-                                Cos2.gimAuftragsnummer := ServiceshipmentHeader."Order No.";
-                                Cos2.modify;
-                                commit;
-                            end;
-
-                        END;
-                end;
-            until Cos.next = 0;
-
-    end;
-
-    procedure BackfillInvoiceNoFromShipment()
+    // =========================================================
+    // 5) BACKFILL: Auftragsnummer nachziehen (Bestand)
+    // =========================================================
+    procedure BackfillOrderNo()
     var
         CoS: Record "Certificate of Supply";
-        Cos2: Record "Certificate of Supply";
-        SalesInvLine: Record "Sales Invoice Line";
-        ServInvHeader: Record "Service Invoice Header";
+        SalesShipmentHeader: Record "Sales Shipment Header";
+        ServiceShipmentHeader: Record "Service Shipment Header";
     begin
-        cos.setRANGE("Geb. Rechnungsnr.", '');
+        CoS.Reset();
+        CoS.SetRange("gimAuftragsnummer", '');
         if CoS.FindSet() then
             repeat
-                // if CoS."Geb. Rechnungsnr." <> '' then
-                //     continue;
-                cos2 := Cos;
                 case CoS."Document Type" of
                     CoS."Document Type"::"Sales Shipment":
-                        begin
-                            SalesInvLine.Reset();
-                            SalesInvLine.SetRange("Order No.", CoS."gimAuftragsnummer");
-                            SalesInvLine.SetCurrentKey("Posting Date", "Document No.", "Line No.");
-                            SalesInvLine.SetAscending("Posting Date", false); // jüngste Rechnung zuerst
-                            if SalesInvLine.FindFirst() then begin
-                                CoS2.Validate("Geb. Rechnungsnr.", SalesInvLine."Document No.");
-                                CoS2.Modify(true); // triggert UpdateDerivedFields()
-                            end else begin
-                                CoS2.Validate("Geb. Rechnungsnr.", '');
-                                CoS2.Modify(true); // triggert UpdateDerivedFields()
-                            end;
+                        if SalesShipmentHeader.Get(CoS."Document No.") then begin
+                            CoS.Validate("gimAuftragsnummer", SalesShipmentHeader."Order No.");
+                            CoS.Modify(true);
                         end;
 
                     CoS."Document Type"::"Service Shipment":
+                        if ServiceShipmentHeader.Get(CoS."Document No.") then begin
+                            CoS.Validate("gimAuftragsnummer", ServiceShipmentHeader."Order No.");
+                            CoS.Modify(true);
+                        end;
+                end;
+            until CoS.Next() = 0;
+    end;
+
+
+    // =========================================================
+    // 6) BACKFILL: Gebuchte Rechnungsnr. nachziehen (Bestand)
+    // =========================================================
+    procedure BackfillInvoiceNo()
+    var
+        CoS: Record "Certificate of Supply";
+        CoS2: Record "Certificate of Supply";
+        SalesInvLine: Record "Sales Invoice Line";
+        ServInvHeader: Record "Service Invoice Header";
+    begin
+        CoS.Reset();
+        CoS.SetRange("Geb. Rechnungsnr.", '');
+        if CoS.FindSet() then
+            repeat
+                CoS2 := CoS;
+
+                case CoS."Document Type" of
+                    // SALES SHIPMENT → nach Shipment No. suchen
+                    CoS."Document Type"::"Sales Shipment":
                         begin
-                            ServInvHeader.Reset();
-                            ServInvHeader.SetRange("Order No.", CoS."gimAuftragsnummer");
-                            if ServInvHeader.FindFirst() then begin
-                                CoS.Validate("Geb. Rechnungsnr.", ServInvHeader."No.");
+                            SalesInvLine.Reset();
+                            SalesInvLine.SetRange("Shipment No.", CoS2."Document No.");
+                            SalesInvLine.SetCurrentKey("Posting Date", "Document No.", "Line No.");
+                            SalesInvLine.SetAscending("Posting Date", false); // jüngste Rechnung zuerst
+
+                            if SalesInvLine.FindFirst() then begin
+                                CoS2.Validate("Geb. Rechnungsnr.", SalesInvLine."Document No.");
                                 CoS2.Modify(true);
-                            end else begin
-                                CoS.Validate("Geb. Rechnungsnr.", '');
-                                CoS2.Modify(true); // triggert UpdateDerivedFields()
+                            end;
+                        end;
+
+                    // SERVICE SHIPMENT → wie gehabt über Order No. (oder analog umbauen)
+                    CoS."Document Type"::"Service Shipment":
+                        begin
+                            if CoS2."gimAuftragsnummer" = '' then
+                                continue;
+
+                            ServInvHeader.Reset();
+                            ServInvHeader.SetRange("Order No.", CoS2."gimAuftragsnummer");
+                            if ServInvHeader.FindFirst() then begin
+                                CoS2.Validate("Geb. Rechnungsnr.", ServInvHeader."No.");
+                                CoS2.Modify(true);
                             end;
                         end;
                 end;
-            //commit;
+            until CoS.Next() = 0;
+    end;
+
+    procedure ResetSuspiciousInvoiceNos()
+    var
+        CoS: Record "Certificate of Supply";
+    begin
+        CoS.Reset();
+        CoS.SetRange("gimAuftragsnummer", '');
+        CoS.SetFilter("Geb. Rechnungsnr.", '<>%1', '');
+        if CoS.FindSet() then
+            repeat
+                CoS.Validate("Geb. Rechnungsnr.", ''); // oder direkt: CoS."Geb. Rechnungsnr." := '';
+                CoS.Modify(true);
             until CoS.Next() = 0;
     end;
 
