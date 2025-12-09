@@ -1,206 +1,166 @@
-/// <summary>
-/// Codeunit gimDownloadImageToItem (ID 50016).
-/// </summary>
-codeunit 80001 gim2DownloadImageToItem
+codeunit 80001 "gim2DownloadImageToItem"
 {
-
-
     trigger OnRun()
     var
-        item: record item;
+        Item: Record Item;
+        ErrorText: Text;
+        ProcessedCount: Integer;
+        ErrorCount: Integer;
     begin
-        //item.Setrange(Katalog, true);
-        item.SETFILTER("Gen. Prod. Posting Group", '%1|%2', 'FERTIGWA19', 'HANDELWA19');
-        if item.FindSet() then
+        // Filter: nur die gewünschten Artikel
+        Item.SetFilter("Gen. Prod. Posting Group", '%1|%2', 'FERTIGWA19', 'HANDELWA19');
+
+        if Item.FindSet() then
             repeat
-                getItemMetadata(item."No.");
-            until item.Next() = 0;
+                ProcessedCount += 1;
+
+                if not GetItemMetadataSafe(Item."No.", ErrorText) then begin
+                    ErrorCount += 1;
+                    LogItemError(Item."No.", ErrorText);
+                end;
+            until Item.Next() = 0;
+
+        // Wenn du willst, kannst du hier noch eine Message ausgeben,
+        // aber bei Job Queue eher NICHT:
+        // Message('Fertig. Artikel: %1, Fehler: %2.', ProcessedCount, ErrorCount);
     end;
 
-    /// <summary>
-    /// ImportItemPictureFromURL.
-    /// </summary>
-    /// <param name="ItemNo">code[30].</param>
-    /// <param name="PictureURL">text.</param>
-    procedure ImportItemPictureFromURL(ItemNo: code[30]; PictureURL: text)
+    // ==================================================================
+    //  BILDER – HARTE VERSION
+    // ==================================================================
+
+    /// Öffentliche, fehlertolerante Hülle. Bricht die Schleife nicht ab.
+    procedure GetItemMetadataSafe(ItemNo: Code[30]; var ErrorText: Text): Boolean
+    begin
+        ErrorText := '';
+
+        if GetItemMetadataInternal(ItemNo) then
+            exit(true);
+
+        ErrorText := GetLastErrorText();
+        exit(false);
+    end;
+
+    /// TryFunction: Fehler hier drin werden nicht propagiert, sondern via GetLastErrorText abgeholt.
+    [TryFunction]
+    local procedure GetItemMetadataInternal(ItemNo: Code[30])
+    var
+        PictureUrl: Text;
+    begin
+        // Aktuell: Direktes Bild aus PIM, ohne JSON
+        PictureUrl := 'https://pim.dueperthal.com/showMainImage/%1';
+        PictureUrl := StrSubstNo(PictureUrl, ItemNo);
+
+        ImportItemPictureFromURL(ItemNo, PictureUrl);
+    end;
+
+    /// Bild von URL holen, sauber prüfen, ins Artikelbild schreiben.
+    procedure ImportItemPictureFromURL(ItemNo: Code[30]; PictureURL: Text)
     var
         Item: Record Item;
         Client: HttpClient;
-        Content: HttpContent;
         Response: HttpResponseMessage;
         InStr: InStream;
     begin
-        Client.Get(PictureURL, Response);
-        if response.IsSuccessStatusCode then begin
-            Response.Content.ReadAs(InStr);
-            if Item.Get(ItemNo) then begin
-                Clear(Item.Picture);
-                Item.Picture.ImportStream(InStr, 'Demo picture for item ' + Format(Item."No."));
-                Item.Modify(true);
-            end;
-        end;
+        if (ItemNo = '') or (PictureURL = '') then
+            error('Ungültige Parameter für ImportItemPictureFromURL. ItemNo=%1, URL=%2', ItemNo, PictureURL);
+
+        // HTTP-Request
+        if not Client.Get(PictureURL, Response) then
+            error('Bild-Download für Artikel %1 fehlgeschlagen. Die URL konnte nicht aufgerufen werden: %2',
+                  ItemNo, PictureURL);
+
+        // HTTP-Status prüfen
+        if not Response.IsSuccessStatusCode() then
+            error('Bild-Download für Artikel %1 fehlgeschlagen. HTTP-Status: %2. URL: %3',
+                  ItemNo, Response.HttpStatusCode(), PictureURL);
+
+        // Inhalt in Stream lesen
+        Response.Content.ReadAs(InStr);
+
+        if not Item.Get(ItemNo) then
+            error('Artikel %1 für Bild-Download nicht gefunden.', ItemNo);
+
+        Clear(Item.Picture);
+        Item.Picture.ImportStream(InStr, 'Bild für Artikel ' + Item."No.");
+        Item.Modify(true);
     end;
 
-    /// <summary>
-    /// ExportPDF.
-    /// </summary>
-    /// <param name="ItemNo">Code[30].</param>
+    // ==================================================================
+    //  PDF-Teil (so wie bei dir, nur leicht gestrafft & gehärtet)
+    // ==================================================================
+
     procedure ExportPDF(ItemNo: Code[30])
     var
-
-        Item: record Item;
-        TenantMedia: record "Tenant Media";
-        Ins: instream;
-        Filename: text;
+        Item: Record Item;
+        TenantMedia: Record "Tenant Media";
+        Ins: InStream;
+        Filename: Text;
     begin
-        if Item.Get(ItemNo) then begin
+        if not Item.Get(ItemNo) then
+            exit;
 
-            IF TenantMedia.get(item.gimTechDatasheet.Item(1)) then begin
-                TenantMedia.calcfields(Content);
-                if tenantMedia.content.hasValue then begin
-                    filename := 'TechDatasheet ' + ItemNo + '.PDF';
-                    tenantMedia.content.CreateinStream(Ins);
-                    DownloadFromStream(Ins, '', '', '', Filename);
-                end;
+        if Item.gimTechDatasheet.Count = 0 then
+            exit;
+
+        if TenantMedia.Get(Item.gimTechDatasheet.Item(1)) then begin
+            TenantMedia.CalcFields(Content);
+            if TenantMedia.Content.HasValue then begin
+                Filename := 'TechDatasheet ' + ItemNo + '.pdf';
+                TenantMedia.Content.CreateInStream(Ins);
+                DownloadFromStream(Ins, '', '', '', Filename);
             end;
-        END;
+        end;
     end;
 
-    /// <summary>
-    /// ImportPDFFromURL.
-    /// </summary>
-    /// <param name="ItemNo">code[30].</param>
-    /// <param name="Languagecode">code[10].</param>
-    /// <param name="PDFType">integer.</param>  0: Text; 1: Table
-
-    procedure ImportPDFFromURL(ItemNo: code[30]; Languagecode: text[10]; PDFType: integer)
+    procedure ImportPDFFromURL(ItemNo: Code[30]; LanguageCode: Text[10]; PDFType: Integer)
     var
         Item: Record Item;
         Client: HttpClient;
-        // Content: HttpContent;
-        PDFURL: text;
+        PDFURL: Text;
         Response: HttpResponseMessage;
         InStr: InStream;
     begin
-        if Languagecode = '' then BEGIN
-            // PDFURL := 'https://shop.dueperthal.com/dataSheetGenerator/generate/orderNo/%1/type/%2';
+        if LanguageCode = '' then begin
             PDFURL := 'https://pim.dueperthal.com/downloadDatasheet/%1';
-            PDFURL := StrSubstNo(PDFURL, ItemNo, PDFType);
-        END else BEGIN
-            //PDFURL := 'https://shop.dueperthal.com/%1/dataSheetGenerator/generate/orderNo/%2/type/%3';
+            PDFURL := StrSubstNo(PDFURL, ItemNo);
+        end else begin
             PDFURL := 'https://pim.dueperthal.com/downloadDatasheet/%1?lang=%2';
-            PDFURL := StrSubstNo(PDFURL, ItemNo, lowercase(LanguageCode), PDFType);
-        END;
-        Client.Get(PDFURL, Response);
+            PDFURL := StrSubstNo(PDFURL, ItemNo, LowerCase(LanguageCode));
+        end;
+
+        if not Client.Get(PDFURL, Response) then
+            error('Datenblatt-Download für Artikel %1 fehlgeschlagen. URL nicht erreichbar: %2', ItemNo, PDFURL);
+
+        if not Response.IsSuccessStatusCode() then
+            error('Datenblatt-Download für Artikel %1 fehlgeschlagen. HTTP-Status: %2. URL: %3',
+                  ItemNo, Response.HttpStatusCode(), PDFURL);
+
         Response.Content.ReadAs(InStr);
-        if Item.Get(ItemNo) then begin
-            Clear(Item.gimTechDatasheet);
-            Item.gimTechDatasheet.ImportStream(InStr, 'Technisches Datenblatt ' + Format(Item."No."), 'application/pdf');
-            Item.Modify(true);
-        end;
+
+        if not Item.Get(ItemNo) then
+            error('Artikel %1 für Datenblattimport nicht gefunden.', ItemNo);
+
+        Clear(Item.gimTechDatasheet);
+        Item.gimTechDatasheet.ImportStream(
+            InStr,
+            'Technisches Datenblatt ' + Format(Item."No."),
+            'application/pdf');
+        Item.Modify(true);
     end;
 
-    /// <summary>
-    /// getItemMetadata.
-    /// </summary>
-    /// <param name="ItemNo">code[30].</param>
-    procedure getItemMetadata(ItemNo: code[30])
-    var
-        Item: record Item;
+    // ==================================================================
+    //  Logging-Helfer
+    // ==================================================================
 
-        InStr: instream;
-        strAccept: text;
-        strFTAPIToken: text;
-        strURL: text;
-        txtContent: text;
-        strImageURL: Text;
+    local procedure LogItemError(ItemNo: Code[30]; ErrorText: Text)
     begin
-        // strAccept:= 'application/vnd.fotoware.assetlist+json';
-        // strFTAPIToken:= 'Ybgef3it3$^xyUgj>WwY';
-        //strURL := 'https://dueperthal.fotoware.cloud/fotoweb/archives/5023-Products/?q=%1&812=ja&811=ja';  //%1=Artikelnummer
-        strURL := 'https://pim.dueperthal.com/showMainImage/%1';
-        strURL := StrSubstNo(strURL, ItemNo);
-        //getResultFromAPI(strURL, txtContent);
-        // message(txtcontent);
-        //strImageURL := getImageURL(txtContent);
-        //if strImageURL <> 'NOIMAGE' then
-        ImportItemPictureFromURL(ItemNo, strURL);
+        Session.LogMessage(
+            'gimIMGERR',
+            StrSubstNo('Fehler beim Verarbeiten von Artikel %1: %2', ItemNo, ErrorText),
+            Verbosity::Warning,
+            DataClassification::SystemMetadata,
+            TelemetryScope::ExtensionPublisher,
+            'ItemNo', ItemNo);
     end;
-
-    /// <summary>
-    /// getResultFromAPI.
-    /// </summary>
-    /// <param name="strAPIURI">Text.</param>
-    /// <param name="txtContent">VAR text.</param>
-    procedure getResultFromAPI(strAPIURI: Text; var txtContent: text)
-    var
-        RequestMessage: HttpRequestMessage;
-        Headers: HttpHeaders;
-        Client: HttpClient;
-        Response: HttpResponseMessage;
-        base64Convert: Codeunit "Base64 Convert";
-        AuthenticationString: Text;
-        strAccept: text;
-        strFWAPIToken: text;
-    begin
-        begin
-            strAccept := 'application/vnd.fotoware.assetlist+json';
-            strFWAPIToken := 'Ybgef3it3$^xyUgj>WwY';
-            // strAPIURI := 'http://svswb0dynamics1.swb.local:14504/BC14_RESTAPI/ODataV4/Company(''Heinz%20Schwarz%20GmbH%20%26%20Co%20KG'')/SWBProjekte/?$filter= No eq ''20-0528''';
-            RequestMessage.GetHeaders(Headers);
-            // AuthenticationString := StrSubstNo('%1:%2', 'swb\ow', 'MbL3p7KCr5MnQykeouvL+qmEQJLDtAeR/l+EG2XohXo='); //BC_Schwarz
-            Headers.Add('Accept', strAccept);
-            Headers.Add('FWAPIToken', strFWAPIToken);
-
-
-            //StrSubstNo('Basic %1', base64Convert.ToBase64(AuthenticationString)));
-            RequestMessage.Method('GET');
-            RequestMessage.SetRequestUri(strAPIURI);
-
-            client.Send(RequestMessage, Response);
-
-            IF Response.IsSuccessStatusCode then BEGIN
-                response.Content().ReadAs(txtContent);
-            END else BEGIN
-                error('Statuscode %1', Response.HttpStatusCode);
-            END;
-        end;
-    end;
-
-    Procedure getImageURL(strContent: text) ret: text
-    var
-        JObject: JsonObject;
-        JToken: JsonToken;
-        JArray: JsonArray;
-
-        i: integer;
-
-        strAPIURIProjekte: text;
-        Projekt: record job;
-    BEGIN
-        //getData
-
-
-        //Iterate Data
-        JObject.ReadFrom(strcontent);
-        Jobject.get('data', JToken);
-        JArray := jtoken.asArray();
-
-        if jarray.Count = 0 then begin
-            ret := 'NOIMAGE';
-            exit;
-        end;
-
-        jarray.Get(0, JToken);
-        JObject := JToken.AsObject();
-        JObject.get('previews', JToken);
-        JArray := JToken.asArray();
-
-        jarray.get(0, JToken);
-        jObject := Jtoken.asObject();
-        jobject.get('href', Jtoken);
-        ret := Jtoken.AsValue().AsText();
-        ret := StrSubstNo('https://dueperthal.fotoware.cloud%1', ret); ///fotoweb/cache/v2/0/r/Folder%20101/29-200667-0xxL_CLASSIC_M_cl_nL.tif.nyflxfvjMd1hSbFjQA0A.XBfp0NMK_s.jpg'
-    end;
-
 }

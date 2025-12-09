@@ -118,6 +118,30 @@ codeunit 80000 "GIM Custom Events"
 
     end;
 
+    local procedure GetDuperthalServiceSetup(var DuperthalSetup: Record "gimDuperthal Service Setup"): Boolean
+    begin
+        exit(DuperthalSetup.Get('SETUP'));
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Service Contract Header", 'OnBeforeInsertEvent', '', false, false)]
+    local procedure ServiceContractHeaderOnBeforeInsert(var Rec: Record "Service Contract Header"; RunTrigger: Boolean)
+    var
+        DuperthalSetup: Record "gimDuperthal Service Setup";
+    begin
+        // Wenn keine Einrichtung -> einfach nichts machen (oder hier hart mit Error abbrechen, wenn gewünscht)
+        if not GetDuperthalServiceSetup(DuperthalSetup) then
+            exit;
+
+        // Nur leere Felder vorbelegen, damit wir nichts überschreiben
+        if Rec."Montage/h" = 0 then
+            Rec."Montage/h" := DuperthalSetup."Montage/h";
+
+        if Rec."Fahrt/h" = 0 then
+            Rec."Fahrt/h" := DuperthalSetup."Fahrt/h";
+
+        if Rec."Fahrt/km" = 0 then
+            Rec."Fahrt/km" := DuperthalSetup."Fahrt/km";
+    end;
 
 
 

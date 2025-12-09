@@ -28,8 +28,10 @@ pageextension 80013 gimItemCard2 extends "Item Card"
                 trigger onaction()
                 var
                     PictureDownload: codeunit gim2DownloadImageToItem;
+                    ErrorText: Text;
                 begin
-                    PictureDownload.getItemMetadata(rec."No.");
+                    PictureDownload.getItemMetadatasafe(rec."No.", Errortext);
+                    if ErrorText <> '' then Message(Errortext);
                     CurrPage.Update(false);
                 end;
             }
