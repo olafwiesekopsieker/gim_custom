@@ -119,7 +119,29 @@ tableextension 80002 CertificateOfSupplyExt extends "Certificate of Supply"
         FillMgt.FillFromSources(Rec);
     end;
 
+    procedure InitFromService(var ServiceShipmentHeader: Record "Service Shipment Header")
+    begin
+        // Nur anlegen, wenn noch kein CoS zu dieser Servicelieferung existiert
+        if not Get("Document Type"::"Service Shipment", ServiceShipmentHeader."No.") then begin
+            Init();
+            "Document Type" := "Document Type"::"Service Shipment";
+            "Document No." := ServiceShipmentHeader."No.";
 
+            // Analoge Befüllung wie InitFromSales
+            "Customer/Vendor Name" := ServiceShipmentHeader."Ship-to Name";
+            "Shipment Method Code" := ServiceShipmentHeader."Shipment Method Code";
 
+            // Je nach Tabellen-Design: Posting- oder Shipment-Datum
+            "Shipment/Posting Date" := ServiceShipmentHeader."Posting Date";
+
+            "Ship-to Country/Region Code" := ServiceShipmentHeader."Ship-to Country/Region Code";
+
+            // Analog zu Sales: Bill-to als Kunde/Vendor
+            "Customer/Vendor No." := ServiceShipmentHeader."Bill-to Customer No.";
+
+            //OnAfterInitFromService(Rec, ServiceShipmentHeader);
+            Insert(true);
+        end;
+    end;
 
 }

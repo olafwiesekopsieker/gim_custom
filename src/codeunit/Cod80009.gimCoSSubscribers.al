@@ -1,80 +1,62 @@
 codeunit 80009 "gimCoSSubscribers"
 {
-    // Management für Certificate of Supply:
-    // - Sales/Service Shipment (Nicht-EU): CoS beim Buchen erzwingen
-    // - Sales/Service Shipment (EU): CoS kommt aus Standard/anderer Logik
-    // - Immer: Auftragsnr. & Zusatzfelder bei CoS-Insert
-    // - Immer: Geb. Rechnungsnr. bei Rechnungszeilen
-    // - Backfill für Altbestand
-
     // =========================================================
-    // 1) SALES SHIPMENT: CoS nur für Nicht-EU erzwingen
+    // 1) SALES SHIPMENT → CoS erzeugen (für Nicht-EU)
+    //    EU-Fälle werden vom Standard angelegt – wir hooken nur an.
     // =========================================================
     [EventSubscriber(ObjectType::Table, Database::"Sales Shipment Header", 'OnAfterInsertEvent', '', true, true)]
-    local procedure CreateCoSOnSalesShipmentInsert(var Rec: Record "Sales Shipment Header"; RunTrigger: Boolean)
+    local procedure CreateCoSFromSalesShipment(var Rec: Record "Sales Shipment Header"; RunTrigger: Boolean)
     var
         CoS: Record "Certificate of Supply";
         CountryRegion: Record "Country/Region";
         ShipToCountry: Code[10];
     begin
-        // EU-Erkennung
+        // EU-Erkennung (Sales)
         ShipToCountry := Rec."Ship-to Country/Region Code";
         if ShipToCountry = '' then
             ShipToCountry := Rec."Bill-to Country/Region Code";
 
         if (ShipToCountry <> '') and CountryRegion.Get(ShipToCountry) then
             if CountryRegion."EU Country/Region Code" <> '' then
-                exit; // EU: Standard/andere Logik erzeugt CoS → hier nichts anlegen
+                exit; // EU-Fälle macht der Standard → danach wird OnAfterInsert(T780) ausgeführt
 
-        // Nur Nicht-EU: eigenen CoS anlegen, falls keiner existiert
-        CoS.Reset();
-        CoS.SetRange("Document Type", CoS."Document Type"::"Sales Shipment");
-        CoS.SetRange("Document No.", Rec."No.");
-        if CoS.FindFirst() then
-            exit; // es gibt schon einen
-
-        CoS.Init();
-        CoS."Document Type" := CoS."Document Type"::"Sales Shipment";
-        CoS."Document No." := Rec."No.";
-        CoS.Insert(true); // OnAfterInsert(T780) übernimmt Auftragsnr. & Zusatzfelder
+        // Nicht-EU → CoS per Standard-Funktion erzeugen
+        CoS.InitFromSales(Rec);
     end;
 
 
+
     // =========================================================
-    // 2) SERVICE SHIPMENT: CoS nur für Nicht-EU erzwingen
+    // 2) SERVICE SHIPMENT → CoS erzeugen (für Nicht-EU)
+    //    EU-Fälle übernimmt euer System bereits → kein doppeltes Anlegen.
     // =========================================================
     [EventSubscriber(ObjectType::Table, Database::"Service Shipment Header", 'OnAfterInsertEvent', '', true, true)]
-    local procedure CreateCoSOnServiceShipmentInsert(var Rec: Record "Service Shipment Header"; RunTrigger: Boolean)
+    local procedure CreateCoSFromServiceShipment(var Rec: Record "Service Shipment Header"; RunTrigger: Boolean)
     var
         CoS: Record "Certificate of Supply";
         CountryRegion: Record "Country/Region";
         ShipToCountry: Code[10];
     begin
-        // EU-Erkennung
+        // EU-Erkennung (Service)
         ShipToCountry := Rec."Ship-to Country/Region Code";
         if ShipToCountry = '' then
             ShipToCountry := Rec."Bill-to Country/Region Code";
 
         if (ShipToCountry <> '') and CountryRegion.Get(ShipToCountry) then
             if CountryRegion."EU Country/Region Code" <> '' then
-                exit; // EU: CoS kommt aus Standard/anderer Logik
+                exit; // EU → bereits im System erzeugt
 
-        // Nur Nicht-EU: eigenen CoS anlegen, falls keiner existiert
-        CoS.Reset();
-        CoS.SetRange("Document Type", CoS."Document Type"::"Service Shipment");
-        CoS.SetRange("Document No.", Rec."No.");
-        if CoS.FindFirst() then
-            exit;
-
-        CoS.Init();
-        CoS."Document Type" := CoS."Document Type"::"Service Shipment";
-        CoS."Document No." := Rec."No.";
-        CoS.Insert(true); // OnAfterInsert(T780) macht den Rest
+        // Nicht-EU → eigene Init-Funktion
+        CoS.InitFromService(Rec);
     end;
 
+
+
     // =========================================================
-    // 3) CoS-INSERT: Auftragsnr. + Zusatzfelder IMMER nachziehen
-    //    (Standard + Erweiterung, EU + Nicht-EU)
+    // 3) CoS AFTER INSERT (SALES + SERVICE)
+    //    → Auftragsnummer
+    //    → Verkäufer / Versand durch DÜSI (via gimCoSFillMgt)
+    //    (gilt für EU & Nicht-EU)
     // =========================================================
     [EventSubscriber(ObjectType::Table, Database::"Certificate of Supply", 'OnAfterInsertEvent', '', true, true)]
     local procedure CoS_OnAfterInsert(var Rec: Record "Certificate of Supply"; RunTrigger: Boolean)
@@ -84,38 +66,36 @@ codeunit 80009 "gimCoSSubscribers"
         CoSFillMgt: Codeunit "gimCoSFillMgt";
     begin
         case Rec."Document Type" of
-            Rec."Document Type"::"Sales Shipment":
-                begin
-                    if SalesShp.Get(Rec."Document No.") then begin
-                        if Rec."gimAuftragsnummer" = '' then
-                            Rec.Validate("gimAuftragsnummer", SalesShp."Order No.");
 
-                        // Verkäufer, Versand durch DÜSI etc.
-                        CoSFillMgt.FillFromSources(Rec);
-                        Rec.Modify(true);
-                    end;
+            Rec."Document Type"::"Sales Shipment":
+                if SalesShp.Get(Rec."Document No.") then begin
+                    if Rec."gimAuftragsnummer" = '' then
+                        Rec.Validate("gimAuftragsnummer", SalesShp."Order No.");
+
+                    CoSFillMgt.FillFromSources(Rec);
+                    Rec.Modify(true);
                 end;
 
             Rec."Document Type"::"Service Shipment":
-                begin
-                    if ServShp.Get(Rec."Document No.") then begin
-                        if Rec."gimAuftragsnummer" = '' then
-                            Rec.Validate("gimAuftragsnummer", ServShp."Order No.");
+                if ServShp.Get(Rec."Document No.") then begin
+                    if Rec."gimAuftragsnummer" = '' then
+                        Rec.Validate("gimAuftragsnummer", ServShp."Order No.");
 
-                        CoSFillMgt.FillFromSources(Rec);
-                        Rec.Modify(true);
-                    end;
+                    CoSFillMgt.FillFromSources(Rec);
+                    Rec.Modify(true);
                 end;
         end;
     end;
 
 
+
     // =========================================================
-    // 4) RECHNUNG: Geb. Rechnungsnr. beim Buchen setzen
-    //    (Sales Invoice Line / Service Invoice Line, EU + Nicht-EU)
+    // 4) RECHNUNGEN (SALES + SERVICE)
+    //    Geb. Rechnungsnr. anhand Shipment No. setzen
     // =========================================================
+
     [EventSubscriber(ObjectType::Table, Database::"Sales Invoice Line", 'OnAfterInsertEvent', '', true, true)]
-    local procedure SalesInvLine_OnAfterInsert(var Rec: Record "Sales Invoice Line"; RunTrigger: Boolean)
+    local procedure SalesInvoiceLine_OnAfterInsert(var Rec: Record "Sales Invoice Line"; RunTrigger: Boolean)
     var
         CoS: Record "Certificate of Supply";
     begin
@@ -136,7 +116,7 @@ codeunit 80009 "gimCoSSubscribers"
 
 
     [EventSubscriber(ObjectType::Table, Database::"Service Invoice Line", 'OnAfterInsertEvent', '', true, true)]
-    local procedure ServInvLine_OnAfterInsert(var Rec: Record "Service Invoice Line"; RunTrigger: Boolean)
+    local procedure ServiceInvoiceLine_OnAfterInsert(var Rec: Record "Service Invoice Line"; RunTrigger: Boolean)
     var
         CoS: Record "Certificate of Supply";
     begin
@@ -154,6 +134,8 @@ codeunit 80009 "gimCoSSubscribers"
                 end;
             until CoS.Next() = 0;
     end;
+
+
 
 
 
