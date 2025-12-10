@@ -3,92 +3,105 @@ codeunit 80001 "gim2DownloadImageToItem"
     trigger OnRun()
     var
         Item: Record Item;
-        ErrorText: Text;
         ProcessedCount: Integer;
         ErrorCount: Integer;
+        ErrorText: Text;
+        Success: Boolean;
     begin
-        // Filter: nur die gewünschten Artikel
+        // Filter: nur relevante Artikel
         Item.SetFilter("Gen. Prod. Posting Group", '%1|%2', 'FERTIGWA19', 'HANDELWA19');
 
         if Item.FindSet() then
             repeat
                 ProcessedCount += 1;
 
-                if not GetItemMetadataSafe(Item."No.", ErrorText) then begin
+                Success := DownloadItemPictureSafe(Item."No.", ErrorText);
+
+                if not Success then begin
                     ErrorCount += 1;
                     LogItemError(Item."No.", ErrorText);
                 end;
             until Item.Next() = 0;
 
-        // Wenn du willst, kannst du hier noch eine Message ausgeben,
-        // aber bei Job Queue eher NICHT:
-        // Message('Fertig. Artikel: %1, Fehler: %2.', ProcessedCount, ErrorCount);
+        // Wenn du das über die Job Queue laufen lässt, lass die Message weg.
+        // Für einmalig direkt aus der Oberfläche starten kannst du sie zum Test aktivieren:
+        // Message('Bild-Download abgeschlossen. Artikel: %1, Fehler: %2.', ProcessedCount, ErrorCount);
     end;
 
-    // ==================================================================
-    //  BILDER – HARTE VERSION
-    // ==================================================================
+    // =========================================================
+    //  BILDER – KEINE error(), nur Rückgabewerte & Logging
+    // =========================================================
 
-    /// Öffentliche, fehlertolerante Hülle. Bricht die Schleife nicht ab.
-    procedure GetItemMetadataSafe(ItemNo: Code[30]; var ErrorText: Text): Boolean
-    begin
-        ErrorText := '';
-
-        if GetItemMetadataInternal(ItemNo) then
-            exit(true);
-
-        ErrorText := GetLastErrorText();
-        exit(false);
-    end;
-
-    /// TryFunction: Fehler hier drin werden nicht propagiert, sondern via GetLastErrorText abgeholt.
-    [TryFunction]
-    local procedure GetItemMetadataInternal(ItemNo: Code[30])
+    procedure DownloadItemPictureSafe(ItemNo: Code[30]; var ErrorText: Text): Boolean
     var
         PictureUrl: Text;
     begin
-        // Aktuell: Direktes Bild aus PIM, ohne JSON
+        ErrorText := '';
+
+        if ItemNo = '' then begin
+            ErrorText := 'Leere Artikelnummer.';
+            exit(false);
+        end;
+
         PictureUrl := 'https://pim.dueperthal.com/showMainImage/%1';
         PictureUrl := StrSubstNo(PictureUrl, ItemNo);
 
-        ImportItemPictureFromURL(ItemNo, PictureUrl);
+        exit(ImportItemPictureFromURLNoError(ItemNo, PictureUrl, ErrorText));
     end;
 
-    /// Bild von URL holen, sauber prüfen, ins Artikelbild schreiben.
-    procedure ImportItemPictureFromURL(ItemNo: Code[30]; PictureURL: Text)
+    /// Bild importieren, aber **niemals error() werfen**.
+    /// Stattdessen: false + ErrorText zurückgeben.
+    procedure ImportItemPictureFromURLNoError(ItemNo: Code[30]; PictureURL: Text; var ErrorText: Text): Boolean
     var
         Item: Record Item;
         Client: HttpClient;
         Response: HttpResponseMessage;
         InStr: InStream;
+        Ok: Boolean;
     begin
-        if (ItemNo = '') or (PictureURL = '') then
-            error('Ungültige Parameter für ImportItemPictureFromURL. ItemNo=%1, URL=%2', ItemNo, PictureURL);
+        ErrorText := '';
+
+        if (ItemNo = '') or (PictureURL = '') then begin
+            ErrorText := StrSubstNo('Ungültige Parameter. ItemNo=%1, URL=%2', ItemNo, PictureURL);
+            exit(false);
+        end;
 
         // HTTP-Request
-        if not Client.Get(PictureURL, Response) then
-            error('Bild-Download für Artikel %1 fehlgeschlagen. Die URL konnte nicht aufgerufen werden: %2',
-                  ItemNo, PictureURL);
+        Ok := Client.Get(PictureURL, Response);
+        if not Ok then begin
+            ErrorText := StrSubstNo(
+                'Bild-Download fehlgeschlagen. URL konnte nicht aufgerufen werden: %1',
+                PictureURL);
+            exit(false);
+        end;
 
         // HTTP-Status prüfen
-        if not Response.IsSuccessStatusCode() then
-            error('Bild-Download für Artikel %1 fehlgeschlagen. HTTP-Status: %2. URL: %3',
-                  ItemNo, Response.HttpStatusCode(), PictureURL);
+        if not Response.IsSuccessStatusCode() then begin
+            ErrorText := StrSubstNo(
+                'Bild-Download fehlgeschlagen. HTTP-Status: %1. URL: %2',
+                Response.HttpStatusCode(), PictureURL);
+            exit(false);
+        end;
 
         // Inhalt in Stream lesen
         Response.Content.ReadAs(InStr);
 
-        if not Item.Get(ItemNo) then
-            error('Artikel %1 für Bild-Download nicht gefunden.', ItemNo);
+        if not Item.Get(ItemNo) then begin
+            ErrorText := StrSubstNo('Artikel %1 nicht gefunden.', ItemNo);
+            exit(false);
+        end;
 
         Clear(Item.Picture);
         Item.Picture.ImportStream(InStr, 'Bild für Artikel ' + Item."No.");
         Item.Modify(true);
+
+        exit(true);
     end;
 
-    // ==================================================================
-    //  PDF-Teil (so wie bei dir, nur leicht gestrafft & gehärtet)
-    // ==================================================================
+    // =========================================================
+    //  PDF-Teil – unverändert / optional
+    //  (Wenn du hier auch „nicht crashen“ willst, machen wir das genauso)
+    // =========================================================
 
     procedure ExportPDF(ItemNo: Code[30])
     var
@@ -121,6 +134,7 @@ codeunit 80001 "gim2DownloadImageToItem"
         Response: HttpResponseMessage;
         InStr: InStream;
     begin
+        // Wenn du auch hier „nicht crashen“ willst → gleiche Strategie wie bei den Bildern
         if LanguageCode = '' then begin
             PDFURL := 'https://pim.dueperthal.com/downloadDatasheet/%1';
             PDFURL := StrSubstNo(PDFURL, ItemNo);
@@ -149,9 +163,9 @@ codeunit 80001 "gim2DownloadImageToItem"
         Item.Modify(true);
     end;
 
-    // ==================================================================
-    //  Logging-Helfer
-    // ==================================================================
+    // =========================================================
+    //  Logging-Helfer (nur Telemetrie, keine Ausnahme)
+    // =========================================================
 
     local procedure LogItemError(ItemNo: Code[30]; ErrorText: Text)
     begin

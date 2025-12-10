@@ -43,6 +43,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table gimDeliverySignature - Field Truck License Plate - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1304376722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Düperthal Service Einrichtung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDuperthal Service Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1304376722 - Field 775606706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fahrt/h (Standard)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDuperthal Service Setup - Field Fahrt/h - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1304376722 - Field 2415606940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fahrt/km (Standard)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDuperthal Service Setup - Field Fahrt/km - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1304376722 - Field 1398925304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Montage/h (Standard)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDuperthal Service Setup - Field Montage/h - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1304376722 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gimDuperthal Service Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2631479374 - Field 4205967536 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>EndOrig</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1007,6 +1032,11 @@
           <source>Fragen kopieren</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gimDialogCopyQuestions - Action actCopyQuestions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1304376722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Düperthal Service Einrichtung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gimDuperthal Service Setup - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 62833699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>gimExtendedText</source>
