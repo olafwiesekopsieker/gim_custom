@@ -30,7 +30,7 @@ pageextension 80013 gimItemCard2 extends "Item Card"
                     PictureDownload: codeunit gim2DownloadImageToItem;
                     ErrorText: Text;
                 begin
-                    PictureDownload.getItemMetadatasafe(rec."No.", Errortext);
+                    PictureDownload.DownloadItemPictureSafe(rec."No.", Errortext);
                     if ErrorText <> '' then Message(Errortext);
                     CurrPage.Update(false);
                 end;

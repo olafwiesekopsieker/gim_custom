@@ -1,62 +1,48 @@
 codeunit 80009 "gimCoSSubscribers"
 {
+    // Immer CoS sicherstellen (EU + Nicht-EU)
+    // Verhindert Dubletten ausschließlich über Get() / Existenzprüfung.
+
     // =========================================================
-    // 1) SALES SHIPMENT → CoS erzeugen (für Nicht-EU)
-    //    EU-Fälle werden vom Standard angelegt – wir hooken nur an.
+    // SALES SHIPMENT → CoS sicherstellen
     // =========================================================
     [EventSubscriber(ObjectType::Table, Database::"Sales Shipment Header", 'OnAfterInsertEvent', '', true, true)]
-    local procedure CreateCoSFromSalesShipment(var Rec: Record "Sales Shipment Header"; RunTrigger: Boolean)
+    local procedure EnsureCoSFromSalesShipment(var Rec: Record "Sales Shipment Header"; RunTrigger: Boolean)
     var
         CoS: Record "Certificate of Supply";
-        CountryRegion: Record "Country/Region";
-        ShipToCountry: Code[10];
     begin
-        // EU-Erkennung (Sales)
-        ShipToCountry := Rec."Ship-to Country/Region Code";
-        if ShipToCountry = '' then
-            ShipToCountry := Rec."Bill-to Country/Region Code";
+        // Wenn schon vorhanden (z.B. Standard hat angelegt) → nichts tun
+        if CoS.Get(CoS."Document Type"::"Sales Shipment", Rec."No.") then
+            exit;
 
-        if (ShipToCountry <> '') and CountryRegion.Get(ShipToCountry) then
-            if CountryRegion."EU Country/Region Code" <> '' then
-                exit; // EU-Fälle macht der Standard → danach wird OnAfterInsert(T780) ausgeführt
-
-        // Nicht-EU → CoS per Standard-Funktion erzeugen
+        // Sonst standardnah anlegen (füllt Standardfelder)
         CoS.InitFromSales(Rec);
+        // InitFromSales ist ebenfalls idempotent (prüft intern mit Get),
+        // aber wir prüfen vorher schon, damit wir ganz sicher sind.
     end;
 
 
-
     // =========================================================
-    // 2) SERVICE SHIPMENT → CoS erzeugen (für Nicht-EU)
-    //    EU-Fälle übernimmt euer System bereits → kein doppeltes Anlegen.
+    // SERVICE SHIPMENT → CoS sicherstellen
     // =========================================================
     [EventSubscriber(ObjectType::Table, Database::"Service Shipment Header", 'OnAfterInsertEvent', '', true, true)]
-    local procedure CreateCoSFromServiceShipment(var Rec: Record "Service Shipment Header"; RunTrigger: Boolean)
+    local procedure EnsureCoSFromServiceShipment(var Rec: Record "Service Shipment Header"; RunTrigger: Boolean)
     var
         CoS: Record "Certificate of Supply";
-        CountryRegion: Record "Country/Region";
-        ShipToCountry: Code[10];
     begin
-        // EU-Erkennung (Service)
-        ShipToCountry := Rec."Ship-to Country/Region Code";
-        if ShipToCountry = '' then
-            ShipToCountry := Rec."Bill-to Country/Region Code";
+        if CoS.Get(CoS."Document Type"::"Service Shipment", Rec."No.") then
+            exit;
 
-        if (ShipToCountry <> '') and CountryRegion.Get(ShipToCountry) then
-            if CountryRegion."EU Country/Region Code" <> '' then
-                exit; // EU → bereits im System erzeugt
-
-        // Nicht-EU → eigene Init-Funktion
+        // Eigene InitFromService (aus TableExtension) nutzt Standard-ähnliche Befüllung
         CoS.InitFromService(Rec);
     end;
 
 
 
+
     // =========================================================
-    // 3) CoS AFTER INSERT (SALES + SERVICE)
-    //    → Auftragsnummer
-    //    → Verkäufer / Versand durch DÜSI (via gimCoSFillMgt)
-    //    (gilt für EU & Nicht-EU)
+    // CoS AFTER INSERT → Auftragsnr. + Zusatzfelder immer ergänzen
+    // (egal ob Standard oder wir angelegt haben)
     // =========================================================
     [EventSubscriber(ObjectType::Table, Database::"Certificate of Supply", 'OnAfterInsertEvent', '', true, true)]
     local procedure CoS_OnAfterInsert(var Rec: Record "Certificate of Supply"; RunTrigger: Boolean)
@@ -64,36 +50,42 @@ codeunit 80009 "gimCoSSubscribers"
         SalesShp: Record "Sales Shipment Header";
         ServShp: Record "Service Shipment Header";
         CoSFillMgt: Codeunit "gimCoSFillMgt";
+        Modified: Boolean;
     begin
-        case Rec."Document Type" of
+        Modified := false;
 
+        case Rec."Document Type" of
             Rec."Document Type"::"Sales Shipment":
                 if SalesShp.Get(Rec."Document No.") then begin
-                    if Rec."gimAuftragsnummer" = '' then
+                    if Rec."gimAuftragsnummer" = '' then begin
                         Rec.Validate("gimAuftragsnummer", SalesShp."Order No.");
+                        Modified := true;
+                    end;
 
                     CoSFillMgt.FillFromSources(Rec);
-                    Rec.Modify(true);
+                    Modified := true;
                 end;
 
             Rec."Document Type"::"Service Shipment":
                 if ServShp.Get(Rec."Document No.") then begin
-                    if Rec."gimAuftragsnummer" = '' then
+                    if Rec."gimAuftragsnummer" = '' then begin
                         Rec.Validate("gimAuftragsnummer", ServShp."Order No.");
+                        Modified := true;
+                    end;
 
                     CoSFillMgt.FillFromSources(Rec);
-                    Rec.Modify(true);
+                    Modified := true;
                 end;
         end;
+
+        if Modified then
+            Rec.Modify(true);
     end;
 
 
-
     // =========================================================
-    // 4) RECHNUNGEN (SALES + SERVICE)
-    //    Geb. Rechnungsnr. anhand Shipment No. setzen
+    // INVOICE LINES → Geb. Rechnungsnr. anhand Shipment No. setzen
     // =========================================================
-
     [EventSubscriber(ObjectType::Table, Database::"Sales Invoice Line", 'OnAfterInsertEvent', '', true, true)]
     local procedure SalesInvoiceLine_OnAfterInsert(var Rec: Record "Sales Invoice Line"; RunTrigger: Boolean)
     var
@@ -136,7 +128,83 @@ codeunit 80009 "gimCoSSubscribers"
     end;
 
 
+    // =========================================================
+    // BACKFILL: Auftragsnummern (Bestand)
+    // =========================================================
+    procedure BackfillOrderNo()
+    var
+        CoS: Record "Certificate of Supply";
+        SalesShp: Record "Sales Shipment Header";
+        ServShp: Record "Service Shipment Header";
+    begin
+        CoS.Reset();
+        CoS.SetRange("gimAuftragsnummer", '');
+        if CoS.FindSet() then
+            repeat
+                case CoS."Document Type" of
+                    CoS."Document Type"::"Sales Shipment":
+                        if SalesShp.Get(CoS."Document No.") then begin
+                            CoS.Validate("gimAuftragsnummer", SalesShp."Order No.");
+                            CoS.Modify(true);
+                        end;
 
+                    CoS."Document Type"::"Service Shipment":
+                        if ServShp.Get(CoS."Document No.") then begin
+                            CoS.Validate("gimAuftragsnummer", ServShp."Order No.");
+                            CoS.Modify(true);
+                        end;
+                end;
+            until CoS.Next() = 0;
+    end;
+
+
+    // =========================================================
+    // BACKFILL: Geb. Rechnungsnr. (Bestand)
+    // Sales: über Shipment No. (robust)
+    // Service: fallback über Order No. (wenn nötig)
+    // =========================================================
+    procedure BackfillInvoiceNo()
+    var
+        CoS: Record "Certificate of Supply";
+        CoS2: Record "Certificate of Supply";
+        SalesInvLine: Record "Sales Invoice Line";
+        ServInvHeader: Record "Service Invoice Header";
+    begin
+        CoS.Reset();
+        CoS.SetFilter("Geb. Rechnungsnr.", '%1', '');
+        if CoS.FindSet() then
+            repeat
+                CoS2 := CoS;
+
+                case CoS."Document Type" of
+                    CoS."Document Type"::"Sales Shipment":
+                        begin
+                            SalesInvLine.Reset();
+                            SalesInvLine.SetRange("Shipment No.", CoS2."Document No.");
+                            SalesInvLine.SetCurrentKey("Posting Date", "Document No.", "Line No.");
+                            SalesInvLine.SetAscending("Posting Date", false);
+
+                            if SalesInvLine.FindFirst() then begin
+                                CoS2.Validate("Geb. Rechnungsnr.", SalesInvLine."Document No.");
+                                CoS2.Modify(true);
+                            end;
+                        end;
+
+                    CoS."Document Type"::"Service Shipment":
+                        begin
+                            if CoS2."gimAuftragsnummer" = '' then
+                                continue;
+
+                            ServInvHeader.Reset();
+                            ServInvHeader.SetRange("Order No.", CoS2."gimAuftragsnummer");
+                            if ServInvHeader.FindFirst() then begin
+                                CoS2.Validate("Geb. Rechnungsnr.", ServInvHeader."No.");
+                                CoS2.Modify(true);
+                            end;
+                        end;
+                end;
+            until CoS.Next() = 0;
+    end;
 
 
 }

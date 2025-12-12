@@ -135,6 +135,7 @@ page 80001 GIM_DatabaseTools
                     if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
 
 
+                        cosfill.RebuildCoSForPostingDateRange(20240901D, 20251231D);
                         CosFill.ResetSuspiciousInvoiceNos();
                         CosFill.BackfillOrderNo();
                         CosFill.BackfillInvoiceNo();

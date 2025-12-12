@@ -138,6 +138,72 @@ codeunit 80008 "gimCoSFillMgt"
             until CoS.Next() = 0;
     end;
 
+    // =========================================================
+    // EINMALIGER REBUILD: fehlende CoS aus gebuchten Lieferscheinen anlegen
+    // =========================================================
+    procedure RebuildCoSFromPostedShipments()
+    var
+        SalesShp: Record "Sales Shipment Header";
+        ServShp: Record "Service Shipment Header";
+        CoS: Record "Certificate of Supply";
+    begin
+        // 1) Sales Shipments
+        SalesShp.Reset();
+        if SalesShp.FindSet() then
+            repeat
+                if not CoS.Get(CoS."Document Type"::"Sales Shipment", SalesShp."No.") then
+                    CoS.InitFromSales(SalesShp); // idempotent & standardnah
+            until SalesShp.Next() = 0;
+
+        // 2) Service Shipments
+        ServShp.Reset();
+        if ServShp.FindSet() then
+            repeat
+                if not CoS.Get(CoS."Document Type"::"Service Shipment", ServShp."No.") then
+                    CoS.InitFromService(ServShp); // deine TableExt-Funktion
+            until ServShp.Next() = 0;
+    end;
+
+
+    // =========================================================
+    // EINMALIGER REBUILD: nur Zeitraum (Posting Date)
+    // (hilft, wenn ihr "dazwischen" eingrenzen wollt)
+    // =========================================================
+    procedure RebuildCoSForPostingDateRange(FromDate: Date; ToDate: Date)
+    var
+        SalesShp: Record "Sales Shipment Header";
+        ServShp: Record "Service Shipment Header";
+        CoS: Record "Certificate of Supply";
+    begin
+        // Sales Shipments
+        SalesShp.Reset();
+        SalesShp.SetRange("Posting Date", FromDate, ToDate);
+        if SalesShp.FindSet() then
+            repeat
+                if not CoS.Get(CoS."Document Type"::"Sales Shipment", SalesShp."No.") then
+                    CoS.InitFromSales(SalesShp);
+            until SalesShp.Next() = 0;
+
+        // Service Shipments
+        ServShp.Reset();
+        ServShp.SetRange("Posting Date", FromDate, ToDate);
+        if ServShp.FindSet() then
+            repeat
+                if not CoS.Get(CoS."Document Type"::"Service Shipment", ServShp."No.") then
+                    CoS.InitFromService(ServShp);
+            until ServShp.Next() = 0;
+    end;
+
+
+    // =========================================================
+    // REPARATUR-LAUF: fehlende Felder in CoS nachziehen
+    // =========================================================
+    procedure RepairExistingCoS()
+    begin
+        // Reihenfolge ist wichtig:
+        BackfillOrderNo();
+        BackfillInvoiceNo();
+    end;
 
 
 }
