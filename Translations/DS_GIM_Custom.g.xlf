@@ -143,6 +143,121 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table gimFarbe - Field RGB - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3455118654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kommisionierzeilen – Verkaufssicht</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 2814799924 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lagerplatzcode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control Bin Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 1066214490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KW</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control CalendarWeek - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 464517489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kommentar - Kunde</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control CustomerComment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 1881986821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debitor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control CustomerName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 3689535207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debitor-Nr.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control CustomerNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 3509305018 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zusatzstatus</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control ExtraStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Artikelnummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 4112877437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>(Artikel) Beschreibung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control ItemDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 3706032493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nettobetrag</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control NetAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Whse Activity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Menge</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 2734504401 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quelle (Herkunftsnummer) aus dem Verkaufsauftrag.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control SalesOrderNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 2734504401 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkaufsauftrag</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control SalesOrderNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 3958639215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkäufercode 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control SellerCode1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 1576761770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkäufercode 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control SellerCode2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 3078595112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warenausgangsdatum</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control ShipmentDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Control 477328378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zustellercode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control ShippingAgentCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picking List DUE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Action CCO Print Picking List DUE - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Action 3677383978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debitor öffnen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Action OpenCustomerAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Action 1209757713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Artikel öffnen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Action OpenItemAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3455118654 - Action 600169920 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkaufsauftrag öffnen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Action OpenSalesOrderAction - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2183238915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>gimContact</source>
           <note from="Developer" annotates="general" priority="2"></note>

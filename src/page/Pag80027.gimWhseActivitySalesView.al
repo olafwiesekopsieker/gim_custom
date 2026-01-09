@@ -4,7 +4,7 @@ page 80027 "gim Whse Activity Sales View"
     SourceTable = "Warehouse Activity Line";
     ApplicationArea = All;
     UsageCategory = Lists;
-    Caption = 'Warehouse Activity Lines – Sales View';
+    Caption = 'Kommissionierzeilen – Verkaufssicht';
 
     // Optional: typischerweise willst du nur Pick/Put-away etc. sehen.
     // Passe das an euren Use-Case an.
@@ -88,11 +88,7 @@ page 80027 "gim Whse Activity Sales View"
                     Editable = false;
                 }
 
-                field(CustomerComment; CustomerComment)
-                {
-                    Caption = 'Kommentar - Kunde';
-                    Editable = false;
-                }
+
 
                 field(SellerCode1; SellerCode1)
                 {
@@ -241,7 +237,7 @@ page 80027 "gim Whse Activity Sales View"
 
         // Menge: in Whse Activity Line ist oft "Qty. (Base)" bzw. "Qty. to Handle" interessant.
         // Passe hier an, was ihr im Grid sehen wollt:
-        Quantity := Rec."Qty. to Handle"; // oder Rec.Quantity, Rec."Qty. Outstanding", etc.
+        Quantity := Rec."Quantity"; // oder Rec.Quantity, Rec."Qty. Outstanding", etc.
 
         // Artikelbeschreibung (sicherer über Item-Tabelle, falls Whse-Line Description leer/anders ist)
         if (Rec."Item No." <> '') and Item.Get(Rec."Item No.") then
@@ -285,25 +281,8 @@ page 80027 "gim Whse Activity Sales View"
                 NetAmount := SalesLine.Amount;
         end;
 
-        // Kommentar – Kunde (als Sales-Header-Kommentar aggregiert)
-        // Alternativ: Customer Comment Lines / andere Logik möglich
-        if SalesOrderNo <> '' then begin
-            SalesCommentLine.Reset();
-            SalesCommentLine.SetRange("Document Type", SalesCommentLine."Document Type"::Order);
-            SalesCommentLine.SetRange("No.", SalesOrderNo);
 
-            if SalesCommentLine.FindSet() then begin
-                repeat
-                    if SalesCommentLine.Comment <> '' then begin
-                        if CommentText <> '' then
-                            CommentText += ' | ';
-                        CommentText += SalesCommentLine.Comment;
-                    end;
-                until SalesCommentLine.Next() = 0;
 
-                CustomerComment := CommentText;
-            end;
-        end;
     end;
 
     local procedure ClearCalculated()
