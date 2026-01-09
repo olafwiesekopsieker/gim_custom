@@ -144,7 +144,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table gimFarbe - Field RGB - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3455118654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kommisionierzeilen – Verkaufssicht</source>
+          <source>Kommissionierzeilen – Verkaufssicht</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Property Caption</note>
         </trans-unit>
@@ -157,11 +157,6 @@
           <source>KW</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control CalendarWeek - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3455118654 - Control 464517489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kommentar - Kunde</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page gim Whse Activity Sales View - Control CustomerComment - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3455118654 - Control 1881986821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Debitor Name</source>

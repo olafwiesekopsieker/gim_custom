@@ -66,13 +66,14 @@ codeunit 80005 "gimSalesLineSubscribersEtagis"
     var
         SalesHeader: Record "Sales Header";
     begin
-        if not EnterGuard() then
-            exit;
 
-        // Nach Löschung Zeilenbereich aggregieren (Min/Max/Status können sich ändern)
-        if SalesHeader.Get(Rec."Document Type", Rec."Document No.") then
-            SalesHeader.UpdateEtagisStatus();
+        // if not EnterGuard() then
+        //     exit;
 
-        ExitGuard();
+        // // Nach Löschung Zeilenbereich aggregieren (Min/Max/Status können sich ändern)
+        // if SalesHeader.Get(Rec."Document Type", Rec."Document No.") then
+        //     SalesHeader.UpdateEtagisStatus();
+
+        // ExitGuard();
     end;
 }
