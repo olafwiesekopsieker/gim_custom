@@ -2,7 +2,9 @@ codeunit 80004 gimDBManagement
 {
 
     Subtype = Normal;
-    Permissions = tabledata "Service Cr.Memo Line" = rimd;
+    Permissions = tabledata "Service Cr.Memo Line" = rimd,
+                  tabledata "Purchase header" = rimd,
+                  tabledata "Purchase line" = rimd;
 
     procedure RunDisableAllJobQueues()
     var
@@ -30,6 +32,22 @@ codeunit 80004 gimDBManagement
         ServiceCrMemoLines.SETRANGE(type, ServiceCrMemoLines.type::item);
         ServiceCrMemoLines.Setrange("No.", '');
         ServiceCrMemoLines.DeleteAll(false);
+    end;
+
+    procedure DeleteEinkBestellungen()
+    var
+        PurchHeader: record "Purchase header";
+        PurchLine: Record "Purchase Line";
+    begin
+        ////EBS-170000..EBS-24-0036
+        PurchHeader.SETRANGE("Document Type", PurchHeader."Document Type"::Order);
+        PurchHeader.SETRANGE("No.", 'EBS-170000', 'EBS-24-0036');
+
+        Purchline.SETRANGE("Document Type", PurchHeader."Document Type"::Order);
+        Purchline.SETRANGE("Document No.", 'EBS-170000', 'EBS-24-0036');
+
+        Purchline.deleteall(false);
+        Purchheader.deleteall(false);
     end;
 
 

@@ -172,6 +172,31 @@ page 80001 GIM_DatabaseTools
                 end;
             }
 
+            action(DeleEinkBestellungen)
+            {
+                ApplicationArea = All;
+                Caption = 'Lösche Einkaufsbestellungen';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
+
+                trigger OnAction()
+                var
+                    gimBDMan: Codeunit gimDBManagement;
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+
+                        //EBS-170000..EBS-24-0036
+                        gimBDMan.DeleteEinkBestellungen();
+
+                        message('job erledigt');
+
+                    end;
+
+                end;
+            }
+
             // action(CoSFillInvoiceNo)
             // {
             //     ApplicationArea = All;
