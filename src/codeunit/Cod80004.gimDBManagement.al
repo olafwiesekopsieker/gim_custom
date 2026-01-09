@@ -2,6 +2,7 @@ codeunit 80004 gimDBManagement
 {
 
     Subtype = Normal;
+    Permissions = tabledata "Service Cr.Memo Line" = rimd;
 
     procedure RunDisableAllJobQueues()
     var
@@ -21,5 +22,16 @@ codeunit 80004 gimDBManagement
                     until JobQueueEntry.Next() = 0;
             until Company.Next() = 0;
     end;
+
+    procedure DeleteOrphanedServicceCrMemoLines()
+    var
+        ServiceCrMemoLines: record "Service Cr.Memo Line";
+    begin
+        ServiceCrMemoLines.SETRANGE(type, ServiceCrMemoLines.type::item);
+        ServiceCrMemoLines.Setrange("No.", '');
+        ServiceCrMemoLines.DeleteAll(false);
+    end;
+
+
 
 }

@@ -147,6 +147,31 @@ page 80001 GIM_DatabaseTools
                 end;
             }
 
+            action(DeleServCrMemoLines)
+            {
+                ApplicationArea = All;
+                Caption = 'Lösche verwaiste ServCredMemoLines';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
+
+                trigger OnAction()
+                var
+                    gimBDMan: Codeunit gimDBManagement;
+                begin
+                    if userid = 'HEW\OLAF.WIESEKOPSIEKER' then begin
+
+
+                        gimBDMan.DeleteOrphanedServicceCrMemoLines();
+
+                        message('job erledigt');
+
+                    end;
+
+                end;
+            }
+
             // action(CoSFillInvoiceNo)
             // {
             //     ApplicationArea = All;
