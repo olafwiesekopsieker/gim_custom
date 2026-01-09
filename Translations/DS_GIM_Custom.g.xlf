@@ -1628,6 +1628,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action DeactivateAllJobQueueEntries - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 2650253800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lösche verwaiste ServCredMemoLines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action DeleServCrMemoLines - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1472808070 - Action 1239587471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Servicezeilen im Servicevertrag löschen</source>
           <note from="Developer" annotates="general" priority="2"></note>

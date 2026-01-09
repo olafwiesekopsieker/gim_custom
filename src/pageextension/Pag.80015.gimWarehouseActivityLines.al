@@ -58,4 +58,5 @@ pageextension 80015 gimWarehouseActivityLines extends "Warehouse Activity Lines"
             }
         }
     }
+
 }
