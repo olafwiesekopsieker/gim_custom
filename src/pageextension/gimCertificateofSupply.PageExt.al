@@ -37,5 +37,40 @@ pageextension 80028 gimCertificateOfSupplyList extends "Certificates of Supply"
             field("Verkäufercode 2"; Rec."Verkäufercode 2") { ApplicationArea = All; }
 
         }
+
+
+    }
+    actions
+    {
+        addlast(processing)
+        {
+            action(ProcessRechnungen)
+            {
+                ApplicationArea = All;
+                Caption = 'Gelangenbestätigung Daten aktualisieren';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = ResetStatus;
+
+                trigger OnAction()
+                var
+                    COSFill: Codeunit gimCoSFillMgt;
+                begin
+
+
+
+                    //cosfill.RebuildCoSForPostingDateRange(20240901D, 20251231D);
+                    //CosFill.ResetSuspiciousInvoiceNos();
+                    CosFill.BackfillOrderNo();
+                    CosFill.BackfillInvoiceNo();
+
+                    message('job erledigt');
+
+
+
+                end;
+            }
+        }
     }
 }

@@ -1738,6 +1738,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action DeactivateAllJobQueueEntries - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1472808070 - Action 3938427757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lösche Einkaufsbestellungen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GIM_DatabaseTools - Action DeleEinkBestellungen - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1472808070 - Action 2650253800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lösche verwaiste ServCredMemoLines</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2407,6 +2412,16 @@
           <source>Eingeplantes Lieferdatum</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gimEingeplantes Lieferdatum - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 2340854292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Menge in Kommissionierung (Lager)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gimQtyToInvtPick - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 682968223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Menge in Kommissionierung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gimQtyToPick - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1960430711 - Field 1903064224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Geplantes Warenausgangsdatum (etagis)</source>

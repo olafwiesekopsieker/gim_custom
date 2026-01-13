@@ -17,6 +17,28 @@ pageextension 80001 gimSalesOrderSubform extends "Sales Order Subform"
         //         ApplicationArea = all;
         //     }
         // }
+        
+        modify("Qty. to Shipment")
+        {
+            visible=false;
+        }
+        modify("Qty. to Assign")
+        {
+            visible=false;
+        }
+
+        addafter(Position)
+        {
+            field(gimQtyToInvtPick;Rec.gimQtyToInvtPick)
+            {
+                applicationArea=all;
+            }
+            field(gimQtyToPick;Rec.gimQtyToPick)
+            {
+                applicationArea=all;
+            }
+        }
+        
         addafter("Shipment Date")
         {
             field("Planned Shipment Date (etagis)"; rec."Planned Shipment Date (etagis)")
