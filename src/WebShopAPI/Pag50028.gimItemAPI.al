@@ -181,6 +181,10 @@ page 80005 gim2ItemAPI
                 {
                     Caption = 'Automatic Ext. Texts';
                 }
+                field("VerkaufGesperrt"; Rec."Sales Blocked")
+                {
+                    Caption = 'VerkaufGesperrt';
+                }
 
 
                 // part(gimExtendedTextLine; gimExtendedTextLine)
