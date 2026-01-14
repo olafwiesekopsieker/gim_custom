@@ -92,7 +92,7 @@ codeunit 80008 "gimCoSFillMgt"
                     CoS."Document Type"::"Sales Shipment":
                         begin
                             SalesInvLine.Reset();
-                            SalesInvLine.SetRange("Shipment No.", CoS2."Document No.");
+                            SalesInvLine.SetRange("Order No.", CoS2.gimAuftragsnummer);
                             SalesInvLine.SetCurrentKey("Posting Date", "Document No.", "Line No.");
                             SalesInvLine.SetAscending("Posting Date", false);
 

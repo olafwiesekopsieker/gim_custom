@@ -2063,6 +2063,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension GIM2UserSetup - Control gimArtikel sperren erlaubt - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 598064978 - Action 2394973970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 350617640">
+          <source>Gelangenbestätigung Daten aktualisieren</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimCertificateOfSupplyList - Action ProcessRechnungen - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3045814676 - Action 3526020579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Importiere aus Bilddatenbank (neue Funktion)</source>
           <note from="Developer" annotates="general" priority="2"></note>
