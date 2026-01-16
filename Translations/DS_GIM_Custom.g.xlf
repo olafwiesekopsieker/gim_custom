@@ -593,6 +593,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control vendorNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 204490496 - Control 136863940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VerkaufGesperrt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim2ItemAPI - Control VerkaufGesperrt - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 204490496 - Control 2246970727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Web-Gruppe</source>
           <note from="Developer" annotates="general" priority="2"></note>
