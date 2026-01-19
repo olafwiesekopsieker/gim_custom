@@ -143,6 +143,19 @@ codeunit 80000 "GIM Custom Events"
             Rec."Fahrt/km" := DuperthalSetup."Fahrt/km";
     end;
 
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeInsertEvent', '', true, true)]
+    local procedure SalesLine_OnBeforeInsert(var Rec: Record "Sales Line"; RunTrigger: Boolean)
+    begin
+        Rec."gim Whse Source Subtype" := Rec."Document Type".AsInteger();
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeModifyEvent', '', true, true)]
+    local procedure SalesLine_OnBeforeModify(var Rec: Record "Sales Line"; var xRec: Record "Sales Line"; RunTrigger: Boolean)
+    begin
+        if Rec."Document Type" <> xRec."Document Type" then
+            Rec."gim Whse Source Subtype" := Rec."Document Type".AsInteger();
+    end;
+
 
 
 }

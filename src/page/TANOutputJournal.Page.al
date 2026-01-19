@@ -103,6 +103,8 @@ page 80019 "gimTANOutputJournal"
                 {
 
                     trigger OnValidate()
+                    var
+                        itemJnlMgt: Codeunit "Mfg. Item Journal Mgt.";
                     begin
                         ItemJnlMgt.GetOutput(Rec, ProdOrderDescription, OperationName);
                     end;
@@ -133,7 +135,7 @@ page 80019 "gimTANOutputJournal"
 
                     trigger OnValidate()
                     begin
-                        ItemJnlMgt.GetOutput(Rec, ProdOrderDescription, OperationName);
+                        MFGItemJnlMgt.GetOutput(Rec, ProdOrderDescription, OperationName);
                     end;
                 }
                 field(Type; Rec.Type)
@@ -562,7 +564,7 @@ page 80019 "gimTANOutputJournal"
 
     trigger OnAfterGetCurrRecord()
     begin
-        ItemJnlMgt.GetOutput(Rec, ProdOrderDescription, OperationName);
+        MFGItemJnlMgt.GetOutput(Rec, ProdOrderDescription, OperationName);
     end;
 
     trigger OnAfterGetRecord()
@@ -608,6 +610,7 @@ page 80019 "gimTANOutputJournal"
 
     var
         ItemJnlMgt: Codeunit ItemJnlManagement;
+        MFGItemJnlMgt: Codeunit "Mfg. Item Journal Mgt.";
         ReportPrint: Codeunit "Test Report-Print";
         ProdOrderDescription: Text[50];
         OperationName: Text[50];

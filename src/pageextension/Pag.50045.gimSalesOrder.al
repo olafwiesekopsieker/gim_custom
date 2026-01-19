@@ -78,12 +78,12 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
             group("Etagis – Planung")
             {
                 Caption = 'Etagis – Planung';
-                field("Planned Shipment Date Min (etagis)"; rec."Planned Shipment Date Min (etagis)")
+                field("Planned Shipm. Date Min (etagis)"; rec."Plan Shipm. Date Min (etagis)")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Kleinstes geplantes Warenausgangsdatum aus den Zeilen (etagis).';
                 }
-                field("Planned Shipment Date Max (etagis)"; rec."Planned Shipment Date Max (etagis)")
+                field("Planned Shipm. Date Max (etagis)"; rec."Plan Shipm. Date Max (etagis)")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Größtes geplantes Warenausgangsdatum aus den Zeilen (etagis).';

@@ -5,14 +5,14 @@ pageextension 80027 "SalesOrderList Ext. Etagis" extends "Sales Order List"
         // Position nach Bedarf anpassen (z. B. addlast(repeater) oder addafter("Shipment Date"))
         addafter("Shipment Date")
         {
-            field("Planned Shipment Date Min (etagis)"; Rec."Planned Shipment Date Min (etagis)")
+            field("Planned Shipment Date Min (etagis)"; Rec."Plan Shipm. Date Min (etagis)")
             {
                 ApplicationArea = All;
                 Caption = 'Gepl. Warenausgang (min, etagis)';
                 ToolTip = 'Kleinstes geplantes Warenausgangsdatum aus den Zeilen (etagis).';
 
             }
-            field("Planned Shipment Date Max (etagis)"; Rec."Planned Shipment Date Max (etagis)")
+            field("Planned Shipment Date Max (etagis)"; Rec."Plan Shipm. Date Max (etagis)")
             {
                 ApplicationArea = All;
                 Caption = 'Gepl. Warenausgang (max, etagis)';

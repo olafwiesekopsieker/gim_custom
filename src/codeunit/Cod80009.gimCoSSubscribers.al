@@ -34,7 +34,7 @@ codeunit 80009 "gimCoSSubscribers"
             exit;
 
         // Eigene InitFromService (aus TableExtension) nutzt Standard-ähnliche Befüllung
-        CoS.InitFromService(Rec);
+        CoS.gimInitFromService(Rec);
     end;
 
 
