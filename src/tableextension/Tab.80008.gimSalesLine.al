@@ -41,7 +41,8 @@ tableextension 80008 gimSalesLine extends "Sales Line"
                                                                                   "Source Type" = const(37),
                                                                                   "Source Subtype" = field("gim Whse Source Subtype"),
                                                                                   "Source No." = field("Document No."),
-                                                                                  "Source Line No." = field("Line No.")));
+                                                                                  "Source Line No." = field("Line No."),
+                                                                                  "Action Type" = const(Place)));
             Caption = 'Menge in Kommissionierung (Lager)';
             Editable = false;
         }
@@ -54,16 +55,39 @@ tableextension 80008 gimSalesLine extends "Sales Line"
                                                                                   "Source Type" = const(37),
                                                                                   "Source Subtype" = field("gim Whse Source Subtype"),
                                                                                   "Source No." = field("Document No."),
-                                                                                  "Source Line No." = field("Line No.")));
+                                                                                  "Source Line No." = field("Line No."),
+                                                                                  "Action Type" = const(Place)));
+
+
             Caption = 'Menge in Kommissionierung';
             Editable = false;
         }
+
+
 
         field(80005; "gim Whse Source Subtype"; Integer)
         {
             Caption = 'Whse Source Subtype';
             DataClassification = SystemMetadata;
         }
+
+        field(80006; gimQtytoPickReg; decimal)
+        {
+            FieldClass = FlowField;
+            BlankZero = true;
+            CalcFormula = sum("Registered Whse. Activity Line"."Qty. (Base)" where("Activity Type" = const("Pick"),
+                                                                                  "Source Type" = const(37),
+                                                                                  "Source Subtype" = field("gim Whse Source Subtype"),
+                                                                                  "Source No." = field("Document No."),
+                                                                                  "Source Line No." = field("Line No."),
+                                                                                  "Action Type" = const(Place)));
+
+            Caption = 'Menge in Kommissionierung';
+            Editable = false;
+        }
+
+
+
     }
 
     local procedure CalcEtagisStatus()
