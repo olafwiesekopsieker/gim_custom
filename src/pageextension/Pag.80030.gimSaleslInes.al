@@ -16,6 +16,10 @@ pageextension 80030 gimSaleslInes2 extends "Sales Lines 2"
             {
                 applicationArea = all;
             }
+            field(gimQtytoPickReg; Rec.gimQtytoPickReg)
+            {
+                applicationArea = all;
+            }
         }
     }
 }
