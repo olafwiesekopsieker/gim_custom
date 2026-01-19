@@ -2,7 +2,7 @@
   "id": "6974ec42-2f4b-42c1-ab53-4057b4fe0c76",
   "name": "DS_GIM_Custom",
   "publisher": "GIM",
-  "version": "26.0.0.66",
+  "version": "26.0.0.67",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -63,8 +63,8 @@
     },
     {
       "id":"8d751890-73a2-4219-8770-7fcaced7ef5e",
-      "publisher": "COSMO Consult / GIM",
-      "name": "DueperthalBC24",
+      "publisher": "COSMO Consult",
+      "name": "DueperthalBC26",
       "version": "22.0.0.0"
     },
     {

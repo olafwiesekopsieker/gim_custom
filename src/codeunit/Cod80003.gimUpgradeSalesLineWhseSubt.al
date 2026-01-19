@@ -18,9 +18,9 @@ codeunit 80003 "gim Upgrade SalesLine WhseSubt"
                 SalesLine.Modify(false);
 
                 Cnt += 1;
-                // optional: bei sehr vielen Datensätzen gelegentlich committen
-                if (Cnt mod 5000) = 0 then
-                    Commit();
+            // optional: bei sehr vielen Datensätzen gelegentlich committen
+            //if (Cnt mod 5000) = 0 then
+            //Commit();
             until SalesLine.Next() = 0;
         end;
     end;

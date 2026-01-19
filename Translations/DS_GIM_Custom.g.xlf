@@ -143,6 +143,111 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table gimFarbe - Field RGB - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1199285707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Registrierte Kommissionierzeilen – Verkaufssicht</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 2814799924 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lagerplatzcode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control Bin Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 1066214490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KW</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control CalendarWeek - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 1881986821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debitor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control CustomerName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 3689535207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debitor-Nr.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control CustomerNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 3509305018 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zusatzstatus</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control ExtraStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Artikelnummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 4112877437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>(Artikel) Beschreibung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control ItemDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 3706032493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nettobetrag</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control NetAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reg. Whse Activity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Menge</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 2734504401 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quelle (Herkunftsnummer) aus dem Verkaufsauftrag.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control SalesOrderNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 2734504401 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkaufsauftrag</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control SalesOrderNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 3958639215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkäufercode 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control SellerCode1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 1576761770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkäufercode 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control SellerCode2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 3078595112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warenausgangsdatum</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control ShipmentDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Control 477328378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zustellercode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Control ShippingAgentCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Action 3677383978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debitor öffnen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Action OpenCustomerAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Action 1209757713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Artikel öffnen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Action OpenItemAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1199285707 - Action 600169920 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkaufsauftrag öffnen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Action OpenSalesOrderAction - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3455118654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kommissionierzeilen – Verkaufssicht</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2118,15 +2223,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Etagis – Planung - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1418196127 - Control 2055973836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+        <trans-unit id="PageExtension 1418196127 - Control 3939236307 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Größtes geplantes Warenausgangsdatum aus den Zeilen (etagis).</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Planned Shipment Date Max (etagis) - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Planned Shipm. Date Max (etagis) - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1418196127 - Control 3793909922 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+        <trans-unit id="PageExtension 1418196127 - Control 35847401 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Kleinstes geplantes Warenausgangsdatum aus den Zeilen (etagis).</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Planned Shipment Date Min (etagis) - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Planned Shipm. Date Min (etagis) - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1418196127 - Control 3793156732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Aggregierter (kritischster) Etagis-Status des Auftrags.</source>
@@ -2398,15 +2503,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimProdOrderRtngLine - Field gimEingeplanteStartzeit - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3058138043 - Field 2055973836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+        <trans-unit id="TableExtension 3058138043 - Field 1616656658 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Geplanter Warenausgang (max, etagis)</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Planned Shipment Date Max (etagis) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Plan Shipm. Date Max (etagis) - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3058138043 - Field 3793909922 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+        <trans-unit id="TableExtension 3058138043 - Field 357577724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Geplanter Warenausgang (min, etagis)</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Planned Shipment Date Min (etagis) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Plan Shipm. Date Min (etagis) - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3058138043 - Field 3793156732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Status (etagis)</source>
@@ -2417,6 +2522,11 @@
           <source>unkritisch,ungeplant,kritisch</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Status (etagis) - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 3035953901 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Whse Source Subtype</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gim Whse Source Subtype - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1960430711 - Field 3130686926 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Eingeplantes Lieferdatum</source>
@@ -2432,6 +2542,11 @@
           <source>Menge in Kommissionierung</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gimQtyToPick - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1960430711 - Field 2597310135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Menge in Kommissionierung</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field gimQtytoPickReg - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1960430711 - Field 1903064224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Geplantes Warenausgangsdatum (etagis)</source>
