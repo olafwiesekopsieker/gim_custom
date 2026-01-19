@@ -2,12 +2,12 @@ tableextension 80010 "gimSalesHeaderEtagis" extends "Sales Header"
 {
     fields
     {
-        field(80000; "Planned Shipment Date Min (etagis)"; Date)
+        field(80000; "Plan Shipm. Date Min (etagis)"; Date)
         {
             Caption = 'Geplanter Warenausgang (min, etagis)';
             Editable = false;
         }
-        field(80001; "Planned Shipment Date Max (etagis)"; Date)
+        field(80001; "Plan Shipm. Date Max (etagis)"; Date)
         {
             Caption = 'Geplanter Warenausgang (max, etagis)';
             Editable = false;
@@ -57,14 +57,14 @@ tableextension 80010 "gimSalesHeaderEtagis" extends "Sales Header"
             if MinDate = DMY2Date(31, 12, 9999) then
                 MinDate := 0D;
 
-            "Planned Shipment Date Min (etagis)" := MinDate;
-            "Planned Shipment Date Max (etagis)" := MaxDate;
+            "Plan Shipm. Date Min (etagis)" := MinDate;
+            "Plan Shipm. Date Max (etagis)" := MaxDate;
             "Status (etagis)" := HeaderStatus;
             Modify();
         end else begin
             // Keine Zeilen -> Felder zurücksetzen
-            "Planned Shipment Date Min (etagis)" := 0D;
-            "Planned Shipment Date Max (etagis)" := 0D;
+            "Plan Shipm. Date Min (etagis)" := 0D;
+            "Plan Shipm. Date Max (etagis)" := 0D;
             "Status (etagis)" := "Status (etagis)"::Ungeplant;
             Modify();
         end;

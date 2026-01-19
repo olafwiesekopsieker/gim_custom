@@ -160,7 +160,7 @@ codeunit 80008 "gimCoSFillMgt"
         if ServShp.FindSet() then
             repeat
                 if not CoS.Get(CoS."Document Type"::"Service Shipment", ServShp."No.") then
-                    CoS.InitFromService(ServShp); // deine TableExt-Funktion
+                    CoS.gimInitFromService(ServShp); // deine TableExt-Funktion
             until ServShp.Next() = 0;
     end;
 
@@ -190,7 +190,7 @@ codeunit 80008 "gimCoSFillMgt"
         if ServShp.FindSet() then
             repeat
                 if not CoS.Get(CoS."Document Type"::"Service Shipment", ServShp."No.") then
-                    CoS.InitFromService(ServShp);
+                    CoS.gimInitFromService(ServShp);
             until ServShp.Next() = 0;
     end;
 

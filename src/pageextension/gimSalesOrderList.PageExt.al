@@ -58,7 +58,7 @@ pageextension 80026 "Sales Order List Ext" extends "Sales Order List"
         cnt := 0;
 
         // Erwartung: CurrPage.SetSelectionFilter(SelHdr) wurde vorher aufgerufen
-        if SelHdr.FindSet(true, false) then
+        if SelHdr.FindSet() then
             repeat
                 if SelHdr."Document Type" = SelHdr."Document Type"::Order then begin
                     // Liste aufbauen: "No." kommasepariert

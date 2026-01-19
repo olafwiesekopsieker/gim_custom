@@ -15,7 +15,7 @@ tableextension 80002 CertificateOfSupplyExt extends "Certificate of Supply"
             else
             if ("Document Type" = filter("Service Shipment")) "Service Header"."No." where("Document Type" = const(Order));
 
-            TestTableRelation = false;
+            //TestTableRelation = false;
             ValidateTableRelation = false;
 
             trigger OnValidate()
@@ -119,7 +119,7 @@ tableextension 80002 CertificateOfSupplyExt extends "Certificate of Supply"
         FillMgt.FillFromSources(Rec);
     end;
 
-    procedure InitFromService(var ServiceShipmentHeader: Record "Service Shipment Header")
+    procedure gimInitFromService(var ServiceShipmentHeader: Record "Service Shipment Header")
     begin
         // Nur anlegen, wenn noch kein CoS zu dieser Servicelieferung existiert
         if not Get("Document Type"::"Service Shipment", ServiceShipmentHeader."No.") then begin

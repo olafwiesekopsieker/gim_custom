@@ -39,7 +39,7 @@ tableextension 80008 gimSalesLine extends "Sales Line"
             BlankZero = true;
             CalcFormula = sum("Warehouse Activity Line"."Qty. Outstanding" where("Activity Type" = const("Invt. Pick"),
                                                                                   "Source Type" = const(37),
-                                                                                  "Source Subtype" = field("Document Type"),
+                                                                                  "Source Subtype" = field("gim Whse Source Subtype"),
                                                                                   "Source No." = field("Document No."),
                                                                                   "Source Line No." = field("Line No.")));
             Caption = 'Menge in Kommissionierung (Lager)';
@@ -52,11 +52,17 @@ tableextension 80008 gimSalesLine extends "Sales Line"
             BlankZero = true;
             CalcFormula = sum("Warehouse Activity Line"."Qty. Outstanding" where("Activity Type" = const("Pick"),
                                                                                   "Source Type" = const(37),
-                                                                                  "Source Subtype" = field("Document Type"),
+                                                                                  "Source Subtype" = field("gim Whse Source Subtype"),
                                                                                   "Source No." = field("Document No."),
                                                                                   "Source Line No." = field("Line No.")));
             Caption = 'Menge in Kommissionierung';
             Editable = false;
+        }
+
+        field(80005; "gim Whse Source Subtype"; Integer)
+        {
+            Caption = 'Whse Source Subtype';
+            DataClassification = SystemMetadata;
         }
     }
 
