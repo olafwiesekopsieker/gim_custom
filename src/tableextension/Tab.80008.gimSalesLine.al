@@ -65,8 +65,10 @@ tableextension 80008 gimSalesLine extends "Sales Line"
 
 
 
-        field(80005; "gim Whse Source Subtype"; Integer)
+        field(80005; "gim Whse Source Subtype"; Option)
         {
+            OptionCaption = '0,1,2,3,4,5,6,7,8,9,10';
+            OptionMembers = "0","1","2","3","4","5","6","7","8","9","10";
             Caption = 'Whse Source Subtype';
             DataClassification = SystemMetadata;
         }
@@ -82,7 +84,7 @@ tableextension 80008 gimSalesLine extends "Sales Line"
                                                                                   "Source Line No." = field("Line No."),
                                                                                   "Action Type" = const(Place)));
 
-            Caption = 'Menge in Kommissionierung';
+            Caption = 'Menge in Reg. Kommissionierung';
             Editable = false;
         }
 
