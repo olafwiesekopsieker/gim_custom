@@ -53,6 +53,11 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
             {
                 ApplicationArea = All;
             }
+            field("LEAD Nummer"; Rec."LEAD Nummer")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the LEAD Number.';
+            }
         }
         addlast("Shipping and Billing")
         {

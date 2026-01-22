@@ -2183,6 +2183,41 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimItemCard2 - Action ImportPicNewFunction - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1115478938 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 52957233">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedReturnReceipt2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3365868979 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedSalesCrMemo - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1926226765 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedSalesInvoice - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1024739222 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedSalesShipment - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 757031800 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4222048109">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedServiceCrMemo - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1483590176 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1778940791">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedServiceInvoice2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1907904073 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1561133952">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedServiceShipment - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3726681872 - Action 3511120583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1555938241">
           <source>Return Slip</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2202,6 +2237,16 @@
           <source>Ausgewählte Fragen löschen</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimQuestions - Action DeleteSelectedQuestions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1663145580 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1708100201">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesCrMemo - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 617352094 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesInvoice - Control LEAD Nummer - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1418196127 - Action 3413224075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Customs Invoice</source>
@@ -2238,6 +2283,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder - Control Status (etagis) - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1418196127 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrder2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1696253881 - Control 1903064224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2026081320">
           <source>Geplantes Warenausgangsdatum der Zeile (von etagis).</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2247,6 +2297,36 @@
           <source>Etagis-Status der Zeile: unkritisch, ungeplant, kritisch.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesOrderSubform - Control Status (etagis) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1697527443 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesQuote - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1210015669 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimSalesReturnOrder - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 240608466 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1511989657">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContract2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1979156504 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3289801783">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContractQuote2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1539602575 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2832910486">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceCrMemo - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 981841849 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1224914752">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceInvoice - Control LEAD Nummer - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3440199191 - Control 1442201679 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1399627168">
           <source>lief. an E-Mail</source>
@@ -2297,6 +2377,16 @@
           <source>Lief. An PLZ</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceItemList2 - Control Ship-to Post Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4076559918 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2145436509">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceOrder2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2273984986 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 846137257">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceQuote2 - Control LEAD Nummer - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1272390404 - Action 345011919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1962553163">
           <source>Prüfzertifikat für Arch. Serv. Auftr.</source>
@@ -2503,6 +2593,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimProdOrderRtngLine - Field gimEingeplanteStartzeit - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1247717076 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2925931323">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimReturnReceiptHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2700500167 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 552782286">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesCrMemoHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3058138043 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3058138043 - Field 1616656658 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Geplanter Warenausgang (max, etagis)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2522,6 +2627,11 @@
           <source>unkritisch,ungeplant,kritisch</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field Status (etagis) - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3610665321 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesInvoiceHeader2 - Field LEAD Nummer - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1960430711 - Field 3035953901 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Whse Source Subtype</source>
@@ -2567,6 +2677,36 @@
           <source>unkritisch,ungeplant,kritisch</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesLine - Field Status (etagis) - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 169597362 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesShipmentHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 255023851 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3367425660">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimServiceContractHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3102901740 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3471029625">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimServiceCrMemoHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 176304189 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3610197182">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimServiceHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3600028886 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3117283677">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimServiceInvoiceHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3459325299 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4081358646">
+          <source>LEAD Nummer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimServiceShipmentHeader - Field LEAD Nummer - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3271962283 - Field 2861697451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3433205814">
           <source>Ressourcentyp</source>
