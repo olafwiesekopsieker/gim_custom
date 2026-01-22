@@ -156,7 +156,7 @@
             "server": "http://oegim-srvbc1",
             "serverInstance": "BC_TEST",
             "port":7349,
-            "authentication": "windows" ,   // oder "Windows", je nach Setup
+            "authentication": "Windows" ,   // oder "Windows", je nach Setup
             "breakOnNext": "WebClient"          // wichtig!
         }
     ]
