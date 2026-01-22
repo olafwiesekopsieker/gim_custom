@@ -19,6 +19,11 @@ tableextension 80010 "gimSalesHeaderEtagis" extends "Sales Header"
             OptionCaption = 'unkritisch,ungeplant,kritisch';
             Editable = false;
         }
+        field(80003; "LEAD Nummer"; Text[50])
+        {
+            Caption = 'LEAD Nummer';
+            DataClassification = ToBeClassified;
+        }
     }
 
     procedure UpdateEtagisStatus()
