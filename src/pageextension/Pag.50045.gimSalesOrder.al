@@ -61,10 +61,10 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
         }
         addlast("Shipping and Billing")
         {
-            field("fix-Termin Lieferung"; Rec."fix-Termin Lieferung")
-            {
-                ApplicationArea = All;
-            }
+            // field("fix-Termin Lieferung"; Rec."fix-Termin Lieferung")
+            // {
+            //     ApplicationArea = All;
+            // }
             field(Kundenliefertermin; Rec.Kundenliefertermin)
             {
                 ApplicationArea = All;
