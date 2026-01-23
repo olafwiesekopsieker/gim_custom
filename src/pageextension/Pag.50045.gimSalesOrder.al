@@ -61,10 +61,10 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
         }
         addlast("Shipping and Billing")
         {
-            // field("fix-Termin Lieferung"; Rec."fix-Termin Lieferung")
-            // {
-            //     ApplicationArea = All;
-            // }
+            field("fix-Termin Lieferung2"; Rec."fix-Termin Lieferung")
+            {
+                ApplicationArea = All;
+            }
             field(Kundenliefertermin; Rec.Kundenliefertermin)
             {
                 ApplicationArea = All;
@@ -165,7 +165,7 @@ pageextension 80010 gimSalesOrder extends "Sales Order"
     begin
         HeaderStatusStyleTxt := GetStatusStyle(rec."Status (etagis)");
         AvailabilityStyleTxt := GetAvailabilityStyle(Rec."gimAvailabilityStatus");
-        
+
         // Recalc status if needed when opening/viewing
         // Perf warning: doing this on every GetRecord might be heavy. 
         // But standard BC does CalcFields often. 
