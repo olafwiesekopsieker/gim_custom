@@ -27,15 +27,53 @@ pageextension 80027 "SalesOrderList Ext. Etagis" extends "Sales Order List"
                 Style = Strong;
                 StyleExpr = StatusStyleTxt;
             }
+            field("gimAvailabilityStatus"; Rec."gimAvailabilityStatus")
+            {
+                ApplicationArea = All;
+                Caption = 'Verfügbarkeit';
+                ToolTip = 'Verfügbarkeitsstatus (Fertigware)';
+                Style = Strong;
+                StyleExpr = AvailabilityStyleTxt;
+            }
+        }
+    }
+
+
+    actions
+    {
+        addlast(processing)
+        {
+            action(RefreshAvailability)
+            {
+                ApplicationArea = All;
+                Caption = 'Verfügbarkeit aktualisieren (Fertigware)';
+                Image = Refresh;
+                Promoted = true;
+                PromotedCategory = Process;
+
+                trigger OnAction()
+                var
+                    SalesHeader: Record "Sales Header";
+                begin
+                    CurrPage.SetSelectionFilter(SalesHeader);
+                    if SalesHeader.FindSet() then
+                        repeat
+                            SalesHeader.UpdateEtagisStatus(); // Updates both dates and availability
+                        until SalesHeader.Next() = 0;
+                    CurrPage.Update(false);
+                end;
+            }
         }
     }
 
     var
         StatusStyleTxt: Text[30];
+        AvailabilityStyleTxt: Text[30];
 
     trigger OnAfterGetRecord()
     begin
         StatusStyleTxt := GetStatusStyle(Rec."Status (etagis)");
+        AvailabilityStyleTxt := GetAvailabilityStyle(Rec."gimAvailabilityStatus");
     end;
 
     local procedure GetStatusStyle(Status: Option Unkritisch,Ungeplant,Kritisch): Text
@@ -47,6 +85,19 @@ pageextension 80027 "SalesOrderList Ext. Etagis" extends "Sales Order List"
                 exit('Ambiguous'); // neutral
             Status::Kritisch:
                 exit('Attention'); // rot/gelb
+        end;
+        exit('');
+    end;
+
+    local procedure GetAvailabilityStyle(Status: Option "Incomplete","Partially Available","Fully Available"): Text
+    begin
+        case Status of
+            Status::"Fully Available":
+                exit('Favorable'); // Green
+            Status::"Partially Available":
+                exit('Ambiguous'); // Yellow/Grey
+            Status::"Incomplete":
+                exit('Attention'); // Red
         end;
         exit('');
     end;
