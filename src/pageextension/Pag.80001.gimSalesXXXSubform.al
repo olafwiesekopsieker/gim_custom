@@ -129,5 +129,14 @@ pageextension 80019 gimSalesCrMemoSubform extends "Sales Cr. Memo Subform"
         {
             visible = false;
         }
+        addfirst(content)
+        {
+            field(Position; Rec."Position")
+            {
+                ApplicationArea = all;
+            }
+
+        }
+
     }
 }

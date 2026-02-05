@@ -62,5 +62,13 @@ pageextension 80023 gimPurchCrMemoSubform extends "Purch. Cr. Memo Subform"
         {
             visible = false;
         }
+
+        // addafter("Job No.")
+        // {
+        //     field(Position; Rec.Position)
+        //     {
+        //         ApplicationArea = all;
+        //     }
+        // }
     }
 }
