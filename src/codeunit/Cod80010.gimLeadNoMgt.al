@@ -1,6 +1,10 @@
 codeunit 80010 "gimLeadNoMgt"
 {
     // Sales Post Subscribers
+    Permissions = TableData "Sales Shipment Header" = rm,
+                  TableData "Sales Invoice Header" = rm,
+                  TableData "Sales Cr.Memo Header" = rm,
+                  TableData "Return Receipt Header" = rm;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnAfterInsertShipmentHeader', '', false, false)]
     local procedure OnAfterInsertShipmentHeader(var SalesShipmentHeader: Record "Sales Shipment Header"; SalesHeader: Record "Sales Header")
