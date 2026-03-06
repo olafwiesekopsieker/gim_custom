@@ -26,6 +26,11 @@ pageextension 80052 "gimSalesInvoice" extends "Sales Invoice"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the LEAD Number.';
             }
+            field("PostingDescription";Rec."Posting Description")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Posting Description.';
+            }
         }
     }
 }
@@ -40,6 +45,11 @@ pageextension 80053 "gimSalesCrMemo" extends "Sales Credit Memo"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the LEAD Number.';
+            }
+             field("PostingDescription";Rec."Posting Description")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Posting Description.';
             }
         }
     }
