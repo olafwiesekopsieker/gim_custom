@@ -2178,6 +2178,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimCertificateOfSupplyList - Action ProcessRechnungen - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 784093571 - Control 351181786 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Unsere Kundennr.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimCustomerCard2 - Control Our Account No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3045814676 - Action 3526020579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Importiere aus Bilddatenbank (neue Funktion)</source>
           <note from="Developer" annotates="general" priority="2"></note>
