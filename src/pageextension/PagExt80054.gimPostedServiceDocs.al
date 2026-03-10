@@ -24,6 +24,7 @@ pageextension 80067 "gimPostedServiceInvoice2" extends "Posted Service Invoice"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the LEAD Number.';
             }
+
         }
     }
 }
