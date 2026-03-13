@@ -3,6 +3,51 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="DS_GIM_Custom">
     <body>
       <group id="body">
+        <trans-unit id="Table 3890194182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Location KPI Buffer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 1749962388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Invoices (Period 1)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Invoices Count 1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 2387659005 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Invoices (Period 2)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Invoices Count 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 706407594 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Orders (Period 2)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Orders Count - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 3562181694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Quotes (Period 2)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Quotes Count - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 993414011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Ship-to Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3890194182 - Field 2743501653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table gim Service Loc. KPI Buffer - Field Ship-to Name - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2348163085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Delivery Signature</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -247,6 +292,86 @@
           <source>Verkaufsauftrag öffnen</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page gim Reg. Whse Act. Sales View - Action OpenSalesOrderAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Location KPIs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 284195533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Filters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 1650081793 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>e.g. previous year (for Posted Invoices)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control DateFilter1Field - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 1650081793 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Filter 1 (Comparison Period)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control DateFilter1Field - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 343830688 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>e.g. current year (for Invoices, Quotes, Orders)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control DateFilter2Field - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 343830688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Filter 2 (Current Period)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control DateFilter2Field - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer name.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 1749962388 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of posted service invoices in period 1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Invoices Count 1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 2387659005 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of posted service invoices in period 2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Invoices Count 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 706407594 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of service orders in period 2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Orders Count - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 3562181694 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of service quotes in period 2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Quotes Count - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 993414011 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ship-to code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Ship-to Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Control 2743501653 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the ship-to address.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Control Ship-to Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Action 1592581304 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate the numbers based on the specified filters.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Action Calculate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3914340590 - Action 1592581304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page gim Service Location KPIs - Action Calculate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3455118654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kommissionierzeilen – Verkaufssicht</source>
@@ -2123,6 +2248,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report gimCheck List for Archived - Control Inbetriebnahme - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Query 1523969530 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Count Service Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query gim Count Serv. Invoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 180912699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Count Service Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query gim Count Serv. Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 788747303 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Count Service Quotes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query gim Count Serv. Quotes - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2701744352 - Action 555198403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4240524421">
           <source>Picking List DUE</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2213,6 +2353,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedServiceInvoice2 - Control LEAD Nummer - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3790577497 - Control 1408999528 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 540259714">
+          <source>Specifies the quantity of service items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedServiceInvoices2 - Control gimQty Service Items - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3790577497 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 540259714">
+          <source>Specifies the LEAD Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedServiceInvoices2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1907904073 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1561133952">
           <source>Specifies the LEAD Number.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2237,6 +2387,16 @@
           <source>Ausgewählte Fragen löschen</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimQuestions - Action DeleteSelectedQuestions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2438891059 - Control 989128122 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3868741142">
+          <source>Zeigt den Verfügbarkeitsstatus des zugehörigen Verkaufsauftrags an.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimReservationEntries - Control gimAvailabilityStatus - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2438891059 - Control 989128122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3868741142">
+          <source>Verfügbarkeit (Auftrag)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimReservationEntries - Control gimAvailabilityStatus - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1663145580 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1708100201">
           <source>Specifies the LEAD Number.</source>
@@ -2312,6 +2472,36 @@
           <source>Specifies the LEAD Number.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContract2 - Control LEAD Nummer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3112243592 - Control 2306852000 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2797597328">
+          <source>Specifies the second address line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContractList2 - Control Address 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3112243592 - Control 714791889 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2797597328">
+          <source>Specifies the city.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContractList2 - Control City - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3112243592 - Control 1541011875 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2797597328">
+          <source>Specifies the e-mail address.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContractList2 - Control E-Mail - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3112243592 - Control 3660300303 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2797597328">
+          <source>Specifies the postal code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContractList2 - Control Post Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3112243592 - Control 1442201679 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2797597328">
+          <source>Specifies the ship-to e-mail address.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContractList2 - Control Ship-to E-Mail - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3112243592 - Control 3001618318 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2797597328">
+          <source>Specifies your reference.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimServiceContractList2 - Control Your Reference - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1979156504 - Control 2726449156 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3289801783">
           <source>Specifies the LEAD Number.</source>
@@ -2407,6 +2597,21 @@
           <source>Unterschriften erfassen</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List Ext - Action CaptureDeliverySignatures - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Action 2574666400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Verfügbarkeit aktualisieren (Fertigware)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Action RefreshAvailability - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 989128122 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Verfügbarkeitsstatus (Fertigware)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control gimAvailabilityStatus - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737375231 - Control 989128122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Verfügbarkeit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderList Ext. Etagis - Control gimAvailabilityStatus - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1737375231 - Control 2055973836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
           <source>Größtes geplantes Warenausgangsdatum aus den Zeilen (etagis).</source>
@@ -2603,6 +2808,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesCrMemoHeader2 - Field LEAD Nummer - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3058138043 - Field 989128122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Verfügbarkeitsstatus (Fertigware)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field gimAvailabilityStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3058138043 - Field 989128122 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Unvollständig,Teilweise verfügbar,Vollständig verfügbar</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimSalesHeaderEtagis - Field gimAvailabilityStatus - Property OptionCaption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3058138043 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>LEAD Nummer</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2697,6 +2912,11 @@
           <source>LEAD Nummer</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimServiceHeader2 - Field LEAD Nummer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3600028886 - Field 1408999528 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3117283677">
+          <source>Qty Service Items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension gimServiceInvoiceHeader2 - Field gimQty Service Items - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3600028886 - Field 2726449156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3117283677">
           <source>LEAD Nummer</source>
