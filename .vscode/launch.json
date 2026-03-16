@@ -62,7 +62,7 @@
             "enableSqlInformationDebugger": true,
             "tenant": "default",
             "port":7349,
-            "schemaUpdateMode":"ForceSync"
+            "schemaUpdateMode":"Synchronize"
 
             
             

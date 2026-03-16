@@ -1,4 +1,4 @@
-pageextension 80066 "gimPostedServiceShipment" extends "Posted Service Shipment"
+pageextension 80067 "gimPostedServiceShipment" extends "Posted Service Shipment"
 {
     layout
     {
@@ -13,7 +13,7 @@ pageextension 80066 "gimPostedServiceShipment" extends "Posted Service Shipment"
     }
 }
 
-pageextension 80067 "gimPostedServiceInvoice2" extends "Posted Service Invoice"
+pageextension 80068 "gimPostedServiceInvoice2" extends "Posted Service Invoice"
 {
     layout
     {
@@ -29,7 +29,7 @@ pageextension 80067 "gimPostedServiceInvoice2" extends "Posted Service Invoice"
     }
 }
 
-pageextension 80068 "gimPostedServiceCrMemo" extends "Posted Service Credit Memo"
+pageextension 80069 "gimPostedServiceCrMemo" extends "Posted Service Credit Memo"
 {
     layout
     {
