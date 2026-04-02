@@ -2338,6 +2338,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedPurchCreditMemos - Control PostingDescription - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2370589473 - Control 1099371656 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2854365759">
+          <source>Specifies the kmirm Barcode.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedPurchCrMemo2 - Control kmirm Barcode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2370589473 - Control 4025242238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2854365759">
+          <source>Specifies the kmirm Document id.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedPurchCrMemo2 - Control kmirmDocumentID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2370589473 - Control 1539609042 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2854365759">
+          <source>Specifies the Posting Description.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedPurchCrMemo2 - Control PostingDescription - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2450097353 - Control 1099371656 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Specifies the kmirm Barcode.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedPurchInvoice - Control kmirm Barcode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2450097353 - Control 4025242238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Specifies the kmirm Document id.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedPurchInvoice - Control kmirmDocumentID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2450097353 - Control 1539609042 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Specifies the Posting Description.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPostedPurchInvoice - Control PostingDescription - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4003043808 - Control 4025242238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
           <source>Specifies the kmirm Document id.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2418,6 +2448,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPurchCreditMemos - Control PostingDescription - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3336934754 - Control 1099371656 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4042331808">
+          <source>Specifies the kmirm Barcode.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPurchCrMemo2 - Control kmirm Barcode - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3336934754 - Control 4025242238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4042331808">
           <source>Specifies the kmirm Document id.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2427,6 +2462,11 @@
           <source>Specifies the Posting Description.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPurchCrMemo2 - Control PostingDescription - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 322562090 - Control 1099371656 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the kmirm Barcode.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension gimPurchInvoice - Control kmirm Barcode - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 322562090 - Control 4025242238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
           <source>Specifies the kmirm Document id.</source>
