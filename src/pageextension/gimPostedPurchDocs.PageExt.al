@@ -1,21 +1,4 @@
-pageextension 80070 "gimPurchQuote" extends "Purchase Quote"
-{
-    layout
-    {
-        addlast(General)
-        {
-            // field("LEAD Nummer"; Rec."LEAD Nummer")
-            // {
-            //     ApplicationArea = All;
-            //     ToolTip = 'Specifies the LEAD Number.';
-            // }
-        }
-    }
-}
-
-
-
-pageextension 80071 "gimPurchInvoice" extends "Purchase Invoice"
+pageextension 80038 "gimPostedPurchInvoice" extends "Posted Purchase Invoice"
 {
     layout
     {
@@ -45,7 +28,7 @@ pageextension 80071 "gimPurchInvoice" extends "Purchase Invoice"
     }
 }
 
-pageextension 80072 "gimPurchCrMemo2" extends "Purchase Credit Memo"
+pageextension 80039 "gimPostedPurchCrMemo2" extends "Posted Purchase Credit Memo"
 {
     layout
     {
@@ -71,21 +54,6 @@ pageextension 80072 "gimPurchCrMemo2" extends "Purchase Credit Memo"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the kmirm Barcode.';
             }
-        }
-    }
-}
-
-pageextension 80073 "gimPurchReturnOrder" extends "Purchase Return Order"
-{
-    layout
-    {
-        addlast(General)
-        {
-            // field("LEAD Nummer"; Rec."LEAD Nummer")
-            // {
-            //     ApplicationArea = All;
-            //     ToolTip = 'Specifies the LEAD Number.';
-            // }
         }
     }
 }

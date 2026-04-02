@@ -14,6 +14,7 @@ pageextension 80036 gimPostedServiceInvoices2 extends "Posted Service Invoices"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the quantity of service items.';
             }
+
         }
     }
 }
