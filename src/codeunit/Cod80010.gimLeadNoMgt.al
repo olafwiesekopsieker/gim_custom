@@ -60,6 +60,7 @@ codeunit 80010 "gimLeadNoMgt"
             ServiceInvoiceHeader."LEAD Nummer" := ServiceHeader."LEAD Nummer";
             // ServiceInvoiceHeader.Modify();
         end;
+        ServiceInvoiceHeader."Technician User ID" := ServiceHeader."Technician User ID";
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Service-Post", 'OnBeforeServiceCrMemoHeaderInsert', '', false, false)]

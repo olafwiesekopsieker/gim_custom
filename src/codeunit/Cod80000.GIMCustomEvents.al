@@ -55,6 +55,26 @@ codeunit 80000 "GIM Custom Events"
             Rec."Link Service to Service Item" := false;
             Rec.Modify(true);
         end;
+        UpdateTechnicianUserID(Rec);
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Service Header", 'OnAfterModifyEvent', '', false, false)]
+    local procedure ServiceHeaderOnAfterModify(var Rec: Record "Service Header"; var xRec: Record "Service Header"; RunTrigger: Boolean)
+    begin
+        if Rec.IsTemporary then
+            exit;
+
+        if Rec."Salesperson Code" <> xRec."Salesperson Code" then
+            UpdateTechnicianUserID(Rec);
+    end;
+
+    local procedure UpdateTechnicianUserID(var ServiceHeader: Record "Service Header")
+    var
+        Salesperson: Record "Salesperson/Purchaser";
+    begin
+        if ServiceHeader."Salesperson Code" <> '' then
+            if Salesperson.Get(ServiceHeader."Salesperson Code") then
+                ServiceHeader."Technician User ID" := Salesperson."User ID";
     end;
 
     // [EventSubscriber(ObjectType::Table, Database::"Service Header", 'OnAfterModifyEvent', '', false, false)]

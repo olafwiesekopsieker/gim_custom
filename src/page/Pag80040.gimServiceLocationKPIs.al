@@ -22,7 +22,7 @@ page 80040 "gim Service Location KPIs"
                     Caption = 'Date Filter 1 (Comparison Period)';
                     ApplicationArea = All;
                     ToolTip = 'e.g. previous year (for Posted Invoices)';
-                    
+
                     trigger OnValidate()
                     begin
                         CalculateData();
@@ -67,7 +67,7 @@ page 80040 "gim Service Location KPIs"
                     ApplicationArea = All;
                     Style = Strong;
                     ToolTip = 'Specifies the number of posted service invoices in period 1.';
-                    
+
                     trigger OnDrillDown()
                     begin
                         ShowPostedInvoices(DateFilter1);
@@ -78,7 +78,7 @@ page 80040 "gim Service Location KPIs"
                     ApplicationArea = All;
                     Style = Strong;
                     ToolTip = 'Specifies the number of posted service invoices in period 2.';
-                    
+
                     trigger OnDrillDown()
                     begin
                         ShowPostedInvoices(DateFilter2);
@@ -88,7 +88,7 @@ page 80040 "gim Service Location KPIs"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the number of service quotes in period 2.';
-                    
+
                     trigger OnDrillDown()
                     begin
                         ShowServiceDocs(Enum::"Service Document Type"::Quote, DateFilter2);
@@ -98,7 +98,7 @@ page 80040 "gim Service Location KPIs"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the number of service orders in period 2.';
-                    
+
                     trigger OnDrillDown()
                     begin
                         ShowServiceDocs(Enum::"Service Document Type"::Order, DateFilter2);
@@ -148,7 +148,7 @@ page 80040 "gim Service Location KPIs"
         // 1. Rechnungen fuer DateFilter 1
         if DateFilter1 <> '' then
             QInvoices1.SetFilter(Posting_Date, DateFilter1);
-        
+
         if QInvoices1.Open() then
             while QInvoices1.Read() do
                 UpdateBuffer(QInvoices1.Customer_No_, QInvoices1.Ship_to_Code, QInvoices1.InvoiceCount, 0, 0, 0);
@@ -156,7 +156,7 @@ page 80040 "gim Service Location KPIs"
         // 2. Rechnungen fuer DateFilter 2
         if DateFilter2 <> '' then
             QInvoices2.SetFilter(Posting_Date, DateFilter2);
-        
+
         if QInvoices2.Open() then
             while QInvoices2.Read() do
                 UpdateBuffer(QInvoices2.Customer_No_, QInvoices2.Ship_to_Code, 0, QInvoices2.InvoiceCount, 0, 0);
@@ -164,7 +164,7 @@ page 80040 "gim Service Location KPIs"
         // 3. Angebote fuer DateFilter 2
         if DateFilter2 <> '' then
             QQuotes.SetFilter(Document_Date, DateFilter2);
-        
+
         if QQuotes.Open() then
             while QQuotes.Read() do
                 UpdateBuffer(QQuotes.Customer_No_, QQuotes.Ship_to_Code, 0, 0, QQuotes.QuoteCount, 0);
@@ -172,7 +172,7 @@ page 80040 "gim Service Location KPIs"
         // 4. Auftraege fuer DateFilter 2
         if DateFilter2 <> '' then
             QOrders.SetFilter(Document_Date, DateFilter2);
-        
+
         if QOrders.Open() then
             while QOrders.Read() do
                 UpdateBuffer(QOrders.Customer_No_, QOrders.Ship_to_Code, 0, 0, 0, QOrders.OrderCount);
@@ -183,13 +183,13 @@ page 80040 "gim Service Location KPIs"
             repeat
                 if Customer.Get(Rec."Customer No.") then
                     Rec."Customer Name" := Customer.Name;
-                    
+
                 if Rec."Ship-to Code" <> '' then begin
                     if ShipToAddress.Get(Rec."Customer No.", Rec."Ship-to Code") then
                         Rec."Ship-to Name" := ShipToAddress.Name;
                 end else
-                    Rec."Ship-to Name" := 'Hauptadresse'; 
-                
+                    Rec."Ship-to Name" := 'Hauptadresse';
+
                 Rec.Modify();
             until Rec.Next() = 0;
 
@@ -216,9 +216,10 @@ page 80040 "gim Service Location KPIs"
     local procedure ShowPostedInvoices(SelectedDateFilter: Text)
     var
         ServiceInvoiceHeader: Record "Service Invoice Header";
+        ServiceSecurity: Codeunit "gimServiceSecurity";
     begin
         ServiceInvoiceHeader.SetRange("Customer No.", Rec."Customer No.");
-        
+
         if Rec."Ship-to Code" <> '' then
             ServiceInvoiceHeader.SetRange("Ship-to Code", Rec."Ship-to Code")
         else
@@ -227,16 +228,19 @@ page 80040 "gim Service Location KPIs"
         if SelectedDateFilter <> '' then
             ServiceInvoiceHeader.SetFilter("Posting Date", SelectedDateFilter);
 
+        ServiceSecurity.ApplyTechnicianFilter(ServiceInvoiceHeader);
+
         Page.Run(Page::"Posted Service Invoices", ServiceInvoiceHeader);
     end;
 
     local procedure ShowServiceDocs(DocType: Enum "Service Document Type"; SelectedDateFilter: Text)
     var
         ServiceHeader: Record "Service Header";
+        ServiceSecurity: Codeunit "gimServiceSecurity";
     begin
         ServiceHeader.SetRange("Document Type", DocType);
         ServiceHeader.SetRange("Customer No.", Rec."Customer No.");
-        
+
         if Rec."Ship-to Code" <> '' then
             ServiceHeader.SetRange("Ship-to Code", Rec."Ship-to Code")
         else
@@ -244,6 +248,8 @@ page 80040 "gim Service Location KPIs"
 
         if SelectedDateFilter <> '' then
             ServiceHeader.SetFilter("Document Date", SelectedDateFilter);
+
+        ServiceSecurity.ApplyTechnicianFilter(ServiceHeader);
 
         if DocType = "Service Document Type"::Quote then
             Page.Run(Page::"Service Quotes", ServiceHeader)

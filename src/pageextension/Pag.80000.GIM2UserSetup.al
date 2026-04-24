@@ -14,6 +14,11 @@ pageextension 80000 GIM2UserSetup extends "User Setup"
                 caption = 'Artikel sperren erlaubt';
                 ToolTip = 'Benutzer mit SUPER-Rechten können hier festlegen, ob ein User berechtigt ist, Artikel zu sperren oder entsperren', Comment = '%';
             }
+            field("Service Admin"; Rec."Service Admin")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Gibt an, ob der Benutzer als Service Admin alle Service-Datensätze sehen darf.';
+            }
         }
     }
 }
